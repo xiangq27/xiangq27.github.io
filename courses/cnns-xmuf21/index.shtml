@@ -24,7 +24,8 @@
 
 </td>
 
-<td align="center" valign="center" width="80" bgcolor="white">
+<td align="center" valign="center" width="54" bgcolor="white"
+	   style="text-align:center">
 <a href="http://www.xmu.edu.cn/">
 <img border="0" src="files/img/xmu.png">
 </a>
@@ -43,13 +44,13 @@ This is the home page for Computer Networks and Network Security, Fall 2021.
 Please see the links above for course materials.
 
 <h3>News and Announcements</h3>
+
 <ul>
-<ul>
-  <li>[12/1/2017] Example routing as a mini-project is linked <a href="./assignments/ns3-routing/index.html">here</a>.
-  <li>[11/28/2017] Assignment 5 posted on the Schedule page.
-  </li>
-  <li><a href="./past.shtml">Past announcements</a>
-  <li>Use <strong><a href="https://piazza.com/yale/fall2017/cpsc433533" target="_target">Piazza</a></strong> to ask questions. Email the instructor (yry AT cs DOT yale DOT edu),  or the teaching team (cs433ta AT cs DOT yale DOT edu) if you want to reach the whole team.</li>
+  <li>[08/10/2021] Welcome to Computer Networks and Network Security. Content to be updated. 
+  <!--/li-->
+  <!--li><a href="./past.shtml">Past announcements</a-->
+  <li>Please email the instructor (qiaoxiang AT xmu DOT edu DOT cn) to ask
+	  questions.</li>
 </ul>
 
 <p class="lastupdate">
@@ -65,13 +66,14 @@ Please see the links above for course materials.
 
 <P><HR><P>
 <ADDRESS>
-Copyright (c) 2021
-<a href="https://qiaoxiang.me/">Qiao Xiang</a>,
-<a href="http://cs.xmu.edu.cn/">Department of Computer Science</a>,
-<a href="http://www.xmu.edu.cn/">Xiamen University</a><br>
-<br>
 <b>Acknowledgment</b>: The materials of this course are heavily based on CPSC 433/533 at
 Yale University, by courtesy of Dr. Y. Richard Yang.
+<br>
+<br>
+	Copyright (c) 2021
+<a href="https://qiaoxiang.me/">Qiao Xiang</a>,
+<a href="http://cs.xmu.edu.cn/">Department of Computer Science</a>,
+<a href="http://www.xmu.edu.cn/">Xiamen University</a>
 </ADDRESS> 
 
 

@@ -30,28 +30,26 @@ a:visited {color: #800080; }
 
 table,th,td {
   border:1px solid black;
-  text-align: left;
+  vertical-align:center
+  text-align:center;
 }
-table {
+
+table.schedule {
+  border-collapse:collapse;
+  cellpadding:1
+  cellspacing:0
   width:90%
+}
+
+table.data {
+  border-collapse:collapse;
+  cellpadding:1
+  cellspacing:0
 }
 
 table.index {
   text-align:left;
   padding:2;
-}
-
-table.schedule {
-  border-collapse:collapse;
-  cellpadding:2;
-  cellspacing:0;
-  width:80%
-}
-
-table.data {
-  border-collapse:collapse;
-  cellpadding:1;
-  cellspacing:0;
 }
 
 td.slno {
