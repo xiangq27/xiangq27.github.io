@@ -1,14 +1,14 @@
-<!--#set var="pagename" value="Home" -->
-<!--#include virtual="header.shtml" -->
+<set var="pagename" value="Home">
+<include virtual="header.shtml">
 
 <p class="lastupdate">
-Last Modified: <!--#flastmod file="index.shtml" -->
+Last Modified: <flastmod file="index.shtml">
 </p>
 
 <head>
 </head>
 
-This is the home page for CS 433/533: Computer Networks.
+This is the home page for Computer Networks and Network Security, Fall 2021.
 Please see the links above for course materials.
 
 <h3>News and Announcements</h3>
@@ -21,4 +21,4 @@ Please see the links above for course materials.
   <li>Use <strong><a href="https://piazza.com/yale/fall2017/cpsc433533" target="_target">Piazza</a></strong> to ask questions. Email the instructor (yry AT cs DOT yale DOT edu),  or the teaching team (cs433ta AT cs DOT yale DOT edu) if you want to reach the whole team.</li>
 </ul>
 
-<!--#include virtual="footer.shtml" -->
+<include virtual="footer.shtml">
