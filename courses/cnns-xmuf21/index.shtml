@@ -1,0 +1,24 @@
+<!--#set var="pagename" value="Home" -->
+<!--#include virtual="header.shtml" -->
+
+<p class="lastupdate">
+Last Modified: <!--#flastmod file="index.shtml" -->
+</p>
+
+<head>
+</head>
+
+This is the home page for CS 433/533: Computer Networks.
+Please see the links above for course materials.
+
+<h3>News and Announcements</h3>
+<ul>
+<ul>
+  <li>[12/1/2017] Example routing as a mini-project is linked <a href="./assignments/ns3-routing/index.html">here</a>.
+  <li>[11/28/2017] Assignment 5 posted on the Schedule page.
+  </li>
+  <li><a href="./past.shtml">Past announcements</a>
+  <li>Use <strong><a href="https://piazza.com/yale/fall2017/cpsc433533" target="_target">Piazza</a></strong> to ask questions. Email the instructor (yry AT cs DOT yale DOT edu),  or the teaching team (cs433ta AT cs DOT yale DOT edu) if you want to reach the whole team.</li>
+</ul>
+
+<!--#include virtual="footer.shtml" -->
