@@ -17,7 +17,7 @@ pre  { margin-left: 5%;
        font-family: "courier new",courier,monospace;
      } 
 
-h2,h3,h4  {color:  #993333;
+h2,h3,h4  {color:  black;
            font-family: arial,helvetica,sans-serif;
            font-weight: bold; 
            margin-left: 0%;  }
@@ -104,9 +104,9 @@ td.exam {
 }
 
 p.lastupdate {
-  text-align:right;
+  text-align:left;
   font-style:italic;
-  font-size:75%
+/*  font-size:75%*/
 }
 
 .note    {color: orange;}
