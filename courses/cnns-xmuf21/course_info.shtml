@@ -40,40 +40,37 @@
 <head>
 </head>
 
-<h2 align="left">Course Information for CPSC 433/533</h2>
+<h2 align="left">Course Information</h2>
 
-<table>
+<table width="50%">
       <tbody>
         <tr>
           <td>Time and location:</td>
-          <td>TTh 1:00-2:15 PM</td>
+          <td>T Th 10:10-11:50 AM</td>
         </tr>
         <tr>
           <td>Instructor:</td>
-          <td>Y. Richard Yang (<a
-              href="mailto:yry@yale.edu?subject=CS434/534">yry AT
-              cs.yale.edu</a>) <br>
-            Room: AKW 208A<br>
-            Phone: 432-6400</td>
+          <td>Qiao Xiang	 (<a
+              href="mailto:qiaoxiang@xmu.edu.cn?subject=CNNS F21">qiaoxiang AT
+              xmu.edu.cn</a>)
+            </td>
         </tr>
         <tr>
-          <td>Instructor office hours: </td>
-          <td>TTh 2:30-3:30 pm or by appointment</td>
+          <td>Lab hours: </td>
+          <td>Th 2:30-6:20 pm every odd week</td>
+        </tr>
+	<tr>
+          <td>Office hours: </td>
+          <td>Please contact the instructor to make an appointment</td>
         </tr>
         <tr>
           <td>Teaching assistants:</td>
-	        <td>Geng Li (<a href="mailto:geng.li@yale.edu?subject=CS433/533">geng.li AT yale.edu</a>), Qiao Xiang(<a
-			  href="mailto:qiao.xiang@cs.yale.edu?subject=CS433/533">qiao.xiang AT
-			  cs.yale.edu</a>)</td>
-        </tr>
-        <tr>
-          <td>Teaching assistant office hours: </td>
-          <td>M-F 9am-6pm</td>
-        </tr>
+	        <td>TBA</td>
+        </tr> 
         <tr>
           <td>Class home page:</td>
           <td> <a
-              href="http://zoo.cs.yale.edu/classes/cs433/">http://zoo.cs.yale.edu/classes/cs433/</a></td>
+              href="https://qiaoxiang.me/courses/cnns-xmuf21/index.shtml">https://qiaoxiang.me/courses/cnns-xmuf21/index.shtml</a></td>
         </tr>
       </tbody>
     </table>
