@@ -1,0 +1,250 @@
+<HTML>
+<HEAD>
+	<TITLE>Computer Networks and Network Security, Fall 2021: Course Info
+	</TITLE>
+        <LINK HREF="qx_class_style.css" REL="stylesheet"  type="text/css" media="screen" />
+</HEAD>
+<BODY>
+
+<table cellspacing="2" cellpadding="10" width="100%">
+<tbody>
+<tr>
+
+<td bgcolor="white" align="left">
+<H2 id="class-head"></H2>
+
+<table cellpadding="5" bgcolor="blue">
+<tr><td bgcolor="white" align="center">
+<a href="index.shtml">Home</a> &nbsp;&ndash;&nbsp;
+<a href="course_info.shtml">Overview</a> &nbsp;&ndash;&nbsp;
+<a href="schedule.shtml">Schedule</a> &nbsp;&ndash;&nbsp;
+<a href="readings.shtml">Readings</a> &nbsp;&ndash;&nbsp;
+<a href="resources.shtml">Resources</a>
+</table>
+
+</td>
+
+<td align="center" valign="center" width="54" bgcolor="white"
+	   style="text-align:center">
+<a href="http://www.xmu.edu.cn/">
+<img border="0" src="files/img/xmu.png">
+</a>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<head>
+</head>
+
+<h2 align="left">Course Information for CPSC 433/533</h2>
+
+<table>
+      <tbody>
+        <tr>
+          <td>Time and location:</td>
+          <td>TTh 1:00-2:15 PM</td>
+        </tr>
+        <tr>
+          <td>Instructor:</td>
+          <td>Y. Richard Yang (<a
+              href="mailto:yry@yale.edu?subject=CS434/534">yry AT
+              cs.yale.edu</a>) <br>
+            Room: AKW 208A<br>
+            Phone: 432-6400</td>
+        </tr>
+        <tr>
+          <td>Instructor office hours: </td>
+          <td>TTh 2:30-3:30 pm or by appointment</td>
+        </tr>
+        <tr>
+          <td>Teaching assistants:</td>
+	        <td>Geng Li (<a href="mailto:geng.li@yale.edu?subject=CS433/533">geng.li AT yale.edu</a>), Qiao Xiang(<a
+			  href="mailto:qiao.xiang@cs.yale.edu?subject=CS433/533">qiao.xiang AT
+			  cs.yale.edu</a>)</td>
+        </tr>
+        <tr>
+          <td>Teaching assistant office hours: </td>
+          <td>M-F 9am-6pm</td>
+        </tr>
+        <tr>
+          <td>Class home page:</td>
+          <td> <a
+              href="http://zoo.cs.yale.edu/classes/cs433/">http://zoo.cs.yale.edu/classes/cs433/</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Objectives</h3>
+
+    <p>The Internet has grown from a research curiosity to something
+    as essential as the ubiquitous telephone and utility networks. It
+    has been able to withstand rapid growth fairly well and its core
+    protocols have been robust enough to accommodate applications
+    (e.g., the World Wide Web) that were unforeseen by the original
+    Internet designers. Networking is becoming an essential component
+    of many systems. </p>
+
+    <p>In this class, we will study the design, implementation,
+    analysis, and evaluation of this global network. We will start
+    with the design principles and the architecture of this global
+    network infrastructure. We will follow the seven layers
+    architecture and study the major protocols in detail. Through both
+    analysis and programming assignments, the students will learn how
+    the Internet works and how to design Internet applications. </p>
+
+    <p>Topics include: layered network architectures, applications,
+    transport, congestion, routing, data link protocols, local area
+    networks, performance analysis, cloud networking, multimedia 
+    networking, and network security. An emphasis will be placed 
+    on the protocols used in the Internet. </p> 
+
+    <h3>Prerequisites</h3> 
+
+    <p>This will be a fast-paced course that covers both the
+    algorithmic/theoretical background and the practical programming
+    for computer networks. The algorithmic background required is
+    covered in <a href="http://zoo.cs.yale.edu/classes/cs223/">CPSC
+    223b</a>. Basic knowledge of distributed computing and probability
+    will be helpful but not required. The practical programming
+    background required is covered in CPSC 223b and <a
+    href="http://zoo.cs.yale.edu/classes/cs323/">323a</a>.  Background
+    in operating system will be helpful for some programming
+    assignments. The prerequisite is CPSC 323a, for which CPSC 223b is
+    a prerequisite. </p> 
+
+    <h3>Course requirements</h3> 
+
+    <p>Course requirements include written assignments, programming
+    assignments and two exams.  There will be no final
+    examination. </p> 
+
+    <h3>Course materials</h3>
+    <ul>
+      <li>Textbook
+        <ul>
+          <li> 
+            <i> 
+              <a href="https://www.pearson.com/us/higher-education/program/Kurose-Computer-Networking-A-Top-Down-Approach-7th-Edition/PGM1101673.html">
+                Computer Networking: A Top-Down Approach </a> (7th edition).
+            </i><br>
+             Jim Kurose</a> and 
+            <a href="http://cis.poly.edu/~ross/">Keith Ross</a>.<br>
+            Addison Wesley, 2017.</li>
+        </ul>
+      </li>
+
+      <li>References
+        <ul>
+          <li><i><a href="http://www.pearsonhighered.com/educator/product/Computer-Networks-5E/9780132126953.page">
+                Computer Networks</a> (5th edition).</i><br>
+           Andrew S. Tanenbaum and David Wetherall.<br>
+            Prentice Hall, 2010.
+          </li>
+
+          <li><i><a href="http://booksite.mkp.com/9780123850591/">
+          Computer Networks, A Systems Approach</a> (5th edition)</i><br>
+          Larry L. Peterson and Bruce S. Davie.<br>
+          Morgan Kaufmann Publishers, 2012
+          </li>
+
+          <li><i>TCP/IP Illustrated, Volume 1: The Protocols </i> (<a
+              href="http://www.kohala.com/start/tcpipiv1.html">author's
+              site</a>)<br>
+            W. Richard Stevens.<br>
+            Addison-Wesley, 1994.
+            <ul>
+              <li>Yale has the book online. Search Yale library catalog.</li>
+              <li>This book explains protocols by examples. Fun and
+                interesting to read.</li>
+            </ul>
+          </li>
+
+          <li><i>Java Network Programming (3rd edition).</i> 
+              Elliotte Harold.<br>
+              O'Reilly, 2005.
+            <ul>
+              <li>Author's site, including examples: <a
+                  href="http://www.cafeaulait.org/books/jnp3/">http://www.cafeaulait.org/books/jnp3/</a>
+              </li>
+              <li>Yale has the book online. Search Yale library catalog.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Supplementary readings
+        <ul>
+          <li>Available from the class schedule page.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>Grading</h3>
+    <ul>
+      <li>30% Exams (15% each)</li>
+      <li>60% Assignments and a course project</li>
+      <li>10% Class participation</li>
+    </ul>
+    <p><b>Class participation.</b> If you do not ask questions in
+      the class, you will not get as much out of the class as you could.
+      Your class participation will be based on the instructor's
+      assessment of whether you are regularly involved in the class over
+      the course of the semester. If at the end of the semester the
+      instructor cannot remember you, you have not actively participated
+      in the class. </p>
+    <h3>Collaboration</h3>
+    <p>I strongly encourage you to discuss any topic with anyone. That's
+      the way good science happens. As a professional, you should
+      acknowledge any significant discussions in your homework/projects.
+      However, when the time comes to write the homework or program,
+      such discussions are no longer appropriate---the solution or
+      program must be your own personal inspiration (although you may
+      ask the instructor and teaching fellow for help in writing and
+      debugging). DO NOT UNDER ANY CIRCUMSTANCES COPY ANOTHER PERSON'S
+      HOMEWORK OR PROGRAM---to do so is a clear violation of
+      ethical/academic standards that, when discovered, will be referred
+      to the Executive Committee of Yale College for disciplinary
+      action. </p>
+    <h3>Late homework policy</h3>
+    <p>A homework or program that is not completed by the time specified
+      in the assignment (and whose late submission is not authorized by
+      the instructor or by a Dean's excuse) will be <b> <i>not</i></b>
+      be graded. </p>
+
+    <p class="lastupdate">
+      <script>
+	updateTime = new Date(document.lastModified)
+	theMonth = updateTime.getMonth() + 1
+	theDate = updateTime.getDate()
+	theYear = updateTime.getFullYear()
+        document.write("Last updated on "+ theMonth + "/" + theDate + "/" + theYear + ".");
+      </script>
+</p>
+
+
+<P><HR><P>
+<ADDRESS>
+<b>Acknowledgment</b>: The materials of this course are heavily based on CPSC 433/533 at
+Yale University, by courtesy of Dr. Y. Richard Yang.
+<br>
+<br>
+	Copyright (c) 2021
+<a href="../../index.html">Qiao Xiang</a>,
+<a href="http://cs.xmu.edu.cn/">Department of Computer Science</a>,
+<a href="http://www.xmu.edu.cn/">Xiamen University</a>
+</ADDRESS> 
+
+
+<script>
+	var coursename="Computer Networks and Network Security, Fall 2021";
+	var pagename="Course Info";
+	document.getElementById("class-head").innerHTML=coursename+": "+pagename;
+</script>
+
+
+
+</BODY>
+</HTML>
+
