@@ -1,0 +1,825 @@
+<HTML>
+<HEAD>
+	<TITLE>Computer Networks and Network Security, Fall 2021: Schedule
+	</TITLE>
+        <LINK HREF="qx_class_style.css" REL="stylesheet"  type="text/css" media="screen" />
+</HEAD>
+<BODY>
+
+<table cellspacing="2" cellpadding="10" width="100%">
+<tbody>
+<tr>
+
+<td bgcolor="white" align="left">
+<H2 id="class-head"></H2>
+
+<table cellpadding="5" bgcolor="blue">
+<tr><td bgcolor="white" align="center">
+<a href="index.shtml">Home</a> &nbsp;&ndash;&nbsp;
+<a href="course_info.shtml">Overview</a> &nbsp;&ndash;&nbsp;
+<a href="schedule.shtml">Schedule</a> &nbsp;&ndash;&nbsp;
+<a href="readings.shtml">Readings</a> &nbsp;&ndash;&nbsp;
+<a href="resources.shtml">Resources</a>
+</table>
+
+</td>
+
+<td align="center" valign="center" width="54" bgcolor="white"
+	   style="text-align:center">
+<a href="http://www.xmu.edu.cn/">
+<img border="0" src="files/img/xmu.png">
+</a>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<head>
+</head>
+
+
+<h3 align="left">Schedule &amp; Handouts</h3>
+
+<p>Notes
+	<ul>
+    	<li>All slides from this class can be copied and reused without
+      	any need for explicit permissions. Note that
+      	some slides are based on other people's slides (e.g., some are
+      	from the slides accompanied by the textbook); so please resolve
+      	copyright issues on your own. </li> 
+
+      	<li>Topics for future classes are tentative. </li>
+    </ul>
+
+<center>
+	<table class="schedule">
+        <tbody>
+          <tr>
+            <th class="slno">Lecture</th>
+            <th class="sdate">Date</th>
+            <th class="stmain">Topic</th>
+            <th class="stsub">Lecture Topic</th>
+            <th class="stread">Textbook Reading</th>
+            <th class="spread">Additional Reading</th>
+            <!--th class="swset">Written<br>
+              Problem <br>
+              Set</th-->
+            <th class="spset">Lab<br>
+              Assignment</th>
+          </tr>
+
+          <tr>
+            <td class="slno">1</td>
+            <td class="sdate">Tuesday<br>
+                Sept. 14</td>
+            <td class="stmain" colspan="1" rowspan="3"><b>Introduction</b>
+            </td>
+            <td class="stsub">Course overview; <br>
+              an introduction to the Internet<br>
+              <!--(<a href="files/lectures/introduction.pptx">pptx</a>, 
+	      <a href="files/lectures/introduction.pdf">pdf</a>)-->
+            </td>
+            <td class="stread">1.1, 1.2, 1.7</td> 
+            <td class="spread"> 
+		    <a href="readings/interestingrfcs.html">Interesting RFCs</a>;<br>
+              <a href="https://en.wikipedia.org/wiki/Clos_network"
+		 target="_blank">Clos Networks</a>;<br>
+              <a
+		      href="http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p183.pdf"
+		      target="_blank">Google Datacenter Networks</a>;<br>
+              <a href="http://www.cybergeography.org/atlas/more_isp_maps.html"
+		      target="_blank">ISP Backbone Maps</a>;
+            </td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">2</td>
+            <td class="sdate">Thursday<br>
+              Sept. 16 
+            </td>
+            <td class="stsub">Taxonomy of communication networks<br>
+              <!--(<a href="files/lectures/taxonomy.pptx">pptx</a>, 
+	      <a href="files/lectures/taxonomy.pdf">pdf</a>)-->
+            </td>
+            <td class="stread">1.3, 1.4 </td> 
+            <td class="spread"> 
+              <a href="http://www.dcs.ed.ac.uk/home/jeh/Simjava/queueing/mm1_q/mm1_q.html" target="_blank">M/M/1 simulation</a>;<br>
+            </td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">3</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 21 </td>
+            <td class="stsub">Statistical multiplexing, layered network architectures and the end-to-end arguments<br>
+              <!--(<a href="files/lectures/architecture.pptx">pptx</a>, 
+	      <a href="files/lectures/architecture.pdf">pdf</a>)-->
+              
+            </td>
+            <td class="stread">1.4, 1.5 </td> 
+
+            <td class="spread"> 
+
+		    Required:<br> <a
+            href="http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf" target="_blank">
+            The End-to-end Argument</a>;<br> 
+
+    Alternative views:<br>
+            <a
+            href="http://www.isi.edu/newarch/DOCUMENTS/hotrba.paper.pdf" target="_blank">Protocol
+	    Stack vs Heap</a>;<br>
+            <!--a
+		    href="http://proquest.safaribooksonline.com/9780132252423?tocview=true"
+		    target="_blank"> Architecture patterns</a>;<br-->
+            <a href="http://groups.geni.net/geni" target="_blank">GENI: A new
+               initiative for network architecture</a>;
+            </td>
+        
+            <td class="swset">
+              <!--a href="assignments/assign1/index.html">Assignment One</a-->
+			</td> 
+            <!--td class="spset">&nbsp;
+            </td-->
+          </tr>
+
+          <!--tr>
+            <td class="slno">4</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 12</td>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network
+                Applications: Basic</b> 
+            </td>
+            <td class="stsub">
+              Overview of network apps; Email<br>
+              (<a href="lectures/application-email.pptx">pptx</a>, 
+               <a href="lectures/application-email.pdf">pdf</a>)
+            </td>
+            <td class="stread">2.1, 2.4, 2.5</td>
+
+            <td class="spread">
+ 
+               History: <a
+               href="http://portal.acm.org/citation.cfm?id=52336">Design
+               Philosophy of DARPA Internet</a>;<br>
+       
+               <a href="readings/history-email.pdf">History: Email development</a><br>
+
+              <a href="http://www.openspf.org/">SPF</a>;<br>
+
+              <a href="http://blog.endpoint.com/2014/04/spf-dkim-and-dmarc-brief-explanation.html">SPF, DKIM, DMARC</a>;<br>              
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">5</td>
+            <td class="sdate">Thursday<br>
+              Sept. 14</td>
+            <td class="stsub">Email Security; DNS High-Level Design<br>
+              (<a href="lectures/application-emailsecurity-dns.pptx">pptx</a>,
+              <a href="lectures/application-emailsecurity-dns.pdf">pdf</a>)
+
+            </td>
+            <td class="stread">2.4, 2.5</td>
+            <td class="spread"> 
+
+              <a
+                href="readings/history-dns.pdf">
+                History: Development of DNS</a>; <br>              
+
+              DNS:
+              <a href="wireshark/dns-capture.pcapng">DNS wireshark capture</a>;              
+              <a href="https://www.rootusers.com/12-dig-command-examples-to-query-dns-in-linux/">Example dig commands</a><br>
+
+              
+
+              DNS attack:
+              <a
+                href="http://www.internetnews.com/dev-news/article.php/1486981">DDoS
+                on DNS</a>;              
+              <a href="http://www.businessweek.com/articles/2013-08-28/how-syrian-hackers-found-the-new-york-times-australian-weak-spot">Syrian attack on NYTimes</a>
+
+            </td>
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">6</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 19</td>
+            <td class="stsub">DNS Details and Extension; Network Socket Programming: UDP Sockets<br>
+             (<a href="lectures/application-dns-udpsock.pptx">pptx</a>,
+              <a href="lectures/application-dns-udpsock.pdf">pdf</a>)
+            </td>
+            <td class="stread">2.7</td> 
+
+            <td class="spread">
+
+              m-DNS/DNS-SD: <a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/dns-sd.1.html">dns-sd</a>;
+              <a href="https://tools.ietf.org/html/rfc6762">mDNS</a>;
+              <a href="https://tools.ietf.org/html/rfc6763">DNS-SD</a>
+              <a href="https://developer.android.com/training/connect-devices-wirelessly/nsd.html">Android NSD</a>
+             <a href="wireshark/dns-mdns.pcapng">mDNS wireshark capture</a>;<br>
+
+             <a
+                href="http://proquest.safaribooksonline.com/book/programming/java/9781449365936">
+                Java Network Programming</a> (Ch. 12 on UDP, Ch. 2 on Enc/Dec)
+
+              <a
+                href="programming/examples-java-socket/UDP/UDPClient.java">UDPClient.java</a>
+
+              <a
+                href="programming/examples-java-socket/UDP/UDPServer.java">UDPServer.java</a>             
+
+              <a
+                href="programming/examples-java-socket/UDP/EncodingDecoding.java">EncodingDecoding.java</a>
+              
+            </td>
+            <td class="swset">&nbsp;</td> 
+            <td class="spset"><a href="assignments/assign2/index.html">Assignment Two</a></td> 
+          </tr>
+
+          <tr>
+            <td class="slno">7</td>
+            <td class="sdate">Thursday<br>
+              Sept. 21</td>
+            <td class="stsub">TCP Socket Programming, FTP<br>
+             (<a href="lectures/application-tcpsock-ftp.pptx">pptx</a>,
+              <a href="lectures/application-tcpsock-ftp.pdf">pdf</a>)
+            </td>
+            <td class="stread">2.3, 2.2</td>
+            <td class="spread"> 
+              <br>
+              <a
+                href="programming/examples-java-socket/TCP/TCPServer.java">TCPServer.java</a>;<br>
+              <a
+                href="programming/examples-java-socket/TCP/TCPClient.java">TCPClient.java</a>;<br><br>
+
+              <a href="readings/FTP.pdf">FTP Seq. Diagram</a> or
+              <a href="readings/FTP-example.pdf">FTP example</a><br>
+              <a href="https://www.ogf.org/documents/GFD.20.pdf">GridFTP</a><br><br>
+              <br>
+            </td>
+            <td class="swset">&nbsp;</td>
+            <td class="spset">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">8</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 26</td>
+            <td class="stmain" colspan="1" rowspan="5"><b>Network
+                Applications: HTTP and High-Performance Network Servers</b> 
+            </td>
+            <td class="stsub">
+              HTTP 1.0<br>
+             (<a href="lectures/application-http-1-0.pptx">pptx</a>,
+              <a href="lectures/application-http-1-0.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+              2.2.5, 2.6
+            </td>
+
+            <td class="spread">   
+            <a
+href="programming/examples-java-socket/BasicWebServer/BasicWebServer.java">BasicWebServer.java</a>;<br>
+              <a
+                href="programming/examples-java-socket/BasicWebServer/WebRequestHandler.java">WebRequestHandler.java</a>;<br>
+               See slides for more links to shtml, cgi, and ajax.           
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">9</td>
+            <td class="sdate">Thursday<br>
+              Sept. 28</td>
+            <td class="stsub">
+              HTTP/1.1/2;<br> Per-Thread Servers<br>
+              (<a href="lectures/application-http112-server-design.pptx">pptx</a>,
+              <a href="lectures/application-http112-server-design.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">   
+              <a href="https://tools.ietf.org/html/rfc7540">HTTP/2</a>;
+              <a href="wireshark/">HTTP/2 wireshark capture (need both http2.pcapng and http2-keylog.txt)</a>; 
+              <br><br>
+
+              <a href="programming/examples-java-socket/TCP/TCPServerMT.java">TCPServerMT.java</a><br>
+              <a href="programming/examples-java-socket/TCP/RequestHandler.java">RequestHandler.java</a>           
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">
+              <a href="assignments/assign3/index.html">Assignment Three (Part 1)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">10</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 3</td>
+            <td class="stsub">
+              Servers using Thread Pool and Synchronization
+              (<a href="lectures/application-server-design-threadpool.pptx">pptx</a>,
+              <a href="lectures/application-server-design-threadpool.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">  
+              <a href="http://docs.oracle.com/javase/tutorial/essential/concurrency/">Java Concurrency Tutorial</a>; 
+              <a
+                href="readings/java-concurrency-framework.pdf">Java Concurrency Framework</a>;
+              <a
+                href="readings/java-concurrent-programming.pdf">Java Concurrent Programming</a>;
+
+              <br><br>
+
+              <a href="programming/examples-java-socket/ThreadPoolServer/ShareExample/">ShareExample.java</a>;<br>
+              <br>
+              <a
+                href="programming/examples-java-socket/ThreadPoolServer/SyncOverhead/">SyncOverhead.java</a>;<br>
+              <br>
+              <a
+                href="programming/examples-java-socket/ThreadPoolServer/ShareWelcome/">ShareWelcome</a>;<br>
+              <a
+                href="programming/examples-java-socket/ThreadPoolServer/ShareQ/">ShareQ</a>;<br>
+             
+              <a href="programming/examples-java-socket/ThreadPoolServer/ThreadPoolExecutor">Threadpool using java.util.concurrent.ThreadPoolExecutor</a><br>
+
+               Chapter 11 of Java Network Programming (Use Yale access);<br>     
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">11</td>
+            <td class="sdate">Thursday<br>
+              Oct. 5</td>
+            <td class="stsub">
+              Nonblocking Servers--Multiplexed (Reactive Design)<br>
+              (<a href="lectures/application-server-design-async-select.pptx">pptx</a>,
+              <a href="lectures/application-server-design-async-select.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">  
+
+              SelectEchoServer: 
+               <a href="programming/examples-java-socket/SelectEchoServer/v1-2/">v1, v2</a>,
+              <a href="readings/java-nio.pdf">Non-blocking I/O Tutorial</a>;<br>
+              Another design (<a
+                href="programming/examples-java-socket/Async2/ONJava.pdf">doc</a>,
+              <a href="programming/examples-java-socket/Async2/code.zip">code</a>);<br>
+              <a href="http://www.kegel.com/c10k.html">The C10K page</a><br>       
+              <a href="programming/examples-java-socket/SelectEchoServer/v3/">SelectEchoServer v3</a>;<br><br>              
+              
+              Scalable Server Design Patterns: 
+               <a href="readings/OOCP-tutorial4.pdf">tutorial 1</a>; 
+               <a href="readings/pra03.pdf">tutorial 2</a>;
+               <a href="readings/op-ana.pdf">Operational analysis</a>;              
+              <a
+                href="http://www.sosp.org/2001/papers/welsh.pdf">SEDA</a>;<br><br>
+
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">
+              <a href="assignments/assign3/index2.html">Assignment Three (Part 2)</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">12</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 10</td>
+            </td>
+            <td class="stsub">
+              Nonblocking Servers--Proactive Design; Operational Analysis; Load-balancing Servers (Wikipedia, Linux Virtual Server)<br>
+              (<a href="lectures/application-op-analysis-load-balance.pptx">pptx</a>,
+              <a href="lectures/application-op-analysis-load-balance.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">   
+              Operational Analysis: <a href="readings/op-ana.pdf">Operational analysis</a><br>
+ 
+              Section 2 of <a
+                href="http://networks.cs.northwestern.edu/publications/ton-Akamai.pdf">DAA on Akamai</a>         
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">13</td>
+            <td class="sdate">Thursday<br>
+              Oct. 12</td>
+            <td class="stmain" colspan="1" rowspan="2"><b>Network
+                Applications: Distributed Systems</b> 
+            </td>
+            <td class="stsub">
+              Application Overlays
+              <br>
+              (<a href="lectures/application-smartswitch-appoverlay.pptx">pptx</a>,
+              <a href="lectures/application-smartswitch-appoverlay.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">    
+              <a href="http://www.bittorrent.org/beps/bep_0003.html">BitTorrent</a><br>
+
+              optional:
+              <a href="https://www.tutorialspoint.com/webrtc/">WebRTC</a><br>
+              <a href="readings/skype_analysis.pdf">Skype</a>;<br>
+              <a href="readings/skype-google-hang.pdf">Skype/Google+/iChat</a>
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">14</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 17</td>
+            <td class="stsub">
+              Application Overlays<br>
+                (<a href="lectures/application-overlays.pptx">pptx</a>,
+                <a href="lectures/application-overlays.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">
+
+              <a href="http://freenetproject.org/">Freenet</a>;<br>
+              Kleinberg analysis (<a
+                href="readings/freenet-kleinberg.pdf">pdf</a> chapter 1 only);
+              <a href="readings/chord.pdf">Chord</a><br>
+
+              optional:
+              <a href="https://bitcoin.org/bitcoin.pdf">Original Nakamoto Bitcoin paper</a>;
+              <a href="https://youtu.be/Lx9zgZCMqXE">A nice YouTube video on Bitcoin</a>;<br>
+              <a href="http://www.onion-router.net/Publications/tor-design.pdf">Tor</a>, 
+              <a href="https://torstatus.blutmagie.de/">Tor status</a>              
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">--</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 24</td>
+            </td>
+            <td colspan="6">
+              Exam 1 (covers first 14 lectures): Exam is closed book but one cheat sheet is allowed. Due to coverage differences, each exam covers different topics, and hence the examples below serve as a style of problems only:
+               <ul>
+                  <li>Spring 2003 exam 1 (<a href="exams/exam1/spring-2003-exam-1.doc">word doc</a>, <a href="exams/exam1/spring-2003-exam-1.pdf">pdf</a>)
+                  </li>
+                  <li>Spring 2005 exam 1: for practice, no solution (<a href="exams/exam1/spring-2005-exam-1-no-solution.doc">word doc</a>, <a href="exams/exam1/spring-2005-exam-1-no-solution.pdf">pdf</a>); with solution (<a href="exams/exam1/spring-2005-exam-1.doc">word doc</a>, <a href="exams/exam1/spring-2005-exam-1.pdf">pdf</a>)
+                  </li>
+                  <li>Spring 2008 exam 1 (<a href="exams/exam1/spring-2008-exam-1.doc">word doc</a>, <a href="exams/exam1/spring-2008-exam-1.pdf">pdf</a>)
+                  </li>
+                  <li>Spring 2009 exam 1 (<a href="exams/exam1/spring-2009-exam-1.doc">word doc</a>, <a href="exams/exam1/spring-2009-exam-1.pdf">pdf</a>)
+                  </li>
+               </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">15</td>
+            <td class="sdate">
+               Thursday<br>
+               Oct. 26</td>
+            <td class="stmain" colspan="1" rowspan="5"><b>Transport Layer</b> 
+            </td>
+            <td class="stsub">
+              Overview;<br> Stop and Wait/Alternating-Bit Protocol<br>
+               (<a href="lectures/transport-overview-reliability.pptx">pptx</a>,
+                <a href="lectures/transport-overview-reliability.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+              3.1-3.4.1
+            </td>
+
+            <td class="spread">          
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">
+              <a href="assignments/assign4">Assignment Four</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="slno">16</td>
+            <td class="sdate">
+               Tuesday<br>
+               Oct. 31
+            </td>            
+            <td class="stsub">
+              Sliding Window Protocols; TCP Reliability
+              (<a href="lectures/transport-reliability-tcp.pptx">pptx</a>,
+                <a href="lectures/transport-reliability-tcp.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+              3.4-3.5
+            </td>
+
+            <td class="spread">          
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">17</td>
+            <td class="sdate">
+               Thursday<br>
+               Nov. 2
+            </td>            
+            <td class="stsub">
+              Timeout RTO; Congestion Control Principles; AIMD; TCP/Reno<br>
+              (<a href="lectures/transport-cc-aimd-reno.pptx">pptx</a>,
+                <a href="lectures/transport-cc-aimd-reno.pdf">pdf</a>)              
+            </td>
+            <td class="stread">
+              3.5-3.7
+            </td>
+
+            <td class="spread"> 
+               <a href="../readings/aimd.pdf">Foundation: Original AIMD paper</a>;
+               <a href="http://ee.lbl.gov/papers/congavoid.pdf">System: Original TCP CC paper</a>         
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">18</td>
+            <td class="sdate">
+               Tuesday<br>
+               Nov. 7
+            </td>            
+            <td class="stsub">
+              TCP/Reno Analysis; TCP Cubic; TCP/Vegas
+              (<a href="lectures/transport-cc-reno-analysis-cubic-vegas.pptx">pptx</a>,
+               <a href="lectures/transport-cc-reno-analysis-cubic-vegas.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+             
+            </td>
+
+            <td class="spread">  
+              <a href="./lectures/tcp-reno-tput.xlsx">tcp-reno-tput.xlsx</a>;<br>
+              <a href="./readings/tcpcubic08.pdf">TCP Cubic</a>;<br>
+              <a href="./readings/tcpvegas94.pdf">TCP Vegas</a>              
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">19</td>
+            <td class="sdate">
+               Thursday<br>
+               Nov. 9
+            </td>            
+            <td class="stsub">
+              General Resource Allocation Framework; Nash Bargaining Solution; Primal-Dual; TCP/Reno and Vegas as Primal-Dual<br>
+              (<a href="lectures/transport-cc-network-wide-bwalloc-framework.pptx">pptx</a>,
+               <a href="lectures/transport-cc-network-wide-bwalloc-framework.pdf">pdf</a>)
+            </td>
+            <td class="stread">
+               
+            </td>
+
+            <td class="spread">  
+              <a href="./readings/nash50a.pdf">Nash Bargaining Solution</a>;<br> 
+               <a href="ftp://ftp.cs.princeton.edu/techreports/2000/616.pdf">TCP as primal-dual</a>;<br>
+
+               optional:<br>
+               <a href="http://conferences.sigcomm.org/sigcomm/2013/papers/sigcomm/p363.pdf">TCP in 4G LTE networks</a> <br>
+               QUIC: <a href="https://docs.google.com/document/d/1RNHkx_VvKWyWg6Lr8SZ-saqsQx7rFV-ev2jRFUoVD34/edit">Design</a>;
+               <a href="https://dl.acm.org/citation.cfm?id=3098842">Deployment and evaluations</a>
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+<tr>
+            <td class="slno">20</td>
+            <td class="sdate">Tuesday<br>
+              Nov. 14<br>
+            </td>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network and Link Layers</b>
+            </td>
+            <td class="stsub">Distributed Distance Vector Protocols<br>
+                (<a href="lectures/network-intro-distance-vector.pptx">pptx</a>,
+               <a href="lectures/network-intro-distance-vector.pdf">pdf</a>)  
+            </td>
+            <td class="stread">             
+              4.1-4.2, 4.5
+            </td>
+            <td class="spread">
+               <a href="readings/Routing_Data_Nets.pdf">Chapter 5 of Bersekas/Gallager</a> 
+               (<a href="http://web.mit.edu/dimitrib/www/datanets.html">Link</a> to all chapters of the book.)<br>
+               <a href="https://tools.ietf.org/html/rfc2453">RIPv2 RFC</a>
+            </td>
+            <td class="swset">&nbsp;  </td>
+            <td class="spset">&nbsp;  </td>
+          </tr>
+
+          <tr>
+            <td class="slno">21<br>
+            </td>
+            <td class="sdate">Thursday<br>
+              Nov. 16</td>
+            <td class="stsub">
+              Distance Vector revisions and Link State Protocols<br>
+              (<a href="lectures/network-dvfix-ls.pptx">pptx</a>,
+               <a href="lectures/network-dvfix-ls.pdf">pdf</a>)             
+            </td>
+            <td class="stread">4.4, 4.5, 4.6</td>
+            <td class="spread">
+               <a href="readings/dsdv.pdf">DSDV</a>
+               <a href="https://tools.ietf.org/html/rfc2328">OSPFv2 RFC</a>
+            </td>
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">22</td>
+            <td class="sdate">Tuesday<br>
+              Nov. 28 </td>
+            <td class="stsub">Internet Routing; BGP Basic Operations; Interdomain as Preference Aggregation<br>
+              (<a href="lectures/network-internetworking.pptx">pptx</a>,
+               <a href="lectures/network-internetworking.pdf">pdf</a>)             
+            </td>
+            <td class="stread">4.4, 4.6</td>
+            <td class="spread">
+               <a href="https://tools.ietf.org/html/rfc4271">BGP-4 RFC</a>
+               <a href="http://www.fixedorbit.com/search.htm">fixedorbit</a>;<br>
+               <a href="http://www.bgp4.as/looking-glasses">Looking
+                glass</a>;<br>
+              <a href="./readings/ArrowImposs.pdf">Arrow's Theorem Proof</a>
+            </td>
+            <td class="swset">
+              <a href="assignments/assign5/index.html">Assignment Five</a>
+            </td>
+            <td class="spset">              
+            </td>
+          
+          </tr>
+          <tr>
+            <td class="slno">23</td>
+            <td class="sdate">Thursday<br>
+              Nov. 30</td>
+            <td class="stsub">BGP Analysis; DHCP<br>
+              (<a href="lectures/network-policy-routing-dhcp.pptx">pptx</a>,
+               <a href="lectures/network-policy-routing-dhcp.pdf">pdf</a>)
+            </td>
+            <td class="stread">4.3-4.4</td>
+            <td class="spread">&nbsp;</td>
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">24</td>
+            <td class="sdate">Tuesday<br>
+              Dec. 5</td>
+            <td class="stmain" colspan="1" rowspan="1"><b>Link Layer</b> 
+            </td>
+            <td class="stsub">
+             Forwarding and Link Layer
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">  
+              <a href="readings/nfv-click.pdf">click</a>;
+              <a href="readings/nfv-clickos.pdf">clickOS</a>;
+              <a href="readings/nfv-e2.pdf">E2</a>;
+              <a href="readings/nfv-netmap.pdf">netmap</a>;
+              <a href="readings/nfv-netbricks.pdf">netbricks</a>
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">25</td>
+            <td class="sdate">Thursday<br>
+              Dec. 7</td>
+            <td class="stmain" colspan="1" rowspan="1"><b>Summary</b> 
+            </td>
+            <td class="stsub">
+             Course Summary; Future Network Architectures (MobilityFirst, NDN, XIA) 
+            </td>
+            <td class="stread">
+            </td>
+            <td class="spread">          
+               <a href="readings/mobilityfirst-5g.pdf">MobilityFirst</a> 
+              (<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6258042">DMap</a>);
+              <a href="http://named-data.net/publications/">NDN</a>;
+              <a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/han_dongsu_xia">XIA</a>
+            </td>
+
+            <td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td>
+          </tr-->          
+
+   </tbody>
+  </table>
+</center>
+
+    <p class="lastupdate">
+      <script>
+	updateTime = new Date(document.lastModified)
+	theMonth = updateTime.getMonth() + 1
+	theDate = updateTime.getDate()
+	theYear = updateTime.getFullYear()
+        document.write("Last updated on "+ theMonth + "/" + theDate + "/" + theYear + ".");
+      </script>
+</p>
+
+
+<P><HR><P>
+<ADDRESS>
+<b>Acknowledgment</b>: The materials of this course are heavily based on CPSC 433/533 at
+Yale University, by courtesy of Dr. Y. Richard Yang.
+<br>
+<br>
+	Copyright (c) 2021
+<a href="../../index.html">Qiao Xiang</a>,
+<a href="http://cs.xmu.edu.cn/">Department of Computer Science</a>,
+<a href="http://www.xmu.edu.cn/">Xiamen University</a>
+</ADDRESS> 
+
+
+<script>
+	var coursename="Computer Networks and Network Security, Fall 2021";
+	var pagename="Schedule";
+	document.getElementById("class-head").innerHTML=coursename+": "+pagename;
+</script>
+
+
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
