@@ -123,7 +123,7 @@
           <tr>
             <td class="slno">3</td>
             <td class="sdate">Tuesday<br>
-              Sept. 21 </td>
+              Sept. 23 </td>
             <td class="stsub">Statistical multiplexing, layered network architectures and the end-to-end arguments<br>
               <!--(<a href="files/lectures/architecture.pptx">pptx</a>, 
 	      <a href="files/lectures/architecture.pdf">pdf</a>)-->
@@ -149,8 +149,8 @@
             </td>
         
             <td class="swset">
-              <!--a href="assignments/assign1/index.html">Assignment One</a-->
-			</td> 
+              <a href="files/assignments/assign1/index.html">Assignment One</a>
+		</td> 
             <!--td class="spset">&nbsp;
             </td-->
           </tr>
