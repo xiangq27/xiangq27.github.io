@@ -125,9 +125,11 @@
             <td class="sdate">Tuesday<br>
               Sept. 23 </td>
             <td class="stsub">Statistical multiplexing, layered network architectures and the end-to-end arguments<br>
-              <!--(<a href="files/lectures/architecture.pptx">pptx</a>, 
-	      <a href="files/lectures/architecture.pdf">pdf</a>)-->
-              
+              (<a href="files/lectures/3-taxonomy.pptx">pptx</a>, 
+	      <a href="files/lectures/3-taxonomy.pdf">pdf</a>
+	      <a href="files/videos/lecture3-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture3-part2.mp4">video: part 2</a>	      
+	      )
             </td>
             <td class="stread">1.4, 1.5 </td> 
 
@@ -155,7 +157,7 @@
             </td-->
           </tr>
 
-          <!--tr>
+          <tr>
             <td class="slno">4</td>
             <td class="sdate">Tuesday<br>
               Sept. 12</td>
@@ -163,9 +165,10 @@
                 Applications: Basic</b> 
             </td>
             <td class="stsub">
+		Layered network architectures and the end-to-end arguments;
               Overview of network apps; Email<br>
-              (<a href="lectures/application-email.pptx">pptx</a>, 
-               <a href="lectures/application-email.pdf">pdf</a>)
+              <!--a href="lectures/application-email.pptx">pptx</a>, 
+               <a href="lectures/application-email.pdf">pdf</a-->
             </td>
             <td class="stread">2.1, 2.4, 2.5</td>
 
@@ -182,11 +185,11 @@
               <a href="http://blog.endpoint.com/2014/04/spf-dkim-and-dmarc-brief-explanation.html">SPF, DKIM, DMARC</a>;<br>              
             </td>
 
-            <td class="swset">&nbsp;</td>
-            <td class="spset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td-->
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">5</td>
             <td class="sdate">Thursday<br>
               Sept. 14</td>
