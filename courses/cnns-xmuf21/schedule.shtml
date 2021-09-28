@@ -75,7 +75,7 @@
             <td class="slno">1</td>
             <td class="sdate">Tuesday<br>
                 Sept. 14</td>
-            <td class="stmain" colspan="1" rowspan="3"><b>Introduction</b>
+            <td class="stmain" colspan="1" rowspan="4"><b>Introduction</b>
             </td>
             <td class="stsub">Course overview; <br>
               an introduction to the Internet<br>
@@ -124,7 +124,7 @@
             <td class="slno">3</td>
             <td class="sdate">Tuesday<br>
               Sept. 23 </td>
-            <td class="stsub">Statistical multiplexing, layered network architectures and the end-to-end arguments<br>
+            <td class="stsub">Statistical multiplexing<br>
               (<a href="files/lectures/3-taxonomy.pptx">pptx</a>, 
 	      <a href="files/lectures/3-taxonomy.pdf">pdf</a>
 	      <a href="files/videos/lecture3-part1.mp4">video: part 1</a>, 
@@ -160,17 +160,17 @@
           <tr>
             <td class="slno">4</td>
             <td class="sdate">Tuesday<br>
-              Sept. 12</td>
-            <td class="stmain" colspan="1" rowspan="4"><b>Network
-                Applications: Basic</b> 
-            </td>
+              Sept. 28</td>
             <td class="stsub">
-		Layered network architectures and the end-to-end arguments;
-              Overview of network apps; Email<br>
-              <!--a href="lectures/application-email.pptx">pptx</a>, 
-               <a href="lectures/application-email.pdf">pdf</a-->
+		    Layered network architectures and the end-to-end arguments<br>
+              <!--Overview of network apps; Email<br-->
+              (<a href="files/lectures/4-architecture.pptx">pptx</a>, 
+	      <a href="files/lectures/4-architecture.pdf">pdf</a>
+	      <a href="files/videos/lecture4-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture4-part2.mp4">video: part 2</a>	      
+	      )
             </td>
-            <td class="stread">2.1, 2.4, 2.5</td>
+            <td class="stread">1.5, 2.3</td>
 
             <td class="spread">
  
@@ -189,16 +189,19 @@
             <td class="spset">&nbsp;</td-->
           </tr>
 
-          <!--tr>
+          <tr>
             <td class="slno">5</td>
             <td class="sdate">Thursday<br>
-              Sept. 14</td>
-            <td class="stsub">Email Security; DNS High-Level Design<br>
-              (<a href="lectures/application-emailsecurity-dns.pptx">pptx</a>,
-              <a href="lectures/application-emailsecurity-dns.pdf">pdf</a>)
+              Sept. 30</td>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network
+                Applications: Basic</b> 
+            </td>
+            <td class="stsub">Overview of network apps; Email; DNS High-Level Design<br>
+              <!--(<a href="lectures/application-emailsecurity-dns.pptx">pptx</a>,
+	      <a href="lectures/application-emailsecurity-dns.pdf">pdf</a>)-->
 
             </td>
-            <td class="stread">2.4, 2.5</td>
+            <td class="stread">2.1, 2.3, 2.4</td>
             <td class="spread"> 
 
               <a
@@ -218,11 +221,11 @@
               <a href="http://www.businessweek.com/articles/2013-08-28/how-syrian-hackers-found-the-new-york-times-australian-weak-spot">Syrian attack on NYTimes</a>
 
             </td>
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">6</td>
             <td class="sdate">Tuesday<br>
               Sept. 19</td>
