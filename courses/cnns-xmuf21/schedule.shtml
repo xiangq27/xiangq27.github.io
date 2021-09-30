@@ -197,9 +197,11 @@
                 Applications: Basic</b> 
             </td>
             <td class="stsub">Overview of network apps; Email; DNS High-Level Design<br>
-              <!--(<a href="lectures/application-emailsecurity-dns.pptx">pptx</a>,
-	      <a href="lectures/application-emailsecurity-dns.pdf">pdf</a>)-->
-
+              (<a href="files/lectures/5-application-email-dns.pptx">pptx</a>, 
+	      <a href="files/lectures/5-application-email-dns.pdf">pdf</a>
+	      <a href="files/videos/lecture5-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture5-part2.mp4">video: part 2</a>	      
+	      )
             </td>
             <td class="stread">2.1, 2.3, 2.4</td>
             <td class="spread"> 
