@@ -88,7 +88,7 @@
             <td class="stread">1.1, 1.2, 1.7</td> 
             <td class="spread"> 
 		    <a href="readings/interestingrfcs.html">Interesting RFCs</a>;<br>
-              <a href="https://en.wikipedia.org/wiki/Clos_network"
+              <a href="files/readings/Clos_network_wiki.pdf"
 		 target="_blank">Clos Networks</a>;<br>
               <a
 		      href="http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p183.pdf"
@@ -178,11 +178,7 @@
                href="http://portal.acm.org/citation.cfm?id=52336">Design
                Philosophy of DARPA Internet</a>;<br>
        
-               <a href="readings/history-email.pdf">History: Email development</a><br>
-
-              <a href="http://www.openspf.org/">SPF</a>;<br>
-
-              <a href="http://blog.endpoint.com/2014/04/spf-dkim-and-dmarc-brief-explanation.html">SPF, DKIM, DMARC</a>;<br>              
+<br>              
             </td>
 
             <!--td class="swset">&nbsp;</td>
@@ -205,13 +201,21 @@
             </td>
             <td class="stread">2.1, 2.3, 2.4</td>
             <td class="spread"> 
-
+               <a href="files/readings/history-email.pdf">History: Email
+		       development</a>;<br>
+              <a href="http://www.open-spf.org/">SPF</a>;
               <a
-                href="readings/history-dns.pdf">
+		      href="https://trendlineinteractive.com/resources/article/what-are-dmarc-dkim-and-spf/">SPF,
+		      DKIM, DMARC</a>;<br>
+<!--a
+		      href="http://blog.endpoint.com/2014/04/spf-dkim-and-dmarc-brief-explanation.html">SPF,
+		      DKIM, DMARC</a>;<br-->
+	      <a
+                href="files/readings/history-dns.pdf">
                 History: Development of DNS</a>; <br>              
 
               DNS:
-              <a href="wireshark/dns-capture.pcapng">DNS wireshark capture</a>;              
+              <a href="files/wireshark/dns-capture.pcapng">DNS wireshark capture</a>;              
               <a href="https://www.rootusers.com/12-dig-command-examples-to-query-dns-in-linux/">Example dig commands</a><br>
 
               
@@ -220,7 +224,10 @@
               <a
                 href="http://www.internetnews.com/dev-news/article.php/1486981">DDoS
                 on DNS</a>;              
-              <a href="http://www.businessweek.com/articles/2013-08-28/how-syrian-hackers-found-the-new-york-times-australian-weak-spot">Syrian attack on NYTimes</a>
+              <a href="https://www.forbes.com/sites/andygreenberg/2013/08/28/syrian-hack-of-nytimes-com-and-twitter-could-have-inflicted-much-more-than-mere-embarrassment/">Syrian attack on NYTimes</a>
+<!--a
+	href="http://www.businessweek.com/articles/2013-08-28/how-syrian-hackers-found-the-new-york-times-australian-weak-spot">Syrian
+	attack on NYTimes</a-->
 
             </td>
             <!--td class="swset">&nbsp;</td-->
