@@ -87,7 +87,7 @@
             </td>
             <td class="stread">1.1, 1.2, 1.7</td> 
             <td class="spread"> 
-		    <a href="readings/interestingrfcs.html">Interesting RFCs</a>;<br>
+		    <a href="files/readings/interestingrfcs.html">Interesting RFCs</a>;<br>
               <a href="files/readings/Clos_network_wiki.pdf"
 		 target="_blank">Clos Networks</a>;<br>
               <a
@@ -234,7 +234,7 @@
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
+          <tr>
             <td class="slno">6</td>
             <td class="sdate">Tuesday<br>
               Sept. 19</td>
@@ -266,11 +266,11 @@
                 href="programming/examples-java-socket/UDP/EncodingDecoding.java">EncodingDecoding.java</a>
               
             </td>
-            <td class="swset">&nbsp;</td> 
-            <td class="spset"><a href="assignments/assign2/index.html">Assignment Two</a></td> 
+            <!--td class="swset">&nbsp;</td--> 
+            <td class="spset"><a href="files/assignments/assign2/index.html">Assignment Two</a></td> 
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">7</td>
             <td class="sdate">Thursday<br>
               Sept. 21</td>
