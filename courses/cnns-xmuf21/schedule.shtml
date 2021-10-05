@@ -237,11 +237,13 @@
           <tr>
             <td class="slno">6</td>
             <td class="sdate">Tuesday<br>
-              Sept. 19</td>
+              Oct. 5</td>
             <td class="stsub">DNS Details and Extension; Network Socket Programming: UDP Sockets<br>
-             (<a href="lectures/application-dns-udpsock.pptx">pptx</a>,
-              <a href="lectures/application-dns-udpsock.pdf">pdf</a>)
-            </td>
+             (<a href="files/lectures/6-application-dns.pptx">pptx</a>, 
+	      <a href="files/lectures/6-application-dns.pdf">pdf</a>
+	      <a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture6-part2.mp4">video: part 2</a>	      
+	      )</td>
             <td class="stread">2.7</td> 
 
             <td class="spread">
@@ -267,7 +269,11 @@
               
             </td>
             <!--td class="swset">&nbsp;</td--> 
-            <td class="spset"><a href="files/assignments/assign2/index.html">Assignment Two</a></td> 
+            <td class="spset"><a
+			    href="files/assignments/assign2/index.html">Assignment
+			    Two</a><br>(<a
+			    href="files/readings/install-ubuntu-vm-and-java.pdf">Java
+	    installation tutorial</a>)</td> 
           </tr>
 
           <!--tr>
