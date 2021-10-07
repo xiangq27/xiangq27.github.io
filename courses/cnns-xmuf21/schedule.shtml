@@ -107,7 +107,7 @@
             </td>
             <td class="stsub">Taxonomy of communication networks<br>
               (<a href="files/lectures/2-taxonomy.pptx">pptx</a>, 
-	      <a href="files/lectures/2-taxonomy.pdf">pdf</a>
+	      <a href="files/lectures/2-taxonomy.pdf">pdf</a>,
 	<a href="files/videos/lecture2-part1.mp4">video: part 1</a>, 
 		<a href="files/videos/lecture2-part2.mp4">video: part 2</a>	      
 	      )
@@ -126,7 +126,7 @@
               Sept. 23 </td>
             <td class="stsub">Statistical multiplexing<br>
               (<a href="files/lectures/3-taxonomy.pptx">pptx</a>, 
-	      <a href="files/lectures/3-taxonomy.pdf">pdf</a>
+	      <a href="files/lectures/3-taxonomy.pdf">pdf</a>,
 	      <a href="files/videos/lecture3-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture3-part2.mp4">video: part 2</a>	      
 	      )
@@ -165,7 +165,7 @@
 		    Layered network architectures and the end-to-end arguments<br>
               <!--Overview of network apps; Email<br-->
               (<a href="files/lectures/4-architecture.pptx">pptx</a>, 
-	      <a href="files/lectures/4-architecture.pdf">pdf</a>
+	      <a href="files/lectures/4-architecture.pdf">pdf</a>,
 	      <a href="files/videos/lecture4-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture4-part2.mp4">video: part 2</a>	      
 	      )
@@ -194,7 +194,7 @@
             </td>
             <td class="stsub">Overview of network apps; Email; DNS High-Level Design<br>
               (<a href="files/lectures/5-application-email-dns.pptx">pptx</a>, 
-	      <a href="files/lectures/5-application-email-dns.pdf">pdf</a>
+	      <a href="files/lectures/5-application-email-dns.pdf">pdf</a>,
 	      <a href="files/videos/lecture5-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture5-part2.mp4">video: part 2</a>	      
 	      )
@@ -240,7 +240,7 @@
               Oct. 5</td>
             <td class="stsub">DNS Details and Extension; Network Socket Programming: UDP Sockets<br>
              (<a href="files/lectures/6-application-dns.pptx">pptx</a>, 
-	      <a href="files/lectures/6-application-dns.pdf">pdf</a>
+	      <a href="files/lectures/6-application-dns.pdf">pdf</a>,
 	      <a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture6-part2.mp4">video: part 2</a>	      
 	      )</td>
@@ -259,10 +259,10 @@
                 Java Network Programming</a> (Ch. 12 on UDP, Ch. 2 on Enc/Dec)
 
               <a
-                href="programming/examples-java-socket/UDP/UDPClient.java">UDPClient.java</a>
+                href="files/programming/examples-java-socket/UDP/UDPClient.java">UDPClient.java</a>
 
               <a
-                href="programming/examples-java-socket/UDP/UDPServer.java">UDPServer.java</a>             
+                href="files/programming/examples-java-socket/UDP/UDPServer.java">UDPServer.java</a>             
 
               <a
                 href="programming/examples-java-socket/UDP/EncodingDecoding.java">EncodingDecoding.java</a>
@@ -276,13 +276,17 @@
 	    installation tutorial</a>)</td> 
           </tr>
 
-          <!--tr>
+          <tr>
             <td class="slno">7</td>
             <td class="sdate">Thursday<br>
-              Sept. 21</td>
-            <td class="stsub">TCP Socket Programming, FTP<br>
-             (<a href="lectures/application-tcpsock-ftp.pptx">pptx</a>,
-              <a href="lectures/application-tcpsock-ftp.pdf">pdf</a>)
+              Oct. 7</td>
+            <td class="stsub">Java in a Nutshell; Network Socket Programming:
+		    UDP Sockets<br>
+              (<a href="files/lectures/7-application-java-udpsock.pptx">pptx</a>, 
+	      <a href="files/lectures/7-application-java-udpsock.pdf">pdf</a>,
+	      <a href="files/videos/lecture7-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture7-part2.mp4">video: part 2</a>	      
+	      )</td>
             </td>
             <td class="stread">2.3, 2.2</td>
             <td class="spread"> 
@@ -297,16 +301,18 @@
               <a href="https://www.ogf.org/documents/GFD.20.pdf">GridFTP</a><br><br>
               <br>
             </td>
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">
             </td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">8</td>
             <td class="sdate">Tuesday<br>
               Sept. 26</td>
-            <td class="stmain" colspan="1" rowspan="5"><b>Network
+            <td class="stmain" colspan="1" rowspan="5"><b>TCP Socket
+	    Programming, FTP;
+	    Network
                 Applications: HTTP and High-Performance Network Servers</b> 
             </td>
             <td class="stsub">
