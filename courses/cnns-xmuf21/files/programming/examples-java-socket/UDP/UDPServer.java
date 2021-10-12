@@ -22,13 +22,13 @@ public class UDPServer {
 		if (args.length >= 1)
 			serverPort = Integer.parseInt(args[0]);
 
-		// create server datagram socket
+		//create server datagram socket
 		//DatagramSocket serverSocket = new DatagramSocket(serverPort);
 
 		//InetAddress sIP1 = InetAddress.getByName("localhost");
 		//DatagramSocket serverSocket = new DatagramSocket(serverPort, sIP1);
 
-		InetAddress sIP2 = InetAddress.getByName("192.168.3.38");
+		InetAddress sIP2 = InetAddress.getByName("10.31.47.209");
 		DatagramSocket serverSocket = new DatagramSocket(serverPort, sIP2);
 
 		System.out.println("Server listening port = " + serverPort);

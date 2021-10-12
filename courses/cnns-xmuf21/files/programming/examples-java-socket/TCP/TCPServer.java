@@ -12,7 +12,7 @@ import java.net.*;
 public class TCPServer {
 
   	// decide if step
-    static boolean step = true;
+    static boolean step = false;
 
     public static void main(String[] args)throws Exception {
 

@@ -192,7 +192,7 @@
             <td class="stmain" colspan="1" rowspan="4"><b>Network
                 Applications: Basic</b> 
             </td>
-            <td class="stsub">Overview of network apps; Email; DNS High-Level Design<br>
+            <td class="stsub">Overview of network apps; Email; DNS high-level design<br>
               (<a href="files/lectures/5-application-email-dns.pptx">pptx</a>, 
 	      <a href="files/lectures/5-application-email-dns.pdf">pdf</a>,
 	      <a href="files/videos/lecture5-part1.mp4">video: part 1</a>, 
@@ -238,7 +238,7 @@
             <td class="slno">6</td>
             <td class="sdate">Tuesday<br>
               Oct. 5</td>
-            <td class="stsub">DNS Details and Extension; Network Socket Programming: UDP Sockets<br>
+            <td class="stsub">DNS details and extension<br>
              (<a href="files/lectures/6-application-dns.pptx">pptx</a>, 
 	      <a href="files/lectures/6-application-dns.pdf">pdf</a>,
 	      <a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
@@ -254,18 +254,8 @@
               <a href="https://developer.android.com/training/connect-devices-wirelessly/nsd.html">Android NSD</a>
              <a href="wireshark/dns-mdns.pcapng">mDNS wireshark capture</a>;<br>
 
-             <a
-                href="http://proquest.safaribooksonline.com/book/programming/java/9781449365936">
-                Java Network Programming</a> (Ch. 12 on UDP, Ch. 2 on Enc/Dec)
+             
 
-              <a
-                href="files/programming/examples-java-socket/UDP/UDPClient.java">UDPClient.java</a>
-
-              <a
-                href="files/programming/examples-java-socket/UDP/UDPServer.java">UDPServer.java</a>             
-
-              <a
-                href="programming/examples-java-socket/UDP/EncodingDecoding.java">EncodingDecoding.java</a>
               
             </td>
             <!--td class="swset">&nbsp;</td--> 
@@ -280,8 +270,8 @@
             <td class="slno">7</td>
             <td class="sdate">Thursday<br>
               Oct. 7</td>
-            <td class="stsub">Java in a Nutshell; Network Socket Programming:
-		    UDP Sockets<br>
+            <td class="stsub">Java in a nutshell; Network socket programming:
+		    UDP socket<br>
               (<a href="files/lectures/7-application-java-udpsock.pptx">pptx</a>, 
 	      <a href="files/lectures/7-application-java-udpsock.pdf">pdf</a>,
 	      <a href="files/videos/lecture7-part1.mp4">video: part 1</a>, 
@@ -292,9 +282,44 @@
             <td class="spread"> 
               <br>
               <a
-                href="programming/examples-java-socket/TCP/TCPServer.java">TCPServer.java</a>;<br>
+		      href="files/programming/examples-java-socket/UDP/UDPClient.java">UDPClient.java</a>;<br>
+
               <a
-                href="programming/examples-java-socket/TCP/TCPClient.java">TCPClient.java</a>;<br><br>
+                href="files/programming/examples-java-socket/UDP/UDPServer.java">UDPServer.java</a>
+	      <br><br>
+
+            </td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+            </td>
+          </tr>
+
+	  <tr>
+            <td class="slno">8</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 12</td>
+            <td class="stsub">Network socket programming:
+		    UDP socket, TCP socket<br>
+              (<a href="files/lectures/8-application-udpsock-tcpsock.pptx">pptx</a>, 
+	      <a href="files/lectures/8-application-udpsock-tcpsock.pdf">pdf</a>,
+	      <a href="files/videos/lecture8-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture8-part2.mp4">video: part 2</a>	      
+	      )</td>
+            </td>
+            <td class="stread">2.3, 2.2</td>
+            <td class="spread"> 
+              <br>
+<a
+                href="https://pan.xmu.edu.cn/s/jcV7SkieQUQ">
+                Java Network Programming</a> (Ch. 12 on UDP, Ch. 2 on
+	Enc/Dec);<br>
+
+              <a
+		      href="files/programming/examples-java-socket/UDP/EncodingDecoding.java">EncodingDecoding.java</a>;<br>
+              <a
+                href="files/programming/examples-java-socket/TCP/TCPServer.java">TCPServer.java</a>;<br>
+              <a
+                href="files/programming/examples-java-socket/TCP/TCPClient.java">TCPClient.java</a>;<br><br>
 
               <a href="readings/FTP.pdf">FTP Seq. Diagram</a> or
               <a href="readings/FTP-example.pdf">FTP example</a><br>
@@ -305,11 +330,10 @@
             <td class="spset">
             </td>
           </tr>
-
           <!--tr>
             <td class="slno">8</td>
             <td class="sdate">Tuesday<br>
-              Sept. 26</td>
+              Oct. 12</td>
             <td class="stmain" colspan="1" rowspan="5"><b>TCP Socket
 	    Programming, FTP;
 	    Network
