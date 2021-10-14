@@ -1,0 +1,3 @@
+GET /finance?q=NYSEARCA%3AGLD HTTP/1.0
+Host www.google.com
+

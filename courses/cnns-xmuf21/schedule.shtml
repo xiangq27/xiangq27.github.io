@@ -330,19 +330,22 @@
             <td class="spset">
             </td>
           </tr>
-          <!--tr>
-            <td class="slno">8</td>
-            <td class="sdate">Tuesday<br>
-              Oct. 12</td>
-            <td class="stmain" colspan="1" rowspan="5"><b>TCP Socket
-	    Programming, FTP;
+
+	  <tr>
+            <td class="slno">9</td>
+            <td class="sdate">Thursday<br>
+              Oct. 14</td>
+            <td class="stmain" colspan="1" rowspan="5"><b>
 	    Network
-                Applications: HTTP and High-Performance Network Servers</b> 
+                Applications: FTP, HTTP and High-Performance Network Servers</b> 
             </td>
             <td class="stsub">
-              HTTP 1.0<br>
-             (<a href="lectures/application-http-1-0.pptx">pptx</a>,
-              <a href="lectures/application-http-1-0.pdf">pdf</a>)
+              FTP; HTTP 1.0<br>
+         (<a href="files/lectures/9-application-ftp-http-1-0.pptx">pptx</a>, 
+	      <a href="files/lectures/8-application-ftp-http-1-0.pdf">pdf</a>,
+	      <a href="files/videos/lecture9-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture9-part2.mp4">video: part 2</a>	      
+	      )
             </td>
             <td class="stread">
               2.2.5, 2.6
@@ -350,17 +353,17 @@
 
             <td class="spread">   
             <a
-href="programming/examples-java-socket/BasicWebServer/BasicWebServer.java">BasicWebServer.java</a>;<br>
+href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java">BasicWebServer.java</a>;<br>
               <a
-                href="programming/examples-java-socket/BasicWebServer/WebRequestHandler.java">WebRequestHandler.java</a>;<br>
+                href="files/programming/examples-java-socket/BasicWebServer/WebRequestHandler.java">WebRequestHandler.java</a>;<br>
                See slides for more links to shtml, cgi, and ajax.           
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">9</td>
             <td class="sdate">Thursday<br>
               Sept. 28</td>

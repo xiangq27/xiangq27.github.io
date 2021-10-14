@@ -1,0 +1,68 @@
+<!--#set var="coursename"
+        value="CPSC 433: Computer Networks, Spring 2016" -->
+<HTML>
+<HEAD>
+        <TITLE> <!--#echo var="coursename" -->
+                <!--#if expr="$pagename" -->
+                &mdash <!--#echo var="pagename" -->
+                <!--#endif -->
+        </TITLE>
+        <LINK HREF="yry_class_style.css" REL="stylesheet"  type="text/css" media="screen" />
+</HEAD>
+<BODY>
+
+<table cellspacing="2" cellpadding="10" width="100%">
+<tbody>
+<tr>
+
+<td bgcolor="white" align="left">
+<H2>    <!--#echo var="coursename" -->
+        <!--#if expr="$pagename" -->:
+        <!--#echo var="pagename" -->
+        <!--#endif -->
+</H2>
+
+<table cellpadding="5" bgcolor="blue">
+<tr><td bgcolor="white" align="center">
+
+<script language="javascript">
+
+  function makeLink(linkurl,linktxt ){
+     //alert(' executing '+linkurl);
+  
+     if ('<!--#echo var="pagename" -->'==linktxt ){
+       document.write("<b>"+linktxt+"</b>");
+     } else {
+       document.write("<a href=\""+linkurl+"\">"+linktxt+"</a>");
+     }
+  }
+  function makeDash() {
+       document.write("&nbsp;&ndash;&nbsp;");
+  }
+
+  makeLink("index.shtml","Home");
+  makeDash();
+
+  makeLink("course_info.shtml","Overview");
+  makeDash();
+
+  makeLink("schdule.shtml","Schedule");
+  makeDash();
+
+  makeLink("help.shtml","Help");
+</script>
+</table>
+
+</td>
+
+<td align="center" valign="center" width="80" bgcolor="white">
+<a href="http://www.yale.edu/">
+<img border="0" src="img/yale64.png">
+</a>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+<hr>

@@ -1,0 +1,9 @@
+<!--#set var="pagename" value="Overview" -->
+<!--#include virtual="header.shtml" -->
+
+<head>
+</head>
+
+This is the <!--#echo var="pagename" --> page for <!--#echo var="coursename" -->.
+
+This will be great class. The schedule is that we meet every day.

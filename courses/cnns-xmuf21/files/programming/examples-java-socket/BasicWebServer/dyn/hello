@@ -1,0 +1,9 @@
+#!/opt/local/bin/perl -w
+
+$name = $ENV{'QUERY_STRING'};
+print "Content-Type: text/html\r\n";
+print "\r\n";
+
+print "<html>";
+print "<h1>Hello $name</h1>";
+print "</html>";

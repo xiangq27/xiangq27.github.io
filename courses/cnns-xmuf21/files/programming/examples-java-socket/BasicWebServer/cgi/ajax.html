@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript" 
+        src="http://code.jquery.com/jquery-1.10.1.min.js">
+</script>
+
+<script type="text/javascript">
+setInterval( "loadPrice();", 1000 );  ///////// 1 seconds
+
+function loadPrice()
+{
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("myPrice").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET","price-raw.cgi?appl",true);
+  xhttp.send();
+}
+</script>
+</head>
+<body>
+
+<h2>My ticker</h2>
+
+<h3>Manual:</h3>
+<button type="button" onclick="loadPrice()">Refresh</button>
+<p>
+Price: <div id="myPrice"></div>
+</body>
+</html>
