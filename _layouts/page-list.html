@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <h1><a href="{{ page.url | absolute_url }}">{{ page.dir }}</a></h1>
+    <ul class="page-list">
+    {% assign pages = site.pages | sort: 'title' %}
+
+    {%- for item in pages %}
+      {%- if item.dir == page.dir and item.path != page.path %}
+        <li>
+          <a href="{{ item.url | relative_url }}">
+            {% include logo.html name=item.logo %}
+            <span>{{ item.title }}</span>
+          </a>
+
+          {%- comment -%} Note that markdownify generates p tags that causes wrapping {%- endcomment -%}
+          {%- if page.description %}
+          <i>{{ item.description | escape | markdownify }}</i>
+            {% endif -%}
+        </li>
+      {% endif -%}
+    {% endfor -%}
+    </ul>
+    <hr/>
+
+    {{ content }}
+  </body>
+</html>
