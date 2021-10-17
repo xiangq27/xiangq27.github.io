@@ -32,7 +32,7 @@ public class RequestHandler implements Runnable {
 
 	    connectionSocket.close();
 
-	    System.out.println(this + " exists");
+	    System.out.println(this + " exits");
 	}
 	catch (Exception e) {}
     }
