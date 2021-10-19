@@ -1,0 +1,20 @@
+<html>
+<ul>
+
+  <li><b>Q:</b> Sometime the Apache server does not return the full length of a file (e.g., for an image). What happened?<br><br>
+      <b>A:</b> 
+       A server may use chunked transfer encoding (Sec. 3.6.1 of http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html). You may need a simple change to your client to handle this, if you want to handle this correctly. Our benchmarking will not use image files.
+      <br><br></li>
+
+  <li><b>Q:</b> Why does my client sometime get a reset exception?
+      <br><br>
+      <b>A:</b> 
+       There can be multiple reasons. One common reason is that the server closes a socket and hence will respond to an unexpected packet from a client with a reset message.
+      <br><br></li>
+  <li><b>Q:</b> How many environment variables should we implement for CGI?
+      <br><br>
+      <b>A:</b> 
+       You need to implement the minimal of the following: QUERY_STRING, REMOTE_*, REQUEST_METHOD, SERVER_*.
+      <br><br></li>
+</ul>
+</html>

@@ -342,7 +342,7 @@
             <td class="stsub">
               FTP; HTTP 1.0<br>
          (<a href="files/lectures/9-application-ftp-http-1-0.pptx">pptx</a>, 
-	      <a href="files/lectures/8-application-ftp-http-1-0.pdf">pdf</a>,
+	      <a href="files/lectures/9-application-ftp-http-1-0.pdf">pdf</a>,
 	      <a href="files/videos/lecture9-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture9-part2.mp4">video: part 2</a>	      
 	      )
@@ -363,15 +363,18 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">9</td>
-            <td class="sdate">Thursday<br>
-              Sept. 28</td>
+          <tr>
+            <td class="slno">10</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 19</td>
             <td class="stsub">
               HTTP/1.1/2;<br> Per-Thread Servers<br>
-              (<a href="lectures/application-http112-server-design.pptx">pptx</a>,
-              <a href="lectures/application-http112-server-design.pdf">pdf</a>)
-            </td>
+         	(<a href="files/lectures/10-application-http112-server-design.pptx">pptx</a>, 
+	      <a href="files/lectures/10-application-http112-server-design.pdf">pdf</a>,
+	      <a href="files/videos/lecture10-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture10-part2.mp4">video: part 2</a>	      
+	      )            
+	    </td>
             <td class="stread">
             </td>
 
@@ -380,17 +383,17 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               <a href="wireshark/">HTTP/2 wireshark capture (need both http2.pcapng and http2-keylog.txt)</a>; 
               <br><br>
 
-              <a href="programming/examples-java-socket/TCP/TCPServerMT.java">TCPServerMT.java</a><br>
-              <a href="programming/examples-java-socket/TCP/RequestHandler.java">RequestHandler.java</a>           
+              <a href="files/programming/examples-java-socket/TCP/TCPServerMT.java">TCPServerMT.java</a><br>
+              <a href="files/programming/examples-java-socket/TCP/RequestHandler.java">RequestHandler.java</a>           
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">
-              <a href="assignments/assign3/index.html">Assignment Three (Part 1)</a>
+              <a href="files/assignments/assign3/index.html">Assignment Three (Part 1)</a>
             </td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">10</td>
             <td class="sdate">Tuesday<br>
               Oct. 3</td>
