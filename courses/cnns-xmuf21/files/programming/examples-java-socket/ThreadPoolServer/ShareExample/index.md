@@ -5,6 +5,5 @@ files:
 - ShareExample.java
 - ShareExampleLock.class
 - ShareExampleLock.java
-- index.md
 ---
 

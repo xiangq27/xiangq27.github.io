@@ -5,6 +5,5 @@ files:
 - Server.java
 - ServiceThread.class
 - ServiceThread.java
-- index.md
 ---
 

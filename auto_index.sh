@@ -18,7 +18,9 @@ for d in $dir; do
         echo layout: page-list >> $d/index.md
         echo files: >> $d/index.md
         for f in $(ls -1pv $d); do
-            echo "- $f" >> $d/index.md
+            if [ $f != index.md ]; then
+                echo "- $f" >> $d/index.md
+            fi
         done
         echo "---" >> $d/index.md
         echo >> $d/index.md

@@ -7,6 +7,5 @@ files:
 - SyncOverhead/
 - ThreadPoolExecutor/
 - WaitNotify/
-- index.md
 ---
 

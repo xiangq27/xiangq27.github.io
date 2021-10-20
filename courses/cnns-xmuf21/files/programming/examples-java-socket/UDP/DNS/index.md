@@ -8,7 +8,6 @@ files:
 - VoteMsgBinCoder.java
 - VoteMsgTextCoder.java
 - VoteServerUDP.java
-- index.md
 - note.txt
 ---
 

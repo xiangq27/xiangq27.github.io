@@ -6,6 +6,5 @@ files:
 - ThreadPoolServer/
 - UDP/
 - WebServer/
-- index.md
 ---
 

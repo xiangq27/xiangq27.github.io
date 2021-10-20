@@ -10,6 +10,5 @@ files:
 - TCPServerMT.class
 - TCPServerMT.java~
 - TCPServerMT.java
-- index.md
 ---
 

@@ -5,6 +5,5 @@ files:
 - Caesar.java
 - HelloWorld/
 - examples-java-socket/
-- index.md
 ---
 
