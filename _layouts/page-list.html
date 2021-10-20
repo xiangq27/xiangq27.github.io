@@ -13,28 +13,13 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <h1><a href="{{ page.url | absolute_url }}">{{ page.dir }}</a></h1>
-    <ul class="page-list">
-    {% assign pages = site.pages | sort: 'title' %}
-
-    {%- for item in pages %}
-      {%- if item.dir == page.dir and item.path != page.path %}
-        <li>
-          <a href="{{ item.url | relative_url }}">
-            {% include logo.html name=item.logo %}
-            <span>{{ item.title }}</span>
-          </a>
-
-          {%- comment -%} Note that markdownify generates p tags that causes wrapping {%- endcomment -%}
-          {%- if page.description %}
-          <i>{{ item.description | escape | markdownify }}</i>
-            {% endif -%}
-        </li>
-      {% endif -%}
-    {% endfor -%}
+    <h1>Directory listing for {{ page.dir }}</a></h1>
+    <hr>
+    <ul>
+      {%- for item in page.files %}
+      <li><a href="{{ item }}">{{ item }}</a></li>
+      {% endfor -%}
     </ul>
-    <hr/>
-
-    {{ content }}
+    <hr>
   </body>
 </html>
