@@ -8,7 +8,6 @@ files:
 - TCPServer.class
 - TCPServer.java
 - TCPServerMT.class
-- TCPServerMT.java~
 - TCPServerMT.java
 ---
 
