@@ -1,3 +1,7 @@
+/**
+ ** XMU CNNS Class Demo WebRequestHandler
+ **/
+
 
 import java.io.*;
 import java.net.*;

@@ -1,3 +1,7 @@
+/**
+ ** XMU CNNS Class Demo Race Condition
+ **/
+
 public class ShareExample extends Thread {
 
     private static int cnt = 0; // shared state

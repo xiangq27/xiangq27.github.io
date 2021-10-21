@@ -1,3 +1,7 @@
+/**
+ ** XMU CNNS Class Demo Lock
+ **/
+
 import java.util.concurrent.locks.*;
 
 public class ShareExampleLock extends Thread {

@@ -1,3 +1,7 @@
+/**
+ ** XMU CNNS Class Demo TCP Server
+ **/
+
 import java.io.*;
 import java.util.*;
 import java.net.*;

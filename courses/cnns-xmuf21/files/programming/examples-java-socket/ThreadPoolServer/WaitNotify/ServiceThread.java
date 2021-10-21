@@ -1,6 +1,6 @@
 /*
  * 
- * CS433/533 Demo
+ * XMU CNNS CLass Demo
  */
 import java.io.*;
 import java.net.*;
