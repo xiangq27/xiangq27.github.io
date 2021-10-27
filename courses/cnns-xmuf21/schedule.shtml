@@ -394,9 +394,9 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
           </tr>
 
           <tr>
-            <td class="slno">10</td>
-            <td class="sdate">Tuesday<br>
-              Oct. 3</td>
+            <td class="slno">11</td>
+            <td class="sdate">Thursday<br>
+              Oct. 21</td>
             <td class="stsub">
 		    Per-Thread Servers;<br>Servers using Thread Pool and
 		    Synchronization<br>
@@ -439,14 +439,20 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           </tr>
 
-          <!--tr>
-            <td class="slno">11</td>
-            <td class="sdate">Thursday<br>
-              Oct. 5</td>
+          <tr>
+            <td class="slno">12</td>
+            <td class="sdate">Tuesday<br>
+              Oct. 26</td>
             <td class="stsub">
-              Nonblocking Servers--Multiplexed (Reactive Design)<br>
-              (<a href="lectures/application-server-design-async-select.pptx">pptx</a>,
-              <a href="lectures/application-server-design-async-select.pdf">pdf</a>)
+		    Servers using wait/notify ThreadPool;<br>
+              Nonblocking Servers: Select-multiplexing server (Reactive Design)<br>
+              	(<a
+		href="files/lectures/12-application-server-design-threadpool-async-select.pptx">pptx</a>, 
+	      <a href="files/lectures/12-application-server-design-threadpool-async-select.pdf">pdf</a>,
+	      <a href="files/videos/lecture12-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture12-part2.mp4">video: part 2</a>	      
+	      )
+
             </td>
             <td class="stread">
             </td>
@@ -471,13 +477,14 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">
-              <a href="assignments/assign3/index2.html">Assignment Three (Part 2)</a>
+              <!--a href="assignments/assign3/index2.html">Assignment Three
+		      (Part 2)</a-->
             </td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">12</td>
             <td class="sdate">Tuesday<br>
               Oct. 10</td>
