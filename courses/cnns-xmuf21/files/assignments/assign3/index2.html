@@ -12,17 +12,19 @@
 	HTTP Protocol and Web Server (Part Two): 
 	Thread Pool and Reactive Servers and Server Performance Evaluation </h2>
 
-    <p>This assignment gives you a chance (Part 1) to better understand HTTP design, including its protocol and the processing at the server (Part 1). Another key goal of this assignment is give you a chance (Part 2) to become more familiar with concurrent network programming, covering topics including threads, synchronization, wait/notify (monitor), asynchronous I/O, and benchmarking.</p>
+    <p align="left"><b>Due Nov. 30, 2021 in class or by email to the instructor.</b> This assignment gives you a chance (Part 1) to better understand HTTP design, including its protocol and the processing at the server (Part 1). Another key goal of this assignment is give you a chance (Part 2) to become more familiar with concurrent network programming, covering topics including threads, synchronization, wait/notify (monitor), asynchronous I/O, and benchmarking.</p>
 
-    <p>Due:
-      <ul>
-        <li>Part 2: 11:59 PM, Monday Oct. 23, 2017 (after October recess).
-        <li>Competition: Among all valid servers. Bonus: 25% bonus and a small prize (A Rasberry Pi 3 Kit). 
+    <p>
+      <ul> 
+	      <li><b>Competition</b>: Among all valid servers. The top three winners will
+		      receive a <b>25% bonus points</b> of lab assignment 3
+		      and 4, and a <b>small
+		      prize</b>.</li> 
       </ul>
 
 <h3>Part 2a: Concurrent HTTP Servers using Threads</h3>
 
-  <p>As we covered in class, a key approach to controlling the overhead of threads is to use a thread pool. We covered two designs: (1) shared welcome socket; and (2) a shared queue with wait and notitify. Please implement the following three threadpool servers:</p>
+<p>As we covered in class, a key approach to controlling the overhead of threads is to use a thread pool. We covered two designs: (1) shared welcome socket; and (2) a shared queue with wait and notify. Please implement the following three threadpool servers:</p>
 
   <ul>
     <li>
@@ -55,7 +57,7 @@ ThreadPoolSize &lt;number of threads&gt;
       any way to improve it (fix error handling, etc). You need to
       document your changes.</li><br>
 
-      <li>The server should have a timeout thread. Upon
+      <li><b>Design question</b>: a production-level server should have a timeout thread. Upon
       accepting a new connection, the accept handler should register a
       timeout event with the timeout thread with a callback function.
       The timeout value is specified by <span style="font-family:
@@ -68,18 +70,27 @@ ThreadPoolSize &lt;number of threads&gt;
       directly close a channel that the dispatcher thread is still
       monitoring (why?). You need to think very carefully about the
       exact details of the interaction between these two threads,
-      propose a software design, and implement it.</li>
+      and describe your software design in your final report. You DO not need to
+      implement it, but if you do, please let us know in your report, and you
+      will receive a 5% bonus points if your implementation pass the
+      functionality test.</li>
     </ul>
 
-<h3>Part 2c: Async Server: Proactive Server</h3>
+<!--h3>Part 2c: Async Server: Proactive Server</h3>
     <p>In this part, instead of using the select structure, you use 
-      <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousServerSocketChannel.html">AsynchornousServerSocketChannel</a> and <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousSocketChannel.html">AsynchornousSocketChannel</a> design, based on Future/Listener to implement the same functionality as in 2b.
+      <a
+      href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousServerSocketChannel.html">AsynchornousServerSocketChannel</a>
+      and <a
+      href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousSocketChannel.html">AsynchornousSocketChannel</a>
+      design, based on Future/Listener to implement the same functionality as in
+      2b.-->
 
-<h3>Part 2d: Comparison of Designs</h3>
+<h3>Part 2c: Comparison of Designs</h3>
     
-    <p>A great way to learn about your design is to compare with other designs. You need to read the docuemnts or code of two related frameworks: xsocket and netty.</p>
+    <p>A great way to learn about your design is to compare with other designs.
+    You need to read the documents or code of one related frameworks: Netty.</p>
 
-    <h4>Part 2d(1): Comparison with xsocket</h4>
+    <!--h4>Part 2d(1): Comparison with xsocket</h4>
     <p>Although xsocket is no longer under active development, it provides a design alternative. Please read the source code and <a
     href="http://xsocket.sourceforge.net/documentation.htm">document</a>
     of <a href="http://xsocket.org/">x-Socket</a>, a high performance
@@ -112,8 +123,8 @@ ThreadPoolSize &lt;number of threads&gt;
       with idle timeout?</li>
     </ul>
 
-    <h4>Part 2d(2): Comparison with Netty</h4>
-    <p>Netty is another Java async IO framework used by many; see <a href="http://netty.io/wiki/adopters.html">for example use cases</a>. Please read Netty <a href="http://netty.io/wiki/user-guide-for-5.x.html">user's guide</a> and answer the following questions:</p>
+    <h4>Part 2d(2): Comparison with Netty</h4-->
+    <p>Netty is an Java async IO framework used by many; see <a href="http://netty.io/wiki/adopters.html">for example use cases</a>. Please read Netty <a href="http://netty.io/wiki/user-guide-for-5.x.html">user's guide</a> and answer the following questions:</p>
 
     <ul>
        <li>Netty provides multiple event loop implementations. In a typical server channel setting, <a href="http://netty.io/5.0/api/io/netty/bootstrap/ServerBootstrap.html#group(io.netty.channel.EventLoopGroup,%20io.netty.channel.EventLoopGroup)">two event loop groups are created</a>, with one typically called the boss group and the second worker group. What are they? How does Netty achieve synchronization among them?</li><br>
@@ -127,7 +138,7 @@ ThreadPoolSize &lt;number of threads&gt;
        <li>Please scan Netty implementation and give a high-level description of how ChannelPipeline is implemented.</li><br>
     </ul>
 
-    <h3>Part 2e: Performance Benchmarking</h3> 
+    <h3>Part 2d: Performance Benchmarking</h3> 
 
     <p>One important computer systems skill is to evaluate the
     performance of design alternatives. In this assignment, we conduct
@@ -144,21 +155,25 @@ ThreadPoolSize &lt;number of threads&gt;
         and untar it (tar -xvf gen.tar), you will see a directory
         named doc-root and a directory named request-patterns.</p>
 
-        <p>To compare the performance with Apache, we will use the
-        department zoo Apache server. We will use
-        /home/httpd/html/zoo/classes/cs433/web/www-root to store
+        <p>To compare the performance with Apache, we will use our lab's Apache server. We will use
+        /var/www/html/cnns/web/www-root to store
         testing files. Suppose we want to fetch
-        /home/httpd/html/zoo/classes/cs433/web/www-root/html-small/doc1.html. To
-        use the department Apache server, since the department server
-        has set DocumentRoot as /home/httpd/html/zoo, the URL should
+        /var/www/html/cnns/web/www-root/html-small/doc1.html. To
+        use our lab's Apache server,  the URL should
         be:<br>
-        http://zoo.cs.yale.edu/classes/cs433/web/www-root/html-small/doc1.html
+	http://ApacheServer/www-root/html-small/doc1.html<br>
+	or<br>
+	http://ApacheServer:80/www-root/html-small/doc1.html
         
         <p>To use your server, suppose you set the DocumentRoot as
-        /home/httpd/html/zoo/classes/cs433/web/www-root,
-        and you run your server on cicada.cs.yale.edu at port 9876.
+        /home/zzh/web/www-root,
+        and you run your server on 192.168.0.120 at port 9876.
         Then the URL is:<br>
-        http://cicada.cs.yale.edu:9876/html-small/doc1.html<br>
+	http://192.168.0.120:9876/html-small/doc1.html
+	<!--br>
+	or<br>
+	http://ZZHWebServer:9876/html-small/doc1.html-->
+	<br>
         </p>
       </li>
 
@@ -182,7 +197,7 @@ ThreadPoolSize &lt;number of threads&gt;
       one small and one large.</li>
       </ul>
   
-  <h3>Part 2f: Report</h3>
+  <h3>Part 2e: Report</h3>
     <ul>
       <li>You should submit a report on your server design. </li>
       <ul>
@@ -190,13 +205,15 @@ ThreadPoolSize &lt;number of threads&gt;
 
         <li>Please report the measured performance of both Apache and
         your best server for these performance metrics: throughput and
-        (mean) delay. You can use open office or gnuplot to generate
+        (mean) delay. You can use GNUplot or whatever figure plotting tools you
+	see fit to generate
         figures. Below is an example figure showing the performance of
         multiple servers.</li> <br>
 
         <li>The TA will benchmark all servers and pick
-        the one with the highest throughput. This server will receive
-        a bonus of 25%.</li>
+        the top three students with the highest throughput. These students will
+	each receive
+        a bonus of 25% for both lab 3 and lab 4.</li>
       </ul>
     </ul>
 
@@ -205,10 +222,11 @@ ThreadPoolSize &lt;number of threads&gt;
 
     <h3>Submission</h3>
     <ul>
-      <li><b>Please submit using canvas. Please include README
+      <li><b>Please include a README
       to tell the TA the directory structure, e.g., which file is the
       report. Please generate a single jar file containing all of your
-      files. </b></li>
+      files. Please generate a single tar or
+      zip file containing all of your files. </b></li>
     </ul>
 
     <h3>Suggestions</h3>
@@ -244,16 +262,14 @@ ByteBuffer input = in.map(FileChannel.MapMode.READ_ONLY, 0, in.size());
       <li>Book
         <ul>
           <li>Java Network Programming (4th ed.) by Elliotte Harold
-          is a good reference book on Java network programming.  Yale
-          library has electronic version of this book</a>
-          (you need Yale IP address to gain access). Please try to search 
-          Orbis and follow the link. The examples codes can be found <a
+          is a good reference book on Java network programming. Our class
+	  schedule page provides an internal copy of this book. The examples codes can be found <a
           href="http://www.cafeaulait.org/books/jnp4/examples/index.html">here</a>.
          </li>
         </ul>
       </li>
 
-      <li>General java information:
+      <!--li>General java information:
         <ul>
           <li>Development environments:
             <ul>
@@ -270,7 +286,7 @@ ByteBuffer input = in.map(FileChannel.MapMode.READ_ONLY, 0, in.size());
             </ul>
           </li>
         </ul>
-      </li>
+      </li-->
     </ul>
   </body>
 </html>
