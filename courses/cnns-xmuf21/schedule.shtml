@@ -484,15 +484,20 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           </tr>
 
-          <!--tr>
-            <td class="slno">12</td>
-            <td class="sdate">Tuesday<br>
-              Oct. 10</td>
+          <tr>
+            <td class="slno">13</td>
+            <td class="sdate">Thursday<br>
+              Oct. 28</td>
             </td>
             <td class="stsub">
               Nonblocking Servers--Proactive Design; Operational Analysis; Load-balancing Servers (Wikipedia, Linux Virtual Server)<br>
-              (<a href="lectures/application-op-analysis-load-balance.pptx">pptx</a>,
-              <a href="lectures/application-op-analysis-load-balance.pdf">pdf</a>)
+              (<a
+		href="files/lectures/13-application-server-async-op-analysis.pptx">pptx</a>, 
+	      <a
+		      href="files/lectures/13-application-server-async-op-analysis.pdf">pdf</a>,
+	      <a href="files/videos/lecture13-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture13-part2.mp4">video: part 2</a>	      
+	      )
             </td>
             <td class="stread">
             </td>
@@ -504,11 +509,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                 href="http://networks.cs.northwestern.edu/publications/ton-Akamai.pdf">DAA on Akamai</a>         
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">13</td>
             <td class="sdate">Thursday<br>
               Oct. 12</td>
