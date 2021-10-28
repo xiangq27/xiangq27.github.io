@@ -389,7 +389,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 
             <!--td class="swset">&nbsp;</td-->
             <td class="spset">
-              <a href="files/assignments/assign3/index.html">Assignment Three (Part 1)</a>
+              <a href="files/assignments/assign3/index.html">Assignment Three</a>
             </td>
           </tr>
 
@@ -510,7 +510,9 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
 
             <!--td class="swset">&nbsp;</td-->
-            <td class="spset">&nbsp;</td>
+            <td class="spset"><a
+			    href="files/assignments/assign3/index2.html">Assignment
+			    Four</a></td>
           </tr>
 
           <!--tr>
