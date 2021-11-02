@@ -490,7 +490,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               Oct. 28</td>
             </td>
             <td class="stsub">
-              Nonblocking Servers--Proactive Design; Operational Analysis; Load-balancing Servers (Wikipedia, Linux Virtual Server)<br>
+              Nonblocking Servers--Proactive Design; Operational Analysis; Load-balancing Servers<br>
               (<a
 		href="files/lectures/13-application-server-async-op-analysis.pptx">pptx</a>, 
 	      <a
@@ -515,7 +515,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 			    Four</a></td>
           </tr>
 
-          <!--tr>
+          <tr>
             <td class="slno">13</td>
             <td class="sdate">Thursday<br>
               Oct. 12</td>
@@ -523,10 +523,15 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                 Applications: Distributed Systems</b> 
             </td>
             <td class="stsub">
-              Application Overlays
+              Operational Analysis; Load-balancing Servers (Wikipedia, Linux Virtual Server)
               <br>
-              (<a href="lectures/application-smartswitch-appoverlay.pptx">pptx</a>,
-              <a href="lectures/application-smartswitch-appoverlay.pdf">pdf</a>)
+              (<a
+		href="files/lectures/14-application-op-analysis-smartswitch.pptx">pptx</a>, 
+	      <a
+		      href="files/lectures/14-application-op-analysis-smartswitch.pdf">pdf</a>,
+	      <a href="files/videos/lecture14-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture14-part2.mp4">video: part 2</a>	      
+	      )
             </td>
             <td class="stread">
             </td>
@@ -540,11 +545,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               <a href="readings/skype-google-hang.pdf">Skype/Google+/iChat</a>
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">14</td>
             <td class="sdate">Tuesday<br>
               Oct. 17</td>
