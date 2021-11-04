@@ -516,9 +516,9 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
           </tr>
 
           <tr>
-            <td class="slno">13</td>
-            <td class="sdate">Thursday<br>
-              Oct. 12</td>
+            <td class="slno">14</td>
+            <td class="sdate">Tuesday<br>
+              Nov. 2</td>
             <td class="stmain" colspan="1" rowspan="2"><b>Network
                 Applications: Distributed Systems</b> 
             </td>
@@ -549,14 +549,19 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">14</td>
-            <td class="sdate">Tuesday<br>
-              Oct. 17</td>
+          <tr>
+            <td class="slno">15</td>
+            <td class="sdate">Thursday<br>
+              Nov. 4</td>
             <td class="stsub">
+		    Load-balancing Servers;<br> 
               Application Overlays<br>
-                (<a href="lectures/application-overlays.pptx">pptx</a>,
-                <a href="lectures/application-overlays.pdf">pdf</a>)
+                (<a href="files/lectures/15-smartswitch-application-overlays.pptx">pptx</a>,
+                <a
+			href="files/lectures/15-smartswitch-application-overlays.pdf">pdf</a>,
+	      <a href="files/videos/lecture15-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture15-part2.mp4">video: part 2</a>
+		)
             </td>
             <td class="stread">
             </td>
@@ -575,12 +580,20 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               <a href="https://torstatus.blutmagie.de/">Tor status</a>              
             </td>
 
-            <td class="swset">&nbsp;</td>
-            <td class="spset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+		    Chinese Notes for Lecture 1-14<br>
+			<a
+			    href="files/lecture-notes/chinese-notes-1-14.pptx">
+			pptx</a>,
+<a
+			    href="files/lecture-notes/chinese-notes-1-14.pdf">
+			pdf</a>
+	    </td>
           </tr>
 
-          <tr>
-            <td class="slno">--</td>
+          <!--tr>
+            <td class="slno"> 16 </td>
             <td class="sdate">Tuesday<br>
               Oct. 24</td>
             </td>
