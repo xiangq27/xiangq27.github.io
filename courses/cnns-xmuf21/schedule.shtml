@@ -610,19 +610,23 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                   </li>
                </ul>
             </td>
-          </tr>
+          </tr-->
 
           <tr>
-            <td class="slno">15</td>
+            <td class="slno">16</td>
             <td class="sdate">
                Thursday<br>
-               Oct. 26</td>
+               No. 26</td>
             <td class="stmain" colspan="1" rowspan="5"><b>Transport Layer</b> 
             </td>
             <td class="stsub">
               Overview;<br> Stop and Wait/Alternating-Bit Protocol<br>
-               (<a href="lectures/transport-overview-reliability.pptx">pptx</a>,
-                <a href="lectures/transport-overview-reliability.pdf">pdf</a>)
+               (<a href="files/lectures/16-transport-overview-reliability.pptx">pptx</a>,
+                <a
+			href="files/lectures/16-transport-overview-reliability.pdf">pdf</a>,
+		<a href="files/videos/lecture16-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture16-part2.mp4">video: part 2</a>
+		)
             </td>
             <td class="stread">
               3.1-3.4.1
@@ -633,11 +637,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 
             <td class="swset">&nbsp;</td>
             <td class="spset">
-              <a href="assignments/assign4">Assignment Four</a>
+              <!--a href="assignments/assign4">Assignment Four</a-->
             </td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">16</td>
             <td class="sdate">
                Tuesday<br>
