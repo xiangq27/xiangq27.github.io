@@ -667,18 +667,21 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">17</td>
+          <tr>
+            <td class="slno">18</td>
             <td class="sdate">
-               Thursday<br>
-               Nov. 2
+               Tuesday<br>
+               Nov. 16
             </td>            
             <td class="stsub">
 	    TCP Reliability;
-              Timeout RTO; Congestion Control Principles; AIMD; TCP/Reno<br>
-              (<a href="lectures/transport-cc-aimd-reno.pptx">pptx</a>,
-                <a href="lectures/transport-cc-aimd-reno.pdf">pdf</a>)              
-            </td>
+              Timeout RTO<br>
+              (<a href="files/lectures/18-transport-tcp.pptx">pptx</a>,
+                <a
+			href="files/lectures/18-transport-tcp.pdf">pdf</a>,
+		<a href="files/videos/lecture18-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture18-part2.mp4">video: part 2</a>
+		)            </td>
             <td class="stread">
               3.5-3.7
             </td>
@@ -692,7 +695,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">18</td>
             <td class="sdate">
                Tuesday<br>
