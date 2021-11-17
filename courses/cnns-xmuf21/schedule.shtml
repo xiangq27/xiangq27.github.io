@@ -460,13 +460,13 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spread">  
 
               SelectEchoServer: 
-               <a href="programming/examples-java-socket/SelectEchoServer/v1-2/">v1, v2</a>,
-              <a href="readings/java-nio.pdf">Non-blocking I/O Tutorial</a>;<br>
+               <a href="filesprogramming/examples-java-socket/SelectEchoServer/v1-2/">v1, v2</a>,
+              <a href="files/readings/java-nio.pdf">Non-blocking I/O Tutorial</a>;<br>
               Another design (<a
-                href="programming/examples-java-socket/Async2/ONJava.pdf">doc</a>,
-              <a href="programming/examples-java-socket/Async2/code.zip">code</a>);<br>
+                href="files/programming/examples-java-socket/Async2/ONJava.pdf">doc</a>,
+              <a href="files/programming/examples-java-socket/Async2/code.zip">code</a>);<br>
               <a href="http://www.kegel.com/c10k.html">The C10K page</a><br>       
-              <a href="programming/examples-java-socket/SelectEchoServer/v3/">SelectEchoServer v3</a>;<br><br>              
+              <a href="files/programming/examples-java-socket/SelectEchoServer/v3/">SelectEchoServer v3</a>;<br><br>              
               
               Scalable Server Design Patterns: 
                <a href="readings/OOCP-tutorial4.pdf">tutorial 1</a>; 
