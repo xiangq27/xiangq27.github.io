@@ -1,19 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
- <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="Author" content="Yang Richard Yang">
-    <meta http-equiv="Content-Language" content="en-us">
-    <meta name="keywords" content=" ">
-    <title>CPSC 433/533: Computer Networks</title>
-    <link href="../../yry_class_style.css" rel="stylesheet" type="text/css"
+  <head>
+    <title>Computer Networks and Network Security: Lab Assignment Five</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=ISO-8859-1">
+    <link href="../../../qx_class_style.css" rel="stylesheet" type="text/css"
       media="screen">
-   </head>
+  </head>
   <body  bgcolor="#ffffff">
+	  <h2>
+Computer Networks and Network Security - Lab Assignment Five: <br>Reliable Transport and Congestion Control</h2>
 
-  <h2>CS433/533 Assignment 4: Reliable Transport and Congestion Control</h2>
-
-    <p>Your assignment is to design and implement a protocol for
+<p align="left"><b>Due Dec. 31, 2021 by email to the instructor.</b>
+    This assignment gives you a chance to design and implement a protocol for
     reliable transport and congestion control, that is, a simplified
     version of TCP. This assignment consists of two perspectives:
     reliability and congestion control. We give out the two
@@ -29,7 +28,7 @@
 
        <li>Rubric (see Grading guidelines at the end)</a>
   
-       <li>Due
+       <!--li>Due
          <ul>
            <li><b>Part 1: Discussion with instructor or TF checkpoint:
            Nov. 7; Code checkpoint: 11:55 pm, Nov. 10, 2017</b></p>
@@ -38,7 +37,7 @@
            <p><b>Part 2: Design discussion with instructor or
             TF checkpoint: Nov. 14; Complete code and report due: 1:30 pm, Nov. 17, 2017.</b></p>
          </ul>
-      </li>
+      </li-->
     </ul></p>
   
     <p></p>
@@ -66,7 +65,7 @@
       physical links. In simulation mode, only loss is simulated, and a
       link effectively has infinite buffer space. In emulation mode,
       there is no emulated buffering and loss. Therefore, if you run the
-      emulation on zoo machines, you will almost experience no loss of
+      emulation on our servers, you will almost experience no loss of
       packets. In order to help you stress test your implementation, we
       have modified Fishnet to provide simulation/emulation of buffering
       and loss characteristics of physical links. Please use the links
