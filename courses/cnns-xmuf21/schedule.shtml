@@ -723,32 +723,36 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 <a href="files/assignments/assign4/index.html">Assignment Five</a>
 	    </td>
           </tr>
-          <!--tr>
-            <td class="slno">18</td>
+          <tr>
+            <td class="slno">20</td>
             <td class="sdate">
-               Tuesday<br>
-               Nov. 7
+               Thursday<br>
+               Nov. 25
             </td>            
             <td class="stsub">
               TCP/Reno Analysis; TCP Cubic; TCP/Vegas
-              (<a href="lectures/transport-cc-reno-analysis-cubic-vegas.pptx">pptx</a>,
-               <a href="lectures/transport-cc-reno-analysis-cubic-vegas.pdf">pdf</a>)
+              (<a href="files/lectures/20-transport-cc-reno-analysis-cubic-vegas.pptx">pptx</a>,
+                <a
+			href="files/lectures/20-transport-cc-reno-analysis-cubic-vegas.pdf">pdf</a>,
+		<a href="files/videos/lecture20-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture20-part2.mp4">video: part 2</a>
+		)
             </td>
             <td class="stread">
              
             </td>
 
             <td class="spread">  
-              <a href="./lectures/tcp-reno-tput.xlsx">tcp-reno-tput.xlsx</a>;<br>
-              <a href="./readings/tcpcubic08.pdf">TCP Cubic</a>;<br>
-              <a href="./readings/tcpvegas94.pdf">TCP Vegas</a>              
+              <a href="files/lectures/tcp-reno-tput.xlsx">tcp-reno-tput.xlsx</a>;<br>
+              <a href="files/readings/tcpcubic08.pdf">TCP Cubic</a>;<br>
+              <a href="files/readings/tcpvegas94.pdf">TCP Vegas</a>              
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">19</td>
             <td class="sdate">
                Thursday<br>
