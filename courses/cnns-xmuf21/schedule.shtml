@@ -617,7 +617,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="sdate">
                Tuesday<br>
                Nov. 9</td>
-            <td class="stmain" colspan="1" rowspan="5"><b>Transport Layer</b> 
+            <td class="stmain" colspan="1" rowspan="6"><b>Transport Layer</b> 
             </td>
             <td class="stsub">
               Overview;<br> Stop and Wait/Alternating-Bit Protocol<br>
@@ -700,7 +700,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                Nov. 18
             </td>            
             <td class="stsub">
-	    TCP Connection Management;
+		    TCP Connection Management;<br>
               Congestion Control: AIMD<br>
               (<a href="files/lectures/19-transport-tcp-cc-aimd.pptx">pptx</a>,
                 <a
@@ -726,11 +726,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
           <tr>
             <td class="slno">20</td>
             <td class="sdate">
-               Thursday<br>
-               Nov. 25
+               Tuesday<br>
+               Nov. 23
             </td>            
             <td class="stsub">
-              TCP/Reno Analysis; TCP Cubic; TCP/Vegas
+		    TCP/Reno Analysis; TCP Cubic; TCP/Vegas<br>
               (<a href="files/lectures/20-transport-cc-reno-analysis-cubic-vegas.pptx">pptx</a>,
                 <a
 			href="files/lectures/20-transport-cc-reno-analysis-cubic-vegas.pdf">pdf</a>,
@@ -752,23 +752,26 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">19</td>
+          <tr>
+            <td class="slno">21</td>
             <td class="sdate">
                Thursday<br>
-               Nov. 9
+               Nov. 25
             </td>            
             <td class="stsub">
               General Resource Allocation Framework; Nash Bargaining Solution; Primal-Dual; TCP/Reno and Vegas as Primal-Dual<br>
-              (<a href="lectures/transport-cc-network-wide-bwalloc-framework.pptx">pptx</a>,
-               <a href="lectures/transport-cc-network-wide-bwalloc-framework.pdf">pdf</a>)
+              (<a href="files/lectures/21-transport-cc-network-wide-bwalloc-framework.pptx">pptx</a>,
+               <a href="files/lectures/21-transport-cc-network-wide-bwalloc-framework.pdf">pdf</a>
+		<a href="files/videos/lecture21-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture21-part2.mp4">video: part 2</a>
+	       )
             </td>
             <td class="stread">
                
             </td>
 
             <td class="spread">  
-              <a href="./readings/nash50a.pdf">Nash Bargaining Solution</a>;<br> 
+              <a href="files/readings/nash50a.pdf">Nash Bargaining Solution</a>;<br> 
                <a href="ftp://ftp.cs.princeton.edu/techreports/2000/616.pdf">TCP as primal-dual</a>;<br>
 
                optional:<br>
@@ -777,11 +780,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                <a href="https://dl.acm.org/citation.cfm?id=3098842">Deployment and evaluations</a>
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-<tr>
+<!--tr>
             <td class="slno">20</td>
             <td class="sdate">Tuesday<br>
               Nov. 14<br>
