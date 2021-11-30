@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Computer Networks and Network Security: Lab Assignment Six</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=ISO-8859-1">
+    <link href="../../../qx_class_style.css" rel="stylesheet" type="text/css"
+      media="screen">
+  </head>
+  <body bgcolor="#ffffff">
+	  <h2>Computer Networks and Network Security: Lab Assignment Six: <br>
+	  Routing and Forwarding</h2>
+
+    <p align="left"><b>Due Jan. 4, 2021 in class or by email to the instructor.</b> This assignment gives you a chance to analyze network layer.</b></p>
+
+    <ul>
+
+      <li>[P1 (10 points)] In this question, we consider some of the pros and cons of virtual-circuit and datagram networks.
+        <ol type="a">
+            <li>Suppose that routers were subjected to conditions that might cause them
+                to fail fairly often. Would this argue in favor of a VC or datagram architecture? 
+                Why?</li>
+            <li>Suppose that a source node and a destination require that a fixed amount
+                of capacity always be available at all routers on the path between the
+                source and destination node, for the exclusive use of traffic flowing
+                between this source and destination node. Would this argue in favor of a
+                VC or datagram architecture? Why?</li>
+            <li>Suppose that the links and routers in the network never fail and that routing paths used 
+                between all source/destination pairs remains constant. In
+                this scenario, does a VC or datagram architecture have more control traffic overhead? 
+                Why?</li>
+         </ol>
+      <br>
+      </li>
+
+      <li>[P2 (5 points)] Consider the network shown below, and assume that each node initially
+        knows the costs to each of its neighbors. Consider the distance-vector 
+        algorithm and show the distance table entries at node <i>z</i>.
+        <div style="margin-left:50px; ">
+            <table style="border-collapse:separate;border-spacing:2px;">
+            <tbody><tr><td><div>
+            <img src="fig_p2.png" alt=""  style=" border:0px;" align="middle" />
+            <br /> <br /> 
+            <b> <span class="darkgreen"> 
+            Figure for P2 </span> </b> 
+            </div></td></tr></tbody></table>
+        </div>
+        <br>
+      <br>
+      </li>
+
+      <li>[P3 (5 points)] Consider a general topology (that is, not the specific network shown above) and a
+        synchronous version of the distance-vector algorithm. Suppose that at each iteration, a node 
+        exchanges its distance vectors with its neighbors and receives their
+        distance vectors. Assuming that the algorithm begins with each node knowing
+        only the costs to its immediate neighbors, what is the maximum number of iterations 
+        required before the distributed algorithm converges? Justify your answer.<br>
+      <br>
+      </li>
+
+     <li>[P4 (10 points)] Consider the network fragment shown below. <i>x</i> has only two attached neighbors, 
+        <i>w</i> and <i>y</i>. <i>w</i> has a minimum-cost path to destination <i>u</i> (not shown) of 5,
+        and <i>y</i> has a minimum-cost path to <i>u</i> of 6. The complete paths from <i>w</i> and <i>y</i> to
+        <i>u</i> (and between <i>w</i> and <i>y</i>) are not shown. All link costs in the network have
+        strictly positive integer values. <br><br>
+
+       <ol type="a">
+           <li>Give <i>x&apos;s</i> distance vector for destinations <i>w</i>, <i>y</i>, and <i>u</i>.</li>
+
+           <li> Give a link-cost change for either <i>c(x,w)</i> or <i>c(x,y)</i> such that <i>x</i> will inform
+            its neighbors of a new minimum-cost path to <i>u</i> as a result of executing the
+            distance-vector algorithm.</li>
+
+           <li> Give a link-cost change for either <i>c(x,w)</i> or <i>c(x,y)</i> such that <i>x</i> will <i>not</i>
+            inform its neighbors of a new minimum-cost path to <i>u</i> as a result of 
+            executing the distance-vector algorithm.</li>
+
+        </ol>
+
+        <div style="margin-left:50px; ">
+            <table style="border-collapse:separate;border-spacing:2px;">
+            <tbody><tr><td><div>
+            <img src="fig_p4.png" alt=""  style=" border:0px;" align="middle" />
+            <br /> <br /> 
+            <b> <span class="darkgreen"> 
+            Figure for P4 </span> </b> 
+            </div></td></tr></tbody></table>
+        </div>
+        <br>
+      </li>
+
+      <li>[P5 (5 points)] Consider the count-to-infinity problem in the distance vector routing. Will the
+        count-to-infinity problem occur if we decrease the cost of a link? Why? How
+        about if we connect two nodes which do not have a link?
+        <br>
+      <br>
+      </li>
+
+      <li>[P6 (10 points)] Consider the figure below. Suppose there is another router <i>w</i>, connected to router
+        <i>y</i> and <i>z</i>. The costs of all links are given as follows: <i>c(x,y)</i> = 4, <i>c(x,z)</i> = 50,
+        <i>c(y,w)</i> = 1, <i>c(z,w)</i> = 1, <i>c(y,z)</i> = 3. Suppose that poisoned reverse is used in the
+        distance-vector routing algorithm.  <br><br>
+
+        
+
+        <ol type="a">
+            <li>When the distance vector routing is stabilized, router <i>w</i>, <i>y</i>, and <i>z</i> inform their
+                distances to <i>x</i> to each other. What distance values do they tell each other?
+   
+            <li>Now suppose that the link cost between <i>x</i> and <i>y</i> increases to 60. Will there
+                be a count-to-infinity problem even if poisoned reverse is used? Why or
+                why not? If there is a count-to-infinity problem, then how many iterations
+                are needed for the distance-vector routing to reach a stable state again?
+                Justify your answer.
+
+            <li>How do you modify <i>c(y,z)</i> such that there is no count-to-infinity problem
+                at all if <i>c(y,x)</i> changes from 4 to 60?
+          </ol>
+
+          <div style="margin-left:50px; ">
+            <table style="border-collapse:separate;border-spacing:2px;">
+            <tbody><tr><td><div>
+            <img src="fig_p6.png" alt=""  style=" border:0px;" align="middle" />
+            <br /> <br /> 
+            <b> <span class="darkgreen"> 
+            Figure for P6 </span> </b> 
+            </div></td></tr></tbody></table>
+        </div>
+          <br>
+      </li>
+
+     <li>[P7 (10 points)] Consider the network shown below. Suppose AS3 and AS2 are running OSPF
+        for their intra-AS routing protocol. Suppose AS1 and AS4 are running RIP
+        for their intra-AS routing protocol. Suppose eBGP and iBGP are used for the
+        inter-AS routing protocol. Initially suppose there is <i>no</i> physical link between
+        AS2 and AS4.
+        <ol type="a">
+            <li>Router 3c learns about prefix x from which routing protocol: OSPF, RIP,
+                eBGP, or iBGP?</li>
+            <li>Router 3a learns about x from which routing protocol?</li>
+            <li>Router 1c learns about x from which routing protocol?</li>
+            <li>Router 1d learns about x from which routing protocol?</li>
+
+            <div style="margin-left:50px; ">
+                <table style="border-collapse:separate;border-spacing:2px;">
+                <tbody><tr><td><div>
+                <img src="fig_p7.png" alt=""  style=" border:0px;" align="middle" />
+                <br /> <br /> 
+                <b> <span class="darkgreen"> 
+                Figure for P7 and P8 </span> </b> 
+                </div></td></tr></tbody></table>
+            </div>
+            <br>
+         </ol>
+
+     </li>
+
+     <li>[P8 (10 points)] Referring to the previous problem, once router 1d learns about <i>x</i> it will put an
+        entry <i>(x, I)</i> in its forwarding table.
+
+       <ol type="a">
+         <li>Will <i>I</i> be equal to <i>I</i><sub>1</sub> or <i>I</i><sub>2</sub> for this entry? Explain why in one sentence.
+
+         <li>Now suppose that there is a physical link between AS2 and AS4, shown by
+            the dotted line. Suppose router 1d learns that x is accessible via AS2 as
+            well as via AS3. Will <i>I</i> be set to <i>I</i><sub>1</sub> or <i>I</i><sub>2</sub>? Explain why in one sentence.
+
+         <li>Now suppose there is another AS, called AS5, which lies on the path
+            between AS2 and AS4 (not shown in diagram). Suppose router 1d learns
+            that <i>x</i> is accessible via AS2 AS5 AS4 as well as via AS3 AS4. Will <i>I</i> be set
+            to <i>I</i><sub>1</sub> or <i>I</i><sub>2</sub>? Explain why in one sentence.
+       </ol>
+       <br>
+     </li>
+
+      <li>[P9 (10 points)] Consider the following network. ISP B provides national backbone service
+        to regional ISPA. ISP C provides national backbone service to regional
+        ISP D. Each ISP consists of one AS. B and C peer with each other in two
+        places using BGP. Consider traffic going from A to D. B would prefer to
+        hand that traffic over to C on the West Coast (so that C would have to
+        absorb the cost of carrying the traffic cross-country), while C would
+        prefer to get the traffic via its East Coast peering point with B (so that B
+        would have carried the traffic across the country). What BGP mechanism
+        might C use, so that B would hand over A-to-D traffic at its East Coast
+        peering point? To answer this question, you will need to dig into the BGP specification.
+
+        <div style="margin-left:50px; ">
+            <table style="border-collapse:separate;border-spacing:2px;">
+            <tbody><tr><td><div>
+            <img src="fig_p9.png" alt=""  style=" border:0px;" align="middle" />
+            <br /> <br /> 
+            <b> <span class="darkgreen"> 
+            Figure for P9 </span> </b> 
+            </div></td></tr></tbody></table>
+        </div>
+        
+      <br>
+      </li>
+
+     <li>[P10 (10 points)] In Figure for P10(1), consider the path information that reaches stub networks W,
+        X, and Y. Based on the information available at W and X, what are their
+        respective views of the network topology? Justify your answer. The topology
+        view at Y is shown in Figure for P10(2).
+
+     <div style="margin-left:50px; ">
+        <table style="border-collapse:separate;border-spacing:2px;">
+        <tbody><tr><td><div>
+        <img src="fig_p10_1.png" alt=""  style=" border:0px;" align="middle" />
+        <br /> <br /> 
+        <b> <span class="darkgreen"> 
+        Figure for P10(1): </span> </b> A simple BGP scenario.
+        </div></td></tr></tbody></table>
+    </div>
+
+    <div style="margin-left:50px; ">
+        <table style="border-collapse:separate;border-spacing:2px;">
+        <tbody><tr><td><div>
+        <img src="fig_p10_2.png" alt=""  style=" border:0px;" align="middle" />
+        <br /> <br /> 
+        <b> <span class="darkgreen"> 
+        Figure for P10(2): </span> </b> The topology view at Y.
+        </div></td></tr></tbody></table>
+    </div>
+      
+      <br><br>
+      </li>
+
+      <li>[P11 (5 points)] Consider Figure for P10(1). B would never forward traffic destined to Y via X
+        based on BGP routing. But there are some very popular applications for
+        which data packets go to X first and then flow to Y. Identify one such
+        application, and describe how data packets follow a path not given by
+        BGP routing. <br><br>
+      </li>
+
+      <li>[P12 (10 points)] Consider a datagram network using 32-bit host addresses. Suppose a router
+        has four links, numbered 0 through 3, and packets are to be forwarded to the
+        link interfaces as follows:<br><br>
+        <div style="margin-left:50px; ">
+            <table style="border-collapse:separate;border-spacing:2px;">
+            <tbody><tr><td><div>
+            <img src="fig_p12_1.png" alt=""  style=" border:0px;" align="middle" />
+            <br /> <br /> 
+            <b> <span class="darkgreen"> 
+          
+            </div></td></tr></tbody></table>
+        </div>
+        <br>
+        <ol type="a">
+   
+            <li> Provide a forwarding table that has five entries, uses longest prefix matching, 
+                and forwards packets to the correct link interfaces.
+   
+            <li> Describe how your forwarding table determines the appropriate link interface
+                 for datagrams with destination addresses:
+                 <br>
+                 <div style="margin-left:50px; ">
+                    <table style="border-collapse:separate;border-spacing:2px;">
+                    <tbody><tr><td><div>
+                    <img src="fig_p12_2.png" alt=""  style=" border:0px;" align="middle" />
+                    <br /> <br /> 
+                    <b> <span class="darkgreen"> 
+                  
+                    </div></td></tr></tbody></table>
+                </div>
+          </ol>
+          <br>
+      </li>
+
+
+    </ul>
+  </body>
+</html>
