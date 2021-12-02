@@ -797,7 +797,6 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 		       href="files/lectures/22-network-intro-distance-vector.pdf">pdf</a>,
 <a href="files/videos/lecture22-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture22-part2.mp4">video: part 2</a>
-
 	       )  
             </td>
             <td class="stread">             
@@ -813,26 +812,29 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 <a href="files/assignments/assign5/index.html">Assignment Six</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">21<br>
+          <tr>
+            <td class="slno">23<br>
             </td>
             <td class="sdate">Thursday<br>
-              Nov. 16</td>
+              Dec. 2</td>
             <td class="stsub">
-              Distance Vector revisions and Link State Protocols<br>
-              (<a href="lectures/network-dvfix-ls.pptx">pptx</a>,
-               <a href="lectures/network-dvfix-ls.pdf">pdf</a>)             
+		    Distance Vector revisions;<br>Link State Protocols<br>
+              (<a href="files/lectures/23-network-dvfix-ls.pptx">pptx</a>,
+               <a href="files/lectures/23-network-dvfix-ls.pdf">pdf</a>,
+<a href="files/videos/lecture23-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture23-part2.mp4">video: part 2</a>
+	       )             
             </td>
             <td class="stread">4.4, 4.5, 4.6</td>
             <td class="spread">
                <a href="readings/dsdv.pdf">DSDV</a>
                <a href="https://tools.ietf.org/html/rfc2328">OSPFv2 RFC</a>
             </td>
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">22</td>
             <td class="sdate">Tuesday<br>
               Nov. 28 </td>
