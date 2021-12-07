@@ -834,13 +834,16 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">22</td>
+          <tr>
+            <td class="slno">24</td>
             <td class="sdate">Tuesday<br>
-              Nov. 28 </td>
+              Dec. 7 </td>
             <td class="stsub">Internet Routing; BGP Basic Operations; Interdomain as Preference Aggregation<br>
-              (<a href="lectures/network-internetworking.pptx">pptx</a>,
-               <a href="lectures/network-internetworking.pdf">pdf</a>)             
+              (<a href="files/lectures/24-network-internetworking.pptx">pptx</a>,
+               <a href="files/lectures/24-network-internetworking.pdf">pdf</a>,
+		<a href="files/videos/lecture24-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture24-part2.mp4">video: part 2</a>
+	       )             
             </td>
             <td class="stread">4.4, 4.6</td>
             <td class="spread">
@@ -848,16 +851,15 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                <a href="http://www.fixedorbit.com/search.htm">fixedorbit</a>;<br>
                <a href="http://www.bgp4.as/looking-glasses">Looking
                 glass</a>;<br>
-              <a href="./readings/ArrowImposs.pdf">Arrow's Theorem Proof</a>
+              <a href="files/readings/ArrowImposs.pdf">Arrow's Theorem Proof</a>
             </td>
-            <td class="swset">
-              <a href="assignments/assign5/index.html">Assignment Five</a>
-            </td>
+            <!--td class="swset">
+             </td-->
             <td class="spset">              
             </td>
           
           </tr>
-          <tr>
+          <!--tr>
             <td class="slno">23</td>
             <td class="sdate">Thursday<br>
               Nov. 30</td>
