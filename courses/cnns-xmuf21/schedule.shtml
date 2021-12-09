@@ -859,21 +859,25 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           
           </tr>
-          <!--tr>
-            <td class="slno">23</td>
+          <tr>
+            <td class="slno">25</td>
             <td class="sdate">Thursday<br>
-              Nov. 30</td>
+              Dec. 9</td>
             <td class="stsub">BGP Analysis; DHCP<br>
-              (<a href="lectures/network-policy-routing-dhcp.pptx">pptx</a>,
-               <a href="lectures/network-policy-routing-dhcp.pdf">pdf</a>)
+              (<a href="files/lectures/25-network-policy-routing-dhcp.pptx">pptx</a>,
+               <a
+		       href="files/lectures/25-network-policy-routing-dhcp.pdf">pdf</a>,
+<a href="files/videos/lecture25-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture25-part2.mp4">video: part 2</a>	       
+	       )
             </td>
             <td class="stread">4.3-4.4</td>
             <td class="spread">&nbsp;</td>
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <tr>
+          <!--tr>
             <td class="slno">24</td>
             <td class="sdate">Tuesday<br>
               Dec. 5</td>
