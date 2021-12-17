@@ -877,51 +877,64 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-          <!--tr>
-            <td class="slno">24</td>
+          <tr>
+            <td class="slno">26</td>
             <td class="sdate">Tuesday<br>
-              Dec. 5</td>
+              Dec. 14</td>
             <td class="stmain" colspan="1" rowspan="1"><b>Link Layer</b> 
             </td>
             <td class="stsub">
-             Forwarding and Link Layer
+		    Forwarding and Link Layer<br>
+(<a href="files/lectures/26-network-forwarding-link-mac.pptx">pptx</a>,
+               <a
+		       href="files/lectures/26-network-forwarding-link-mac.pdf">pdf</a>,
+<a href="files/videos/lecture26-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture26-part2.mp4">video: part 2</a>	       
+	       )
             </td>
             <td class="stread">
             </td>
 
             <td class="spread">  
-              <a href="readings/nfv-click.pdf">click</a>;
-              <a href="readings/nfv-clickos.pdf">clickOS</a>;
-              <a href="readings/nfv-e2.pdf">E2</a>;
-              <a href="readings/nfv-netmap.pdf">netmap</a>;
-              <a href="readings/nfv-netbricks.pdf">netbricks</a>
+              <a href="files/readings/nfv-click.pdf">click</a>;
+              <a href="files/readings/nfv-clickos.pdf">clickOS</a>;
+              <a href="files/readings/nfv-e2.pdf">E2</a>;
+              <a href="files/readings/nfv-netmap.pdf">netmap</a>;
+              <a href="files/readings/nfv-netbricks.pdf">netbricks</a>
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
           <tr>
-            <td class="slno">25</td>
+            <td class="slno">27</td>
             <td class="sdate">Thursday<br>
-              Dec. 7</td>
+              Dec. 16</td>
             <td class="stmain" colspan="1" rowspan="1"><b>Summary</b> 
             </td>
             <td class="stsub">
-             Course Summary; Future Network Architectures (MobilityFirst, NDN, XIA) 
+		    Link Layer; Future Network Architectures (SDN); Course Summary<br> 
+	     <!--Future Network Architectures (MobilityFirst, NDN, XIA) <br-->
+(<a href="files/lectures/27-link-summary.pptx">pptx</a>,
+               <a
+		       href="files/lectures/27-link-summary.pdf">pdf</a>,
+<a href="files/videos/lecture27-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture27-part2.mp4">video: part 2</a>	       
+	       )
             </td>
             <td class="stread">
             </td>
             <td class="spread">          
-               <a href="readings/mobilityfirst-5g.pdf">MobilityFirst</a> 
+               <a href="files/readings/mobilityfirst-5g.pdf">MobilityFirst</a> 
               (<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6258042">DMap</a>);
               <a href="http://named-data.net/publications/">NDN</a>;
               <a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/han_dongsu_xia">XIA</a>
             </td>
 
-            <td class="swset">&nbsp;</td>
+            <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
-          </tr-->          
+          </tr>          
 
    </tbody>
   </table>
