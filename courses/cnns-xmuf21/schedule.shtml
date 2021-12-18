@@ -789,7 +789,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="sdate">Tuesday<br>
               Nov. 30<br>
             </td>
-            <td class="stmain" colspan="1" rowspan="4"><b>Network and Link Layers</b>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network Layer</b>
             </td>
             <td class="stsub">Distributed Distance Vector Protocols<br>
                 (<a href="files/lectures/22-network-intro-distance-vector.pptx">pptx</a>,
