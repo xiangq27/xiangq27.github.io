@@ -1,0 +1,42 @@
+<set var="coursename"
+	value="Computer Networks and Network Security, Fall 2022" >
+<HTML>
+<HEAD>
+	<TITLE>	<echo var="coursename">
+		<if expr="$pagename" >
+		: <echo var="pagename" >
+		<endif >
+	</TITLE>
+        <LINK HREF="qx_class_style.css" REL="stylesheet"  type="text/css" media="screen" />
+</HEAD>
+<BODY>
+
+<table cellspacing="2" cellpadding="10" width="100%">
+<tbody>
+<tr>
+
+<td bgcolor="white" align="left">
+<H2>	<echo var="coursename" >
+	: <echo var="pagename" >
+</H2>
+
+<table cellpadding="5" bgcolor="blue">
+<tr><td bgcolor="white" align="center">
+<a href="index.shtml">Home</a> &nbsp;&ndash;&nbsp;
+<a href="course_info.shtml">Overview</a> &nbsp;&ndash;&nbsp;
+<a href="schedule.shtml">Schedule</a> &nbsp;&ndash;&nbsp;
+<a href="readings.shtml">Readings</a> &nbsp;&ndash;&nbsp;
+<a href="resources.shtml">Resources</a>
+</table>
+
+</td>
+
+<td align="center" valign="center" width="80" bgcolor="white">
+<a href="http://www.xmu.edu.cn/">
+<img border="0" src="files/img/xmu.png">
+</a>
+</td>
+
+</tr>
+</tbody>
+</table>
