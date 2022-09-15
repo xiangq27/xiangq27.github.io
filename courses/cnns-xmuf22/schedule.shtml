@@ -115,7 +115,10 @@
               <a href="http://www.dcs.ed.ac.uk/home/jeh/Simjava/queueing/mm1_q/mm1_q.html" target="_blank">M/M/1 simulation</a>;<br>
             </td>
             <!--td class="swset">&nbsp;</td-->
-            <td class="spset">&nbsp;</td>
+	                <td class="swset">
+              <a href="files/assignments/assign1/index.html">Assignment One</a>
+		</td>
+            <!--td class="spset">&nbsp;</td-->
           </tr>
 
 	  
