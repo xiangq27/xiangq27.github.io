@@ -75,10 +75,10 @@
             <td class="slno">1</td>
             <td class="sdate">Tuesday<br>
                 Sept. 13</td>
-            <td class="stmain" colspan="1" rowspan="4"><b>Introduction</b>
+            <td class="stmain" colspan="1" rowspan="3"><b>Introduction</b>
             </td>
             <td class="stsub">Course overview; <br>
-              an introduction to the Internet<br>
+              An introduction to the Internet<br>
               (<a href="files/lectures/1-introduction.pptx">pptx</a>, 
 	      <a href="files/lectures/1-introduction.pdf">pdf</a>,
 		<a href="files/videos/lecture1-part1.mp4">video: part 1</a>, 
@@ -126,7 +126,7 @@
             <td class="sdate">Tuesday<br>
               Sept. 20 </td>
 	    <td class="stsub">Statistical multiplexing;<br>Layered Network
-		    Architecture<br>
+		    Architecture;<br>End-to-end arguments<br>
               (<a href="files/lectures/3-architecture.pptx">pptx</a>, 
 	      <a href="files/lectures/3-architecture.pdf">pdf</a>,
 	      <a href="files/videos/lecture3-part1.mp4">video: part 1</a>, 
@@ -158,7 +158,37 @@
             </td-->
           </tr>
 
+	  <tr>
+            <td class="slno">4</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 22</td>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network
+                Applications: Basic</b> 
+            </td>
+            <td class="stsub">
+		    <!--Layered network architectures and the end-to-end
+			    argumentsbr-->
+			    Overview of network apps; Email<br>
+              (<a href="files/lectures/4-application-email.pptx">pptx</a>, 
+	      <a href="files/lectures/4-application-email.pdf">pdf</a>,
+	      <a href="files/videos/lecture4-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture4-part2.mp4">video: part 2</a>	      
+	      )
+            </td>
+            <td class="stread">1.5, 2.3</td>
 
+            <td class="spread">
+ 
+               History: <a
+               href="http://portal.acm.org/citation.cfm?id=52336">Design
+               Philosophy of DARPA Internet</a>;<br>
+       
+<br>              
+            </td>
+
+            <!--td class="swset">&nbsp;</td>
+            <td class="spset">&nbsp;</td-->
+          </tr>
 
 
 
