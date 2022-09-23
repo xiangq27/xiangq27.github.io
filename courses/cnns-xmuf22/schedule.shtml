@@ -121,6 +121,48 @@
             <!--td class="spset">&nbsp;</td-->
           </tr>
 
+	  <tr>
+            <td class="slno">3</td>
+            <td class="sdate">Tuesday<br>
+              Sept. 20 </td>
+	    <td class="stsub">Statistical multiplexing;<br>Layered Network
+		    Architecture<br>
+              (<a href="files/lectures/3-architecture.pptx">pptx</a>, 
+	      <a href="files/lectures/3-architecture.pdf">pdf</a>,
+	      <a href="files/videos/lecture3-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture3-part2.mp4">video: part 2</a>	      
+	      )
+            </td>
+            <td class="stread">1.4, 1.5 </td> 
+
+            <td class="spread"> 
+
+		    Required:<br> <a
+            href="http://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf" target="_blank">
+            The End-to-end Argument</a>;<br> 
+
+    Alternative views:<br>
+            <a
+            href="http://www.isi.edu/newarch/DOCUMENTS/hotrba.paper.pdf" target="_blank">Protocol
+	    Stack vs Heap</a>;<br>
+            <!--a
+		    href="http://proquest.safaribooksonline.com/9780132252423?tocview=true"
+		    target="_blank"> Architecture patterns</a>;<br-->
+            <a href="http://groups.geni.net/geni" target="_blank">GENI: A new
+               initiative for network architecture</a>;
+            </td>
+        
+            <td class="swset">
+	    </td> 
+            <!--td class="spset">&nbsp;
+            </td-->
+          </tr>
+
+
+
+
+
+
 	  
    </tbody>
   </table>
