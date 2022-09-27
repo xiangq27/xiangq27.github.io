@@ -190,7 +190,51 @@
             <td class="spset">&nbsp;</td-->
           </tr>
 
+          <tr>
+            <td class="slno">5</td>
+            <td class="sdate">Thursday<br>
+              Sept. 27</td>
+            <td class="stsub">Email; DNS<br>
+              (<a href="files/lectures/5-application-email-dns.pptx">pptx</a>, 
+	      <a href="files/lectures/5-application-email-dns.pdf">pdf</a>,
+	      <a href="files/videos/lecture5-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture5-part2.mp4">video: part 2</a>	      
+	      )
+            </td>
+            <td class="stread">2.1, 2.3, 2.4</td>
+            <td class="spread"> 
+               <a href="files/readings/history-email.pdf">History: Email
+		       development</a>;<br>
+              <a href="http://www.open-spf.org/">SPF</a>;
+              <a
+		      href="https://trendlineinteractive.com/resources/article/what-are-dmarc-dkim-and-spf/">SPF,
+		      DKIM, DMARC</a>;<br>
+<!--a
+		      href="http://blog.endpoint.com/2014/04/spf-dkim-and-dmarc-brief-explanation.html">SPF,
+		      DKIM, DMARC</a>;<br-->
+	      <a
+                href="files/readings/history-dns.pdf">
+                History: Development of DNS</a>; <br>              
 
+              DNS:
+              <a href="files/wireshark/dns-capture.pcapng">DNS wireshark capture</a>;              
+              <a href="https://www.rootusers.com/12-dig-command-examples-to-query-dns-in-linux/">Example dig commands</a><br>
+
+              
+
+              DNS attack:
+              <a
+                href="http://www.internetnews.com/dev-news/article.php/1486981">DDoS
+                on DNS</a>;              
+              <a href="https://www.forbes.com/sites/andygreenberg/2013/08/28/syrian-hack-of-nytimes-com-and-twitter-could-have-inflicted-much-more-than-mere-embarrassment/">Syrian attack on NYTimes</a>
+<!--a
+	href="http://www.businessweek.com/articles/2013-08-28/how-syrian-hackers-found-the-new-york-times-australian-weak-spot">Syrian
+	attack on NYTimes</a-->
+
+            </td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
 
 
 	  
