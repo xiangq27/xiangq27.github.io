@@ -1,0 +1,28 @@
+Rubric for Assignment 2 
+
+[Part 1] 70 points in total
+1. Program can compile on our lab servers. (10 points)
+2. Correct output (minimum, maximum, average RTTs and loss rate) (10 points)
+3. Ping messages are formatted correctly. (10 points)
+4. PingClient uses Timer. (10 points)
+5. The use of timeout on datagram sockets. (10 points)
+6. Interoperate with three randomly selected implementations from other members of the class (TA will be the referee if
+compatibility issues occur). (20 points)
+
+[Part 2] 30 points in total
+[2a] 12 points:
+4 for question 1
+4 for question 2
+4 for question 3
+
+[2b] 10 points: 
+3 for question 1
+4 for question 2
+3 for question 3
+
+[2c] 8 points
+
+[Part 3] 10 bonus points in total
+5 points for [3a]
+3 points for [3b]
+2 points for [3b]

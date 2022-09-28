@@ -160,7 +160,7 @@
 
 	  <tr>
             <td class="slno">4</td>
-            <td class="sdate">Tuesday<br>
+            <td class="sdate">Thursday<br>
               Sept. 22</td>
             <td class="stmain" colspan="1" rowspan="4"><b>Network
                 Applications: Basic</b> 
@@ -235,6 +235,47 @@
             <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
+
+<tr>
+            <td class="slno">6</td>
+            <td class="sdate">Thursday<br>
+              Sep. 29</td>
+            <td class="stsub">Java in a nutshell; Network socket programming<br>
+             <!--(<a href="files/lectures/6-application-dns.pptx">pptx</a>, 
+	      <a href="files/lectures/6-application-dns.pdf">pdf</a>,
+	      <a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture6-part2.mp4">video: part 2</a>	      
+	      )-->
+	    </td>
+            <td class="stread">2.7, 2.3, 2.2</td> 
+
+            <td class="spread">
+
+              m-DNS/DNS-SD: <a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/dns-sd.1.html">dns-sd</a>;
+              <a href="https://tools.ietf.org/html/rfc6762">mDNS</a>;
+              <a href="https://tools.ietf.org/html/rfc6763">DNS-SD</a>
+              <a href="https://developer.android.com/training/connect-devices-wirelessly/nsd.html">Android NSD</a>
+             <a href="wireshark/dns-mdns.pcapng">mDNS wireshark capture</a>;<br>
+
+             
+
+              
+            </td>
+            <!--td class="swset">&nbsp;</td--> 
+            <td class="spset"><a
+			    href="files/assignments/assign2/index.html">Assignment
+			    Two</a><br>(<a
+			    href="files/readings/install-ubuntu-vm-and-java.pdf">Java
+	    installation tutorial</a>)</td> 
+          </tr>
+
+
+
+
+
+
+
+
 
 
 	  
