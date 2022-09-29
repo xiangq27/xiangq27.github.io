@@ -241,9 +241,9 @@
             <td class="sdate">Thursday<br>
               Sep. 29</td>
             <td class="stsub">Java in a nutshell; Network socket programming<br>
-             <!--(<a href="files/lectures/6-application-dns.pptx">pptx</a>, 
+             (<a href="files/lectures/6-application-socket-programming.pptx">pptx</a>, 
 	      <a href="files/lectures/6-application-dns.pdf">pdf</a>,
-	      <a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
+	      <!--a href="files/videos/lecture6-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture6-part2.mp4">video: part 2</a>	      
 	      )-->
 	    </td>
