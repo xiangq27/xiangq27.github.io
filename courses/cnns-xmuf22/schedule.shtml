@@ -304,7 +304,36 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
+          <tr>
+            <td class="slno">8</td>
+            <td class="sdate">Thursday<br>
+              Oct. 6</td>
+            <td class="stsub">
+              HTTP/1.1/2<br>
+         	(<a href="files/lectures/8-application-http-1-1-2.pptx">pptx</a>, 
+	      <a href="files/lectures/8-application-http-1-1-2.pdf">pdf</a>,
+	      <a href="files/videos/lecture8-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture8-part2.mp4">video: part 2</a>	      
+	      )            
+	    </td>
+            <td class="stread">
+            </td>
 
+            <td class="spread">   
+              <a href="https://tools.ietf.org/html/rfc7540">HTTP/2</a>;
+              <a href="wireshark/">HTTP/2 wireshark capture (need both http2.pcapng and http2-keylog.txt)</a>; 
+              <br><br>
+
+              <a href="files/programming/examples-java-socket/TCP/TCPServerMT.java">TCPServerMT.java</a><br>
+              <a href="files/programming/examples-java-socket/TCP/RequestHandler.java">RequestHandler.java</a>           
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+              <!--a href="files/assignments/assign3/index.html">Assignment
+		      Three</a-->
+            </td>
+          </tr>
 
 
 
