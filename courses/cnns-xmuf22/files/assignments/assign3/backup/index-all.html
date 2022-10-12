@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="Yang Richard Yang">
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="keywords" content=" ">
+    <title>CPSC 433/533: Computer Networks</title>
+    <link href="../../yry_class_style.css" rel="stylesheet" type="text/css"
+      media="screen">
+  </head>
+  <body bgcolor="#ffffff">
+    <h2>CS433/533 Homework Assignment Three: Network Servers and Server Performance Evaluation</h2>
+
+    <p><a href="faq.html">FAQ</a>.
+    <p><a href="rubric3.txt">Rubric</a>
+
+    <p>This assignment gives you a chance (Part 1) to better understand HTTP design, including its protocol and the processing at the server (Part 1). Another key goal of this assignment is give you a chance (Part 2) to become more familiar with concurrent network programming, covering topics including
+    threads, synchronization, wait/notify (monitor), asynchronous I/O,
+    and benchmarking.</p>
+
+    <p>Due:
+      <ul>
+        <li>Part 1: 11:59 PM, Friday Oct. 6, 2017 </b>
+        <li>Part 2: 11:59 PM, Thursday Oct. 12, 2017.
+        <li>Competition: Among all valid servers. Bonus: 25% bonus and a second small prize. 
+      </ul>
+
+    <h3>Protocol</h3> 
+
+    <p>The server that we will design is a simplified version of HTTP
+    1.0. The most basic application message, encoded in
+    ASCII, from the client to the server is:</p>
+
+<pre>
+GET &lt;URL&gt; HTTP/1.0
+Host: &lt;ServerName&gt;
+CRLF</pre>
+
+    <p>where CRLF is carriage return and line feed, representing an
+    empty line. This request asks for the file stored at location
+    &lt;DocRootServerName&gt;/&lt;URL&gt;, where DocRootServerName is the root 
+    directory for the requested server name. </p>
+
+    <p>For example, if &lt;DocRooServerNamet&gt;=/tmp/mydoc, and &lt;URL&gt; is
+    /file1.html, the server will return the file
+    /tmp/mydoc/file1.html, if it exists. If the request does not specify the Host 
+    header, the server returns the first server (virtual host) configured; see below.</p>
+
+    <p>The basic reply message from the server to the client, encoded in
+      ASCII, is:</p>
+
+<pre>
+HTTP/1.0 &lt;StatusCode&gt; &lt;message&gt;
+Date: &lt;date&gt;
+Server: &lt;your server name&gt;
+Content-Type: text/html
+Content-Length: &lt;LengthOfFile&gt;
+CRLF
+&lt;file content&gt;
+</pre>
+
+    <p>CRLF again represents an empty line. If the file is found and
+    readable, the returned &lt;status code&gt; is 200 and you can give
+    a message such as OK. Otherwise, please give an error code of 400.
+    If you are curious about HTTP error codes, you can see <a
+    href="http://www.ietf.org/rfc/rfc1945.txt">
+    http://www.ietf.org/rfc/rfc1945.txt</a>. You can use Java File
+    class to obtain file size.</p>
+
+    <h3>Part 1a: Simple Client</h3>
+
+    <p>Your test client should be multi-threaded. The client can
+    generate test requests to the server with the following command
+    line:<br>
+    </p>
+
+    <pre>%java SHTTPTestClient -server &lt;server&gt; -servname &lt;server name&gt; -port &lt;server port&gt; -parallel &lt;# of threads&gt; -files &lt;file name&gt; -T &lt;time of test in seconds&gt;
+</pre>
+    <p>In a typical deployment, we do not need to specify both server and servname. For example, in a typical setting, a Web hosting server with IP1 may host multiple virtual hosts named www.vh1.com, www.vh2.com. All of these DNS names will resolve to the same IP1. But for our testing, since the zoo machine typically has only a single DNS name, we add the servname switch to specify the virtual host.  
+
+    <p>The &lt;file name&gt; is the name of a file that
+    contains a list of files to be requested. For example, a file may
+    look like the following: </p>
+
+<pre>
+file1.html
+file2.html
+file3.html
+file1.html
+</pre>
+
+    <p>Then each thread of the client will request file1.html, then
+    file2.html, then file3.html, and then file1.html. The thread then
+    repeats the sequence. The client simply discards the received
+    reply. The client stops after &lt;time of test in seconds&gt;. The
+    client should print out the total transaction throughput (# files
+    finished downloading by all threads, averaged over per second),
+    data rate throughput (number bytes received, averaged over per
+    second), and the average of wait time (i.e., time from issuing
+    request to getting first data). Think about how to collect
+    statistics from multiple threads.</p>
+
+    <h3>Part 1b: Sequential and Per-thread HTTP Servers</h3>
+
+    <p>In class we will cover multiple approaches to implementing
+    network servers. In Part 1, you will need to implement only the  sequential server an the per-thread server. </p>
+
+    <p>You can feel free to reuse the example code provided in class.<br>
+    </p>
+
+   
+
+
+ <p>When your server executes, it must support the following:</p>
+
+    <ul>
+
+      <li>Configuration: Your server must support a configuration file, which we follow the Apache configuration style (<a
+    href="http://httpd.apache.org/docs/2.4/vhosts/examples.html">http://httpd.apache.org/docs/2.4/vhosts/examples.html</a>.
+    Note that we implement a single server name, not multiple, as the
+    Apache example configuration shows. We start a server by reading a
+    configuration file:<br>
+<pre>
+%java &lt;servername&gt; -config &lt;config_file_name&gt;
+</pre>
+
+    <p>The basic configuration parameter is listening port:</p>
+
+<pre>
+Listen &lt;port such as 6789&gt;
+</pre>
+
+    <p>A configuration file should also contain one or more virtual hosts shown below. We use the same format as the Apache, but your server ignores the *:6789 part.
+<pre>
+&lt;VirtualHost *:6789&gt;
+  DocumentRoot &lt;root dir&gt;
+  ServerName &lt;server name&gt;
+&lt;VirtualHost&gt;  
+</pre>
+
+  <p>We recommend that you consider
+    a hash map in your program to implement configurations.</p>
+
+    <p>An example configuration file is <a href="httpd.conf">httpd.conf</a>.
+
+  <li>HTTP Methods: Your server must support HTTP 1.0
+      (http://www.w3.org/Protocols/HTTP/1.0/spec.html) GET
+      method.
+      </li><br>
+
+  <li>Headers: Your server must send the Last-Modified header and
+      understand the If-Modified-Since header from client. This means
+      that you will need to parse date format. For this assignment,
+      we use the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1">rfc1123-date format</a>. Your server also needs
+      to understand the User-Agent header. For other headers, your
+      server can skip.</li><br>
+
+  <li>URL Mapping: If the URL ends with / without specifying a file
+        name, your server should return index.html if it exists;
+        otherwise it will return Not Found. If the request is for
+        DocumentRoot without specifying a file name and the User-Agent
+        header indicates that the request is from a mobile handset
+        (e.g., it should at least detect iphone by detecting iPhone in
+        the User-Agent string),&nbsp; it should return index_m.html, if
+        it exists; index.html next, and then Not Found.</li><br>
+
+
+  <li>Dynamic content using CGI: Your server needs to check if a mapped file is
+       executable. If so, it should execute the file and relay the
+       results back to clients. Our assignment only handles the case
+       that the input to the external program is from GET. Please see
+       Java <a
+       href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/ProcessBuilder.html">ProcessBuilder</a>
+       on how to start set environment variables and start a dynamic
+       process. The example of the doc can be helpful. You will need
+       to read <a href="http://www.ietf.org/rfc/rfc3875">RFC 3875</a>
+       to set the right environment variables. You will need to write
+       a dynamic CGI program to test your invocation.</li><br>
+        
+  <li>Heatbeat monitoring: Your server  needs to implement a heartbeat monitoring
+       URL service to integrate with a load balancer (e.g., Amazon Load Balancer we covered in class). In particular, a
+       load balancer may query a virtual URL (i.e., no mapped file)
+       named <span style="font-family: 'Courier New', Courier,
+       monospace;">load</span> (i.e., with request
+       GET /load HTTP/1.0). If the server is willing to accept new
+       connections, it should return status code 200; otherwise, it
+       returns code 503 to indicate overloading. Your software design
+       should allow "plugin", at run time, of different algorithms to
+       compute overloading conditions. Please describe a particular
+       design and implement it.</li>
+    </ul>
+
+<h3>Part 2: Concurrency, Acceleration and Performance Evaluation</h3>
+
+  <p>A real server needs more features. In Part 2, we evaluate several factors.</p>
+
+  <p>Caching: You need to modify your server to use a cache to speedup handling of requests for
+    static files. The cache is a simple Java Map, with key being the
+    file and content the whole file in an array. Before reading a file
+    from disk, the server checks whether it is already cached. Think:
+    how to handle multiple threads reading and adding to the Map.</p>
+
+    <p>The cache size can be specified in the configuration file: </p>
+<pre>
+CacheSize &lt;cache size in KBytes&gt;
+</pre> 
+
+    <p>To simplify your server, there is no cache replacement; i.e.,
+    when the cache is full, no addition to the cache.</p>
+
+  <p>For a thread pool based server, the configuration file allows
+      specification of the number of threads: </p>
+
+<pre>
+ThreadPoolSize &lt;number of threads&gt;
+</pre>
+
+  
+
+
+    <ul>
+      <li>
+        <p>sequential;</p>
+      </li>
+      <li>
+        <p>per request thread;</p>
+      </li>
+      <li>
+        <p>thread pool with service threads competing on welcome socket;</p>
+      </li>
+      <li>
+        <p>thread pool with a shared queue and busy wait;</p>
+      </li>
+      <li>
+        <p>thread pool with a shared queue and suspension;</p>
+      </li>
+      <li>
+        <p>asynchronous i/o.</p>
+      </li>
+    </ul>
+
+    <p>In this part, you implement asynchronous servers with
+    functions as specified in Part 2. We have the following
+    requirements:</p>
+
+    <h3>Part 3.1: Async Server using select</h3>
+    <ul>
+
+      <li>We recommend that the software structure of your asynchronous 
+      server be
+      based on v3 of the <span style="font-family: 'Courier New',
+      Courier, monospace; ">EchoServer</span> that we discussed in
+      class. You need to write a handler for the particular
+      protocol. You can feel free to modify the structure if you see
+      any way to improve it (fix error handling, etc). You need to
+      document your changes.</li><br>
+
+      <li>The server should have a timeout thread. Upon
+      accepting a new connection, the accept handler should register a
+      timeout event with the timeout thread with a callback function.
+      The timeout value is specified by <span style="font-family:
+      'Courier New', Courier, monospace; ">IncompleteTimeout
+      &lt;timeout in seconds&gt;</span>. The default timeout value is
+      3 seconds. If the connection does not give a complete request to
+      the server <em>approximately</em> within timeout from the time
+      of being accepted, the server should disconnect the
+      connection. Note that the timeout monitoring thread should not
+      directly close a channel that the dispatcher thread is still
+      monitoring (why?). You need to think very carefully about the
+      exact details of the interaction between these two threads,
+      propose a software design, and implement it.</li>
+    </ul>
+
+    <h3>Part 3.2: Async Server in Java 7</h3>
+    <p>In this part, instead of using the select structure, you use 
+      <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousServerSocketChannel.html">AsynchornousServerSocketChannel</a> and <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/channels/AsynchronousSocketChannel.html">AsynchornousSocketChannel</a> design, based on Future/Listener to implement the same functionality as in 3.1.
+
+    <h3>Part 3.3: Comparison of Designs</h3>
+    
+    <p>A great way to learn about your design is to compare with other designs. You need to read the docuemnts or code of two related frameworks: xsocket and netty.</p>
+
+    <h4>Part 3.3(a): Comparison with xsocket</h4>
+    <p>Although xsocket is no longer under active development, it provides a design alternative. Please read the source code and <a
+    href="http://xsocket.sourceforge.net/documentation.htm">document</a>
+    of <a href="http://xsocket.org/">x-Socket</a>, a high performance
+    software library for reusable, asynchronous I/O servers. Please
+    discuss in your report the following questions (please refer to
+    the specific location when you refer to its document or source code:</p>
+
+    <ul>
+      <li>How many dispatchers does x-Socket allow? If multiple, how
+      do the dispatchers share workload?</li><br>
+
+      <li>What is the basic flow of a dispatcher thread?</li><br>
+
+      <li>What is the calling sequence until the <span
+      style="font-family: 'Courier New', Courier, monospace;
+      ">onData</span> method of <span style="font-family: 'Courier
+      New', Courier, monospace; ">EchoHandler</span> (see <span
+      style="font-family: 'Courier New', Courier, monospace;
+      ">EchoHandler, EchoServer</span>, and <span style="font-family:
+      'Courier New', Courier, monospace;">EchoServerTest</span>) is
+      invoked?  Please check this link for testing code:
+      <a href="http://sourceforge.net/p/xsocket/code/HEAD/tree/xsocket/core/trunk/src/test/java/org/xsocket/connection/">http://sourceforge.net/p/xsocket/code/HEAD/tree/xsocket/core/trunk/src/test/java/org/xsocket/connection/</a></li><br>
+
+      <li>How does x-Socket implement Idle timeout of a
+      connection?</li><br>
+
+      <li>Please give an example of how the library does testing (see
+      <a href="http://sourceforge.net/p/xsocket/code/HEAD/tree/xsocket/core/trunk/src/test/java/org/xsocket/connection/EchoServerTest.java">http://sourceforge.net/p/xsocket/code/HEAD/tree/xsocket/core/trunk/src/test/java/org/xsocket/connection/EchoServerTest.java</a>
+      for an example).  Please describe how you may test your server
+      with idle timeout?</li>
+    </ul>
+
+    <h4>Part 3.3(b): Comparison with Netty</h4>
+    <p>Netty is another Java async IO framework used by many; see <a href="http://netty.io/wiki/adopters.html">for example use cases</a>. Please read Netty <a href="http://netty.io/wiki/user-guide-for-5.x.html">user's guide</a> and answer the following questions:</p>
+
+    <ul>
+       <li>Netty provides multiple event loop implementations. In a typical server channel setting, <a href="http://netty.io/5.0/api/io/netty/bootstrap/ServerBootstrap.html#group(io.netty.channel.EventLoopGroup,%20io.netty.channel.EventLoopGroup)">two event loop groups are created</a>, with one typically called the boss group and the second worker group. What are they? How does Netty achieve synchronization among them?</li><br>
+
+       <li>Method calls such as bind return ChannelFuture. Please describe how one may implement the sync method of a future.</li><br>
+
+       <li>Instead of using ByteBuffer, Netty introduces a data structure called ByteBuf. Please give one key difference between ByteBuffer and ByteBuf.</li><br>
+
+       <li>A major novel, interesting feature of Netty which we did not cover in class is ChannelPipeline. A pipeline may consist of a list of ChannelHander. Compare <a href="http://netty.io/4.0/xref/io/netty/example/http/helloworld/package-summary.html">HTTP Hello World Server</a> and <a href="http://netty.io/4.0/xref/io/netty/example/http/snoop/package-summary.html">HTTP Snoop Server</a>, what are the handlers that each insert?</li><br>
+
+       <li>Please scan Netty implementation and give a high-level description of how ChannelPipeline is implemented.</li><br>
+    </ul>
+
+    <h3>Part 4: Performance Benchmarking</h3> 
+
+    <p>One important computer systems skill is to evaluate the
+    performance of design alternatives. In this assignment, we conduct
+    performance evaluation of the alternatives:
+
+    <ul>
+
+      <li>
+        <p>To conduct the testing, you will need to setup the
+        DocumentRoot at the server. It is highly recommended that you
+        generate a number of files of different sizes under
+        DocumentRoot named such as file1.html, file2.html, ...,
+        file1000.html. If you download <a href="gen.tar">gen.tar</a>,
+        and untar it (tar -xvf gen.tar), you will see a directory
+        named doc-root and a directory named request-patterns.</p>
+
+        <p>To compare the performance with Apache, we will use the
+        department zoo Apache server. We will use
+        /home/httpd/html/zoo/classes/cs433/web/www-root to store
+        testing files. Suppose we want to fetch
+        /home/httpd/html/zoo/classes/cs433/web/www-root/html-small/doc1.html. To
+        use the department Apache server, since the department server
+        has set DocumentRoot as /home/httpd/html/zoo, the URL should
+        be:<br>
+        http://zoo.cs.yale.edu/classes/cs433/web/www-root/html-small/doc1.html
+        
+        <p>To use your server, suppose you set the DocumentRoot as
+        /home/httpd/html/zoo/classes/cs433/web/www-root,
+        and you run your server on cicada.cs.yale.edu at port 9876.
+        Then the URL is:<br>
+        http://cicada.cs.yale.edu:9876/html-small/doc1.html<br>
+        </p>
+      </li>
+
+      <li>For the test, you will need to generate a request file for the
+        client. The request pattern can have a major impact on your
+        server performance (how requests repeat). The TA will use a <a
+          href="http://en.wikipedia.org/wiki/Pareto_distribution">Pareto
+          distribution</a> to generate request patterns to test your
+        server. You can write a simple Java program or script to
+        generate the request.
+      </li><br>
+
+      <li>You should vary the client parallel (see Client command line
+        above) with a reasonable increment schedule (e.g., 1, 2, 3, 4,
+        5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, ...). A
+        reasonable test time is 60 to 120 seconds. You can write a
+        simple script to automate this task.
+      </li><br>
+
+      <li>For multi-threaded server, please try two thread pool sizes:
+      one small and one large.</li>
+      </ul>
+  
+  <h3>Part 5: Report</h3>
+    <ul>
+      <li>You should submit a report on your server design. </li>
+      <ul>
+        <li>Please answer any question we specified above.</li><br>
+
+        <li>Please report the measured performance of both Apache and
+        your best server for these performance metrics: throughput and
+        (mean) delay. You can use open office or gnuplot to generate
+        figures. Below is an example figure showing the performance of
+        multiple servers.</li> <br>
+
+        <li>The TA will benchmark all servers and pick
+        the one with the highest throughput. This server will receive
+        a bonus of 25%.</li>
+      </ul>
+    </ul>
+
+    <img style="width: 600px; height: 600px;" alt="Server performance"
+      src="screenshot.jpg">
+
+    <h3>Submission</h3>
+    <ul>
+      <li><b>Please submit using class server. Please include README
+      to tell the TA the directory structure, e.g., which file is the
+      report. Please generate a single jar file containing all of your
+      files. </b></li>
+    </ul>
+
+    <h3>Suggestions</h3>
+
+    <p align="left">During your async i/o design based on select, 
+      think how you implement a finite state machine to handle each 
+      request (e.g.,
+    initial state after accepting a connection, what other states).
+    Java async i/o does not allow you to select events on a file
+    channel. There are can be multiple design options to handle file
+    i/o:</p>
+
+    <ul>
+      <li><p>Use standard file i/o by assuming that file system is
+      fast and will not become bottleneck;</p>
+      </li>
+
+      <li><p>Try out mapped file i/o:
+<pre>
+FileInputStream fin = new FileInputStream(args[0]);
+FileChannel in = fin.getChannel();
+ByteBuffer input = in.map(FileChannel.MapMode.READ_ONLY, 0, in.size());
+</pre></li>
+         
+      <li><p>Try out direct transfer: See FileChannel.transferTo;</p>
+
+      <li><p>Use standard file i/o and use a thread pool to help with
+      reading files.</p></li>
+    </ul>
+
+    <p>References</p>
+    <ul>
+      <li>Book
+        <ul>
+          <li>Java Network Programming (4th ed.) by Elliotte Harold
+          is a good reference book on Java network programming.  Yale
+          library has electronic version of this book</a>
+          (you need Yale IP address to gain access). Please try to search 
+          Orbis and follow the link. The examples codes can be found <a
+          href="http://www.cafeaulait.org/books/jnp4/examples/index.html">here</a>.
+         </li>
+        </ul>
+      </li>
+
+      <li>General java information:
+        <ul>
+          <li>Development environments:
+            <ul>
+              <li>zoo has Java installed:</li>
+              <li>eclipse provides a nice java IDE.</li>
+            </ul>
+          </li>
+          <li>Java book
+            <ul>
+              <li>An overall very good book on Java is
+              <strong>Thinking in Java (4th Edition)</strong> by Bruce
+              Eckel. The book web site is 
+              <a href="http://www.mindviewinc.com/Books/TIJ4/">here</a>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p align="right"><i>Last Update: <!--webbot bot="Timestamp"
+    s-type="REGENERATED" s-format="%B %d, %Y %I:%M:%S %p %Z" startspan
+    -->Feb. 23, 2016 09:59:24 PM -0500<!--webbot bot="Timestamp"
+    endspan i-checksum="2963" --></i></p>
+  </body>
+</html>

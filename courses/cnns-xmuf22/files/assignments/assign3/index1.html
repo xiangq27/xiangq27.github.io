@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Computer Networks and Network Security: Lab Assignment Three</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=ISO-8859-1">
+    <link href="../../../qx_class_style.css" rel="stylesheet" type="text/css"
+      media="screen">
+  </head>
+  <body bgcolor="#ffffff">
+	  <h2>Computer Networks and Network Security - Lab Assignment Three:<br> HTTP
+	    Protocol and Web Server (Part One):
+	    Simple HTTP Client and Server</h2>
+
+
+    <p align="left"><b>Due Nov. 14, 2021 by email to the instructor.</b> This assignment gives you a chance (Part 1) to better understand HTTP design, including its protocol and the processing at the server (Part 1). In <a href="index2.html">Part 2</a>, we will extend part 1 to give you a chance to become more familiar with concurrent network programming, covering topics including
+    threads, synchronization, wait/notify (monitor), asynchronous I/O,
+    and benchmarking. Hence, when designing Part 1, please consider extension to Part 2 in mind.</p>
+
+    <p>
+      <ul>
+        <!--li>Part 1: 11:59 PM, Monday Oct. 9, 2017 </b--> 
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="rubric3.txt">rubric</a></li>         
+        <li><a href="overview-lab-three.pptx">an overview of lab assignment
+			three</a> (<a href="../../videos/assignment-3-4.mp4">video</a>)</li>
+	<li><a href="servername.pdf">an example on how to config etc/hosts</a></li>
+	<li><a href="get_cgi_env.py">a sample CGI script</a></li>
+      </ul>
+
+    <h3>Protocol</h3> 
+
+    <p>The server that we will design is a simplified version of HTTP
+    1.0. The most basic application message, encoded in
+    ASCII, from the client to the server is:</p>
+
+<pre>
+GET &lt;URL&gt; HTTP/1.0
+Host: &lt;ServerName&gt;
+CRLF</pre>
+
+    <p>where CRLF is carriage return and line feed, representing an
+    empty line. This request asks for the file stored at location
+    &lt;DocRootServerName&gt;/&lt;URL&gt;, where DocRootServerName is the root 
+    directory for the requested server name. </p>
+
+    <p>For example, if &lt;DocRooServerNamet&gt;=/tmp/mydoc, and &lt;URL&gt; is
+    /file1.html, the server will return the file
+    /tmp/mydoc/file1.html, if it exists. If the request does not specify the Host 
+    header, the server returns the first server (virtual host) configured; see below.</p>
+
+    <p>The basic reply message from the server to the client, encoded in
+      ASCII, is:</p>
+
+<pre>
+HTTP/1.0 &lt;StatusCode&gt; &lt;message&gt;
+Date: &lt;date&gt;
+Server: &lt;your server name&gt;
+Content-Type: text/html
+Content-Length: &lt;LengthOfFile&gt;
+CRLF
+&lt;file content&gt;
+</pre>
+
+    <p>CRLF again represents an empty line. If the file is found and
+    readable, the returned &lt;status code&gt; is 200 and you can give
+    a message such as OK. Otherwise, please give an error code of 400.
+    If you are curious about HTTP error codes, you can see <a
+    href="http://www.ietf.org/rfc/rfc1945.txt">
+    http://www.ietf.org/rfc/rfc1945.txt</a>. You can use Java File
+    class to obtain file size.</p>
+
+    <h3>Part 1a: Simple Client</h3>
+
+    <p>Your test client should be multi-threaded. The client can
+    generate test requests to the server with the following command
+    line:<br>
+    </p>
+
+    <pre>%java SHTTPTestClient -server &lt;server&gt; -servname &lt;server name&gt; -port &lt;server port&gt; -parallel &lt;# of threads&gt; -files &lt;file name&gt; -T &lt;time of test in seconds&gt;
+</pre>
+    <p>In a typical deployment, we do not need to specify both server and
+    servname. For example, in a typical setting, a Web hosting server with IP1
+    may host multiple virtual hosts named www.vh1.com, www.vh2.com. All of these
+    DNS names will resolve to the same IP1. But for our testing, since we assign
+    our server only one single DNS name, we add the servname switch to specify the virtual host.  
+
+    <p>The &lt;file name&gt; is the name of a file that
+    contains a list of files to be requested. For example, a file may
+    look like the following: </p>
+
+<pre>
+file1.html
+file2.html
+file3.html
+file1.html
+</pre>
+
+    <p>Then each thread of the client will request file1.html, then
+    file2.html, then file3.html, and then file1.html. The thread then
+    repeats the sequence. The client simply discards the received
+    reply. The client stops after &lt;time of test in seconds&gt;. The
+    client should print out the total transaction throughput (# files
+    finished downloading by all threads, averaged over per second),
+    data rate throughput (number bytes received, averaged over per
+    second), and the average of wait time (i.e., time from issuing
+    request to getting first data). Think about how to collect
+    statistics from multiple threads.</p>
+
+    <h3>Part 1b: Sequential and Per-thread HTTP Servers</h3>
+
+    <p>In class we will cover multiple approaches to implementing
+    network servers. In Part 1, you will need to implement only the  sequential server an the per-thread server. </p>
+
+    <p>You can feel free to reuse the example code provided in class.<br>
+    </p>
+
+   
+
+
+ <p>When your server executes, it must support the following:</p>
+
+    <ul>
+
+      <li>Configuration: Your server must support a configuration file, which we follow the Apache configuration style (<a
+    href="http://httpd.apache.org/docs/2.4/vhosts/examples.html">http://httpd.apache.org/docs/2.4/vhosts/examples.html</a>.
+    Note that we implement a single server name, not multiple, as the
+    Apache example configuration shows. We start a server by reading a
+    configuration file:<br>
+<pre>
+%java &lt;servername&gt; -config &lt;config_file_name&gt;
+</pre>
+
+    <p>The basic configuration parameter is listening port:</p>
+
+<pre>
+Listen &lt;port such as 6789&gt;
+</pre>
+
+    <p>A configuration file should also contain one or more virtual hosts shown below. We use the same format as the Apache, but your server ignores the *:6789 part.
+<pre>
+&lt;VirtualHost *:6789&gt;
+  DocumentRoot &lt;root dir&gt;
+  ServerName &lt;server name&gt;
+&lt;VirtualHost&gt;  
+</pre>
+
+  <p>We recommend that you consider
+    a hash map in your program to implement configurations.</p>
+
+    <p>An example configuration file is <a href="httpd.conf">httpd.conf</a>.
+
+  <li>HTTP Methods: Your server must support HTTP 1.0
+      (http://www.w3.org/Protocols/HTTP/1.0/spec.html) GET
+      method.
+      </li><br>
+
+  <li>Headers: Your server must send the Last-Modified header and
+      understand the If-Modified-Since header from client. This means
+      that you will need to parse date format. For this assignment,
+      we use the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.3.1">rfc1123-date format</a>. Your server also needs
+      to understand the User-Agent header. For other headers, your
+      server can skip.</li><br>
+
+  <li>URL Mapping: If the URL ends with / without specifying a file
+        name, your server should return index.html if it exists;
+        otherwise it will return Not Found. If the request is for
+        DocumentRoot without specifying a file name and the User-Agent
+        header indicates that the request is from a mobile handset
+        (e.g., it should at least detect iphone by detecting iPhone in
+        the User-Agent string),&nbsp; it should return index_m.html, if
+        it exists; index.html next, and then Not Found.</li><br>
+
+
+    <li>Caching: Your server needs to include a basic caching mechanism to speedup handling of requests for
+    static files. The cache is a simple Java Map, with key being the
+    file and content the whole file in an array. Before reading a file
+    from disk, the server checks whether it is already cached. Think:
+    how to handle multiple threads reading and adding to the Map.</p>
+
+    <p>The cache size can be specified in the configuration file: </p>
+<pre>
+CacheSize &lt;cache size in KBytes&gt;
+</pre> 
+
+    <p>To simplify your server, there is no cache replacement; i.e.,
+    when the cache is full, no addition to the cache.</p>
+
+  <li>Dynamic content using CGI: Your server needs to check if a mapped file is
+       executable. If so, it should execute the file and relay the
+       results back to clients. Our assignment only handles the case
+       that the input to the external program is from GET. Please see
+       Java <a
+       href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/ProcessBuilder.html">ProcessBuilder</a>
+       on how to start set environment variables and start a dynamic
+       process. The example of the doc can be helpful. You will need
+       to read <a href="http://www.ietf.org/rfc/rfc3875">RFC 3875</a>
+       to set the right environment variables. You will need to write
+       a dynamic CGI program to test your invocation.</li><br>
+        
+  <li>Heartbeat monitoring: Your server  needs to implement a heartbeat monitoring
+       URL service to integrate with a load balancer (e.g., Amazon Load Balancer we covered in class). In particular, a
+       load balancer may query a virtual URL (i.e., no mapped file)
+       named <span style="font-family: 'Courier New', Courier,
+       monospace;">load</span> (i.e., with request
+       GET /load HTTP/1.0). If the server is willing to accept new
+       connections, it should return status code 200; otherwise, it
+       returns code 503 to indicate overloading. Your software design
+       should follow a "plugin" design, at run time, of different algorithms to
+       compute overloading conditions. In particular, the monitor class file name can be specified in the configuration file. 
+
+<pre>
+Monitor &lt;MyCoolMonitorClassName&gt;
+</pre>
+
+       <p>Please describe a particular
+       design and implement it.</li>
+    </ul>
+
+    <h3>Submission</h3>
+    <ul>
+	    <li><b>Please include a README in your submission
+      to tell the TA the directory structure. Please generate a single tar or
+      zip file containing all of your files. </b></li>
+    </ul>
+
+    <p>References</p>
+    <ul>
+      <li>Book
+        <ul>
+          <li>Java Network Programming (4th ed.) by Elliotte Harold
+          is a good reference book on Java network programming.  Our class
+	  schedule page provides an internal copy of this book.  The examples codes can be found <a
+          href="http://www.cafeaulait.org/books/jnp4/examples/index.html">here</a>.
+         </li>
+        </ul>
+      </li>
+
+      <!--li>General java information:
+        <ul>
+          <li>Development environments:
+            <ul>
+              <li>zoo has Java installed:</li>
+              <li>eclipse provides a nice java IDE.</li>
+            </ul>
+          </li>
+          <li>Java book
+            <ul>
+              <li>An overall very good book on Java is
+              <strong>Thinking in Java (4th Edition)</strong> by Bruce
+              Eckel. The book web site is 
+              <a href="http://www.mindviewinc.com/Books/TIJ4/">here</a>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li-->
+    </ul>
+  </body>
+</html>

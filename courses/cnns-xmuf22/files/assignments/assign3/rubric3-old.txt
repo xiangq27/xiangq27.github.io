@@ -1,0 +1,29 @@
+Rubric for Assignment 3 CPSC 433/533 
+
+- [25 pt in total] Protocol and functions
+  a. [5 pt] Method: HTTP 1.0 GET method (URL mapping)
+  b. [5 pt] Header: Last-Modified, If-Modified and User-Agent
+  c. [10 pt in total] Support CGI program
+     c.1. [4 pt] Detect executable
+     c.2. [6 pt] Setup Environment variables and direct I/O
+  d. [5 pt in total] Heartbeat monitoring
+  
+- [40 pt in total] Implementation structure
+  a. [3 pt] Sequential
+  b. [3 pt] Per request thread
+  c. [3 pt] Thread pool with shared welcome thread
+  d. [3 pt] Thread pool with a shared queue and busy wait
+  e. [3 pt] Thread pool with a shared queue and suspension
+  f. Asynchronous I/O using select [12 pt]
+  g. Asynchronous I/O using Java 7 Async channel future/listener [13 pt]
+
+- [15 pt in total] Performance benchmarking
+  a. [6 pt] Clear description of benchmarking methodology
+  b. [9 pt] Best throughput exceeds 10 Mbps
+
+- [20 pt in total] Comparison and exploration of other designs
+  a. 2 points for each question
+
+- [35 pt in total potential] Bonus points
+  a. [10 pt] Beat or close to Apache performance
+  b. [25 pt] The fastest server
