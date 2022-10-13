@@ -8,7 +8,7 @@ public class ShareExample extends Thread {
 
     public void run() {
         int y = cnt;
-        //System.out.println("Calcuating...");
+        System.out.println("Calcuating...");
         cnt = y + 1;
     }
 

@@ -367,7 +367,51 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 	    </td>
           </tr>
 
+          <tr>
+            <td class="slno">11</td>
+            <td class="sdate">Thursday<br>
+              Oct. 13 (Afternoon)</td>
+            <td class="stsub">
+		    Per-Thread Servers;<br>Servers using Thread Pool and
+		    Synchronization<br>
+         	(<!--a href="files/lectures/11-application-server-design-per-thread-threadpool.pptx">pptx</a>, 
+	      <a href="files/lectures/11-application-server-design-per-thread-threadpool.pdf">pdf</a>,
+	      <a href="files/videos/lecture11-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture11-part2.mp4">video: part 2</a-->	      
+	      )
+            </td>
+            <td class="stread">
+            </td>
 
+            <td class="spread">  
+              <a href="http://docs.oracle.com/javase/tutorial/essential/concurrency/">Java Concurrency Tutorial</a>; 
+              <a
+                href="files/readings/java-concurrency-framework.pdf">Java Concurrency Framework</a>;
+              <a
+                href="files/readings/java-concurrent-programming.pdf">Java Concurrent Programming</a>;
+
+              <br><br>
+
+              <a href="files/programming/examples-java-socket/ThreadPoolServer/ShareExample/">ShareExample.java</a>;<br>
+              <br>
+              <a
+                href="files/programming/examples-java-socket/ThreadPoolServer/SyncOverhead/">SyncOverhead.java</a>;<br>
+              <br>
+              <a
+                href="files/programming/examples-java-socket/ThreadPoolServer/ShareWelcome/">ShareWelcome</a>;<br>
+              <a
+                href="files/programming/examples-java-socket/ThreadPoolServer/ShareQ/">ShareQ</a>;<br>
+             
+              <a href="files/programming/examples-java-socket/ThreadPoolServer/ThreadPoolExecutor">Threadpool using java.util.concurrent.ThreadPoolExecutor</a><br>
+
+               Chapter 11 of Java Network Programming;<br>     
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+              
+            </td>
+          </tr>
 
 
 	  
