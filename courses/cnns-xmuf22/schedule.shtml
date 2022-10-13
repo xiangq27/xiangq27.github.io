@@ -367,6 +367,36 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 	    </td>
           </tr>
 
+	  <tr>
+            <td class="slno">10</td>
+            <td class="sdate">Thursday<br>
+              Oct. 13</td> 
+            <td class="stsub">
+              Load-balancing Servers
+              <br>
+              (<a
+		href="files/lectures/10-application-multiple-servers.pptx">pptx</a>, 
+	      <a
+		      href="files/lectures/10-application-multiple-servers.pdf">pdf</a>,
+	      <a href="files/videos/lecture10-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture10-part2.mp4">video: part 2</a>	      
+	      )
+            </td>
+            <td class="stread">
+            </td>
+
+            <td class="spread">    
+              <a href="http://www.bittorrent.org/beps/bep_0003.html">BitTorrent</a><br>
+
+              optional:
+              <a href="https://www.tutorialspoint.com/webrtc/">WebRTC</a><br>
+              <a href="readings/skype_analysis.pdf">Skype</a>;<br>
+              <a href="readings/skype-google-hang.pdf">Skype/Google+/iChat</a>
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
           <tr>
             <td class="slno">11</td>
             <td class="sdate">Thursday<br>
@@ -374,10 +404,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="stsub">
 		    Per-Thread Servers;<br>Servers using Thread Pool and
 		    Synchronization<br>
-         	(<!--a href="files/lectures/11-application-server-design-per-thread-threadpool.pptx">pptx</a>, 
+         	(<a href="files/lectures/11-application-server-design-per-thread-threadpool.pptx">pptx</a>, 
 	      <a href="files/lectures/11-application-server-design-per-thread-threadpool.pdf">pdf</a>,
 	      <a href="files/videos/lecture11-part1.mp4">video: part 1</a>, 
-	      <a href="files/videos/lecture11-part2.mp4">video: part 2</a-->	      
+	      <a href="files/videos/lecture11-part2.mp4">video: part 2</a>,
+	      <a href="files/videos/lecture11-part3.mp4">video: part 3</a>
 	      )
             </td>
             <td class="stread">
@@ -401,7 +432,8 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                 href="files/programming/examples-java-socket/ThreadPoolServer/ShareWelcome/">ShareWelcome</a>;<br>
               <a
                 href="files/programming/examples-java-socket/ThreadPoolServer/ShareQ/">ShareQ</a>;<br>
-             
+             <a
+                href="files/programming/examples-java-socket/ThreadPoolServer/WaitNotify/">WaitNotify</a>;<br>
               <a href="files/programming/examples-java-socket/ThreadPoolServer/ThreadPoolExecutor">Threadpool using java.util.concurrent.ThreadPoolExecutor</a><br>
 
                Chapter 11 of Java Network Programming;<br>     
