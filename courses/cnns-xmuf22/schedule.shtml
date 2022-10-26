@@ -276,7 +276,7 @@
             <td class="slno">7</td>
             <td class="sdate">Tuesday<br>
               Oct. 4</td>
-            <td class="stmain" colspan="1" rowspan="5"><b>
+            <td class="stmain" colspan="1" rowspan="6"><b>
 	    Network
 	    Applications: <br> FTP, HTTP and Distributed Systems</b> 
             </td>
@@ -444,12 +444,52 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               
             </td>
           </tr>
+		<tr>
+            <td class="slno">13</td>
+            <td class="sdate">Thursday<br>
+              Oct. 27 (Afternoon)</td>
+            <td class="stsub">
+		    Servers using wait/notify ThreadPool;<br>
+              Nonblocking Servers: Select-multiplexing server (Reactive Design)<br>
+              	(<!--a
+		href="files/lectures/12-application-server-design-threadpool-async-select.pptx">pptx</a>, 
+	      <a href="files/lectures/12-application-server-design-threadpool-async-select.pdf">pdf</a>,
+	      <a href="files/videos/lecture12-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture12-part2.mp4">video: part 2</a-->	      
+	      )
+            </td>
+            <td class="stread">
+            </td>
 
+            <td class="spread">  
+                          SelectEchoServer: 
+               <a href="files/programming/examples-java-socket/SelectEchoServer/v1-2/">v1, v2</a>,
+              <a href="files/readings/java-nio.pdf">Non-blocking I/O Tutorial</a>;<br>
+              Another design (<a
+                href="files/programming/examples-java-socket/Async2/ONJava.pdf">doc</a>,
+              <a href="files/programming/examples-java-socket/Async2/code.zip">code</a>);<br>
+              <a href="http://www.kegel.com/c10k.html">The C10K page</a><br>       
+              <a href="files/programming/examples-java-socket/SelectEchoServer/v3/">SelectEchoServer v3</a>;<br><br>              
+              
+              Scalable Server Design Patterns: 
+               <a href="files/readings/OOCP-tutorial4.pdf">tutorial 1</a>; 
+               <a href="files/readings/pra03.pdf">tutorial 2</a>;
+               <a href="files/readings/op-ana.pdf">Operational analysis</a>;              
+              <a
+                href="http://www.sosp.org/2001/papers/welsh.pdf">SEDA</a>;<br><br>
+     
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+              
+            </td>
+          </tr>
           <tr>
             <td class="slno">12</td>
             <td class="sdate">
                Tuesday<br>
-               Nov. 9</td>
+               Oct. 17</td>
             <td class="stmain" colspan="1" rowspan="6"><b>Transport Layer</b> 
             </td>
             <td class="stsub">
