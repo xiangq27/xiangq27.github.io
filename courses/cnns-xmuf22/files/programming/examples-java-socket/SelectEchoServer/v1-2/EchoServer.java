@@ -129,7 +129,7 @@ public class EchoServer {
 
 			// extract server socket of the server channel and bind the port
 			// In Java 7 and later, you can bind directly
-			// erverChannel.bind(new InetSocketAddress(port));
+			// ServerChannel.bind(new InetSocketAddress(port));
 			ServerSocket ss = serverChannel.socket();
 			InetSocketAddress address = new InetSocketAddress(port);
 			ss.bind(address);
@@ -157,7 +157,7 @@ public class EchoServer {
 		client.configureBlocking(false);
 
 		// register the new connection with interests
-		SelectionKey clientKey = client.register(selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE);
+		SelectionKey clientKey = client.register(selector, SelectionKey.OP_READ ); //| SelectionKey.OP_WRITE);
         //v2: remove |SelectionKey.OP_WRITE
 
 		// attach a buffer to the new connection
@@ -177,7 +177,7 @@ public class EchoServer {
 		DEBUG("   Read data from connection " + client + ": read " + readBytes + " byte(s); buffer becomes " + output);
 
 		/// ********************** v2: uncomment this
-		/*if (readBytes == -1) {// no longer need to read, close read
+		if (readBytes == -1) {// no longer need to read, close read
 			turnOff(key, SelectionKey.OP_READ);
 			DEBUG("   State change: client closed; turn off read.");
 		}
@@ -186,7 +186,7 @@ public class EchoServer {
 		if (output.position() > 0) { // position is the available data to echo
 			turnOn(key, SelectionKey.OP_WRITE);
 			DEBUG("   State change: has data to send; turn on write.");
-		} */
+		}
 		// **********************/
 
 		try {
@@ -212,7 +212,7 @@ public class EchoServer {
 		if (!output.hasRemaining()) { // no response left
 			turnOff(key, SelectionKey.OP_WRITE);
 			DEBUG(" State change: all data sent; turn off write");
-		} 
+		}
 		// *************/
 
 		output.compact();
