@@ -489,16 +489,16 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="slno">12</td>
             <td class="sdate">
                Tuesday<br>
-               Oct. 17</td>
-            <td class="stmain" colspan="1" rowspan="1"><b>Transport Layer</b> 
+               Oct. 18</td>
+            <td class="stmain" colspan="1" rowspan="2"><b>Transport Layer</b> 
             </td>
             <td class="stsub">
               Overview;<br> Stop and Wait/Alternating-Bit Protocol<br>
-               (<!--a href="files/lectures/16-transport-overview-reliability.pptx">pptx</a>,
+               (<a href="files/lectures/12-application-p2p-transport-overview-udp.pptx">pptx</a>,
                 <a
-			href="files/lectures/16-transport-overview-reliability.pdf">pdf</a>,
-		<a href="files/videos/lecture16-part1.mp4">video: part 1</a>, 
-	      <a href="files/videos/lecture16-part2.mp4">video: part 2</a-->
+			href="files/lectures/12-application-p2p-transport-overview-udp.pdf">pdf</a>,
+		<a href="files/videos/lecture12-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture12-part2.mp4">video: part 2</a>
 		)
             </td>
             <td class="stread">
@@ -514,7 +514,31 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           </tr>
 
+   	<tr>
+            <td class="slno">13</td>
+            <td class="sdate">
+               Thursday<br>
+               Oct. 20
+            </td>            
+            <td class="stsub">
+		    Reliable Data Transfer<br>
+               (<a href="files/lectures/13-transport-reliability.pptx">pptx</a>,
+                <a
+			href="files/lectures/13-transport-reliability.pdf">pdf</a>,
+		<a href="files/videos/lecture13-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture13-part2.mp4">video: part 2</a>
+		)
+            </td>
+            <td class="stread">
+              3.4-3.5
+            </td>
 
+            <td class="spread">          
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
 
    	<tr>
             <td class="slno">15</td>
