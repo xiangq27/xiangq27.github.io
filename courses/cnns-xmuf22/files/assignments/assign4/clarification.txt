@@ -1,0 +1,30 @@
+1. If the initial sequence number of a SYN packet is x, the ACK
+   sequence number should be x+1 for this SYN.
+
+2. The emulator may freeze after sometime.  It seems that this is 
+   a problem of Fishnet, and the simulator does not have this problem.  
+   You can leave this aside as long as your code works for simulator.
+
+3. Your design document should describe your transport layer design.
+   In particular, you should document your transport service
+   interface.  You should also include in the design document
+   important high level implementation decisions you have made.  For
+   example, whether you choose to use a linear array or a hash table
+   for the socket space.  If you make design decisions that are not
+   typical (as we have covered in class), please make efforts to
+   justify your choices.  However, don't over-elaborate.
+
+4. Your code should contain appropriate comments.  Try to be succinct,
+   don't comment on the obvious, but on important implementation
+   decisions, such as the algorithm used to search in the socket space
+   for the purpose of demultiplexing.
+
+5. You should use your designed transport service interface to build a
+   test case 'application' to convince the TA that your
+   implementation works.  For example, you could build the 'transfer'
+   application suggested on the assignment description page, choose a
+   reasonable data pattern, and verify the received data at the
+   server(receiver) side application.
+
+6. When we say adding a list of sockets to the node, it does not necessarily mean
+   the Node class.
