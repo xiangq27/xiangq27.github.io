@@ -673,7 +673,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 
             <td class="spread">  
               <a href="files/readings/nash50a.pdf">Nash Bargaining Solution</a>;<br> 
-               <a href="ftp://ftp.cs.princeton.edu/techreports/2000/616.pdf">TCP as primal-dual</a>;<br>
+               <a href="files/readings/understanding-tcp-vegas.pdf">TCP as primal-dual</a>;<br>
 
                optional:<br>
                <a href="http://conferences.sigcomm.org/sigcomm/2013/papers/sigcomm/p363.pdf">TCP in 4G LTE networks</a> <br>
