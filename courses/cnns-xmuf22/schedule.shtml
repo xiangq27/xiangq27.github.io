@@ -490,7 +490,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="sdate">
                Tuesday<br>
                Oct. 18</td>
-            <td class="stmain" colspan="1" rowspan="5"><b>Transport Layer</b> 
+            <td class="stmain" colspan="1" rowspan="7"><b>Transport Layer</b> 
             </td>
             <td class="stsub">
               Overview;<br> Stop and Wait/Alternating-Bit Protocol<br>
@@ -601,9 +601,9 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="stsub">
 		    TCP
               Congestion Control: AIMD<br>
-              (<a href="files/lectures/18-transport-tcp-cc-aimd.pptx">pptx</a>,
+              (<a href="files/lectures/18-transport-cc-aimd.pptx">pptx</a>,
                 <a
-			href="files/lectures/18-transport-tcp-cc-aimd.pdf">pdf</a>,
+			href="files/lectures/18-transport-cc-aimd.pdf">pdf</a>,
 		<a href="files/videos/lecture18-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture18-part2.mp4">video: part 2</a>
 		)            </td>
@@ -623,6 +623,79 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
 		<a href="files/assignments/assign4/index.html">Assignment Four</a>
 	    </td>
           </tr>
+
+	<tr>
+            <td class="slno">19</td>
+            <td class="sdate">
+               Tuesday<br>
+               Nov. 8
+            </td>            
+            <td class="stsub">
+		    TCP/Reno Analysis; TCP Cubic; TCP/Vegas<br>
+              (<a href="files/lectures/19-transport-cc-reno-cubic-vegas.pptx">pptx</a>,
+                <a
+			href="files/lectures/19-transport-cc-reno-cubic-vegas.pdf">pdf</a>,
+		<a href="files/videos/lecture19-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture19-part2.mp4">video: part 2</a>
+		)
+            </td>
+            <td class="stread">
+             
+            </td>
+
+            <td class="spread">  
+              <a href="files/lectures/tcp-reno-tput.xlsx">tcp-reno-tput.xlsx</a>;<br>
+              <a href="files/readings/tcpcubic08.pdf">TCP Cubic</a>;<br>
+              <a href="files/readings/tcpvegas94.pdf">TCP Vegas</a>              
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">20</td>
+            <td class="sdate">
+               Thursday<br>
+               Nov. 10
+            </td>            
+            <td class="stsub">
+              General Resource Allocation Framework; Nash Bargaining Solution; Primal-Dual; TCP/Reno and Vegas as Primal-Dual<br>
+              (<a href="files/lectures/20-transport-cc-num-framework.pptx">pptx</a>,
+               <a href="files/lectures/20-transport-cc-num-framework.pdf">pdf</a>
+		<a href="files/videos/lecture20-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture20-part2.mp4">video: part 2</a>
+	       )
+            </td>
+            <td class="stread">
+               
+            </td>
+
+            <td class="spread">  
+              <a href="files/readings/nash50a.pdf">Nash Bargaining Solution</a>;<br> 
+               <a href="ftp://ftp.cs.princeton.edu/techreports/2000/616.pdf">TCP as primal-dual</a>;<br>
+
+               optional:<br>
+               <a href="http://conferences.sigcomm.org/sigcomm/2013/papers/sigcomm/p363.pdf">TCP in 4G LTE networks</a> <br>
+               QUIC: <a href="https://docs.google.com/document/d/1RNHkx_VvKWyWg6Lr8SZ-saqsQx7rFV-ev2jRFUoVD34/edit">Design</a>;
+               <a href="https://dl.acm.org/citation.cfm?id=3098842">Deployment and evaluations</a>
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
 
 	  <tr>
             <td class="slno">15</td>
