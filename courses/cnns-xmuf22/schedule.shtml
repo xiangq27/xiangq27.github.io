@@ -685,7 +685,33 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
-
+<tr>
+            <td class="slno">21</td>
+            <td class="sdate">Tuesday<br>
+              Nov. 15<br>
+            </td>
+            <td class="stmain" colspan="1" rowspan="1"><b>Network Layer</b>
+            </td>
+            <td class="stsub">Distributed Distance Vector Protocols<br>
+                (<a href="files/lectures/21-network-intro-distance-vector.pptx">pptx</a>,
+               <a
+		       href="files/lectures/21-network-intro-distance-vector.pdf">pdf</a>,
+<a href="files/videos/lecture21-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture21-part2.mp4">video: part 2</a>
+	       )  
+            </td>
+            <td class="stread">             
+              4.1-4.2, 4.5
+            </td>
+            <td class="spread">
+               <a href="files/readings/Routing_Data_Nets.pdf">Chapter 5 of Bersekas/Gallager</a> 
+               (<a href="http://web.mit.edu/dimitrib/www/datanets.html">Link</a> to all chapters of the book.)<br>
+               <a href="https://tools.ietf.org/html/rfc2453">RIPv2 RFC</a>
+            </td>
+            <!--td class="swset">&nbsp;  </td-->
+            <td class="spset">&nbsp;
+<!--a href="files/assignments/assign5/index.html">Assignment Six</td-->
+          </tr>
 
 
 
@@ -725,10 +751,10 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           </tr>
    	<tr>
-            <td class="slno">XX</td>
+            <td class="slno">22</td>
             <td class="sdate">
                Thursday<br>
-               Nov. 16</td>
+               Nov. 17</td>
             <td class="stsub">
 		Inside a Datacenter: Hardware and Software Architecture<br>
 		Wei Bai (Microsoft Research)
