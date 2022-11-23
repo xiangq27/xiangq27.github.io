@@ -777,11 +777,11 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
                Nov. 17</td>
             <td class="stsub">
 		Inside a Datacenter: Hardware and Software Architecture<br>
-		Wei Bai (Microsoft Research)
-               (<!--a href="files/lectures/16-transport-overview-reliability.pptx">pptx</a>,
+		Wei Bai (Microsoft Research)<br>
+               (<a href="files/lectures/22-microsoft-inside-datacenter.pptx">pptx</a>,
                 <a
-			href="files/lectures/16-transport-overview-reliability.pdf">pdf</a>,
-		<a href="files/videos/lecture16-part1.mp4">video: part 1</a>, 
+			href="files/lectures/22-microsoft-inside-datacenter.pdf">pdf</a>
+		<!--a href="files/videos/lecture16-part1.mp4">video: part 1</a>, 
 	      <a href="files/videos/lecture16-part2.mp4">video: part 2</a-->
 		)
             </td>
