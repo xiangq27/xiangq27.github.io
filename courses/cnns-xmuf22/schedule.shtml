@@ -690,7 +690,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="sdate">Tuesday<br>
               Nov. 15<br>
             </td>
-            <td class="stmain" colspan="1" rowspan="2"><b>Network Layer</b>
+            <td class="stmain" colspan="1" rowspan="4"><b>Network Layer</b>
             </td>
 	    <td class="stsub">Network Layer Overview;<br> Distance Vector Protocols<br>
                 (<a href="files/lectures/21-network-intro-distance-vector.pptx">pptx</a>,
@@ -728,14 +728,60 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
             <td class="stread">4.4, 4.5, 4.6</td>
             <td class="spread">
-               <a href="files/readings/dsdv.pdf">DSDV</a>
+               <!--a href="files/readings/dsdv.pdf">DSDV</a>
+               <a href="https://tools.ietf.org/html/rfc2328">OSPFv2 RFC</a-->
+            </td>
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td class="slno">24<br>
+            </td>
+            <td class="sdate">Thursday<br>
+              Nov. 24</td>
+            <td class="stsub">
+		    Distance Vector revisions;<br>Link State Protocols<br>
+              (<a href="files/lectures/24-network-dv-ls.pptx">pptx</a>,
+               <a href="files/lectures/24-network-dv-ls.pdf">pdf</a>,
+<a href="files/videos/lecture24-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture24-part2.mp4">video: part 2</a>
+	       )             
+            </td>
+            <td class="stread">4.4, 4.5, 4.6</td>
+            <td class="spread">
+               <a href="readings/dsdv.pdf">DSDV</a>
                <a href="https://tools.ietf.org/html/rfc2328">OSPFv2 RFC</a>
             </td>
             <!--td class="swset">&nbsp;</td-->
             <td class="spset">&nbsp;</td>
           </tr>
 
-
+          <tr>
+            <td class="slno">25</td>
+            <td class="sdate">Tuesday<br>
+              Nov. 29 </td>
+            <td class="stsub">Internet Routing; BGP Basic Operations<br>
+              (<a href="files/lectures/25-network-internet-routing.pptx">pptx</a>,
+               <a href="files/lectures/25-network-internet-routing.pdf">pdf</a>,
+		<a href="files/videos/lecture25-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture25-part2.mp4">video: part 2</a>
+	       )             
+            </td>
+            <td class="stread">4.4, 4.6</td>
+            <td class="spread">
+               <a href="https://tools.ietf.org/html/rfc4271">BGP-4 RFC</a>
+               <a href="http://www.fixedorbit.com/search.htm">fixedorbit</a>;<br>
+               <a href="http://www.bgp4.as/looking-glasses">Looking
+                glass</a>;<br>
+              <a href="files/readings/ArrowImposs.pdf">Arrow's Theorem Proof</a>
+            </td>
+            <!--td class="swset">
+             </td-->
+            <td class="spset">              
+            </td>
+          
+          </tr>
 
 
 
@@ -748,7 +794,7 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="sdate">
                Thursday<br>
                Oct. 27</td>
-            <td class="stmain" colspan="1" rowspan="4"><b>Guest Lectures</b> 
+            <td class="stmain" colspan="1" rowspan="5"><b>Guest Lectures</b> 
             </td>
             <td class="stsub">
 		Alibaba's Experience on Intent-Based Networking<br>
@@ -770,7 +816,8 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
               <!--a href="assignments/assign4">Assignment Four</a-->
             </td>
           </tr>
-   	<tr>
+
+	  <tr>
             <td class="slno">22</td>
             <td class="sdate">
                Thursday<br>
@@ -797,7 +844,32 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             </td>
           </tr>
 
+	<tr>
+            <td class="slno">26</td>
+            <td class="sdate">
+               Thursday<br>
+               Dec. 1</td>
+            <td class="stsub">
+		Internet of Things<br>
+		Linghe Kong (SJTU)<br>
+               <!--(<a href="files/lectures/22-microsoft-inside-datacenter.pptx">pptx</a>,
+                <a
+			href="files/lectures/22-microsoft-inside-datacenter.pdf">pdf</a>
+		a href="files/videos/lecture16-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture16-part2.mp4">video: part 2</a>
+	      )-->
+            </td>
+            <td class="stread">
+            </td>
 
+            <td class="spread">          
+            </td>
+
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">
+              <!--a href="assignments/assign4">Assignment Four</a-->
+            </td>
+          </tr>
 
    </tbody>
   </table>
