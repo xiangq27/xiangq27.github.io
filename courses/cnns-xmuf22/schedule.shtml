@@ -805,7 +805,34 @@ href="files/programming/examples-java-socket/BasicWebServer/BasicWebServer.java"
             <td class="spset">&nbsp;</td>
           </tr>
 
+          <tr>
+            <td class="slno">29</td>
+            <td class="sdate">Tuesday<br>
+              Dec. 13</td>
+            <td class="stmain" colspan="1" rowspan="1"><b>Summary</b> 
+            </td>
+            <td class="stsub">
+		    Link Layer; Future Network Architectures (SDN); Course Summary<br> 
+	     <!--Future Network Architectures (MobilityFirst, NDN, XIA) <br-->
+(<a href="files/lectures/29-link-summary.pptx">pptx</a>,
+               <a
+		       href="files/lectures/29-link-summary.pdf">pdf</a>,
+<a href="files/videos/lecture29-part1.mp4">video: part 1</a>, 
+	      <a href="files/videos/lecture29-part2.mp4">video: part 2</a>	       
+	       )
+            </td>
+            <td class="stread">
+            </td>
+            <td class="spread">          
+               <a href="files/readings/mobilityfirst-5g.pdf">MobilityFirst</a> 
+              (<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6258042">DMap</a>);
+              <a href="http://named-data.net/publications/">NDN</a>;
+              <a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/han_dongsu_xia">XIA</a>
+            </td>
 
+            <!--td class="swset">&nbsp;</td-->
+            <td class="spset">&nbsp;</td>
+          </tr>          
 
 
 
