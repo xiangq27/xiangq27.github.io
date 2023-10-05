@@ -1,6 +1,0 @@
-POST /finance HTTP/1.0
-Host www.google.com
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 16
-
-q=NYSEARCA%3AGLD
