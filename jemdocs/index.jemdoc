@@ -1,0 +1,33 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==Qiao Xiang
+
+~~~
+{}{img_left}{imgs/Qiao.jpg}{alt text}{131}{180}{http://qiaoxiang.me/files/pics/Qiao_profile_20.jpeg}
+Professor\n [https://cs.xmu.edu.cn/ Department of Computer Science and Technology] \n[https://www.xmu.edu.cn/ Xiamen University]\n
+Office:211,Building 3,West of Xiang'an Campus \n
+Email:qiaoxiang@xmu.edu.cn \n 
+find me at  {{<img src="imgs/github.svg" height="20px">}} [https://github.com/sngroup-xmu SNGroup]\n\n
+"The Only Easy Day Was Yesterday."- Navy Seal
+~~~
+
+== About me
+I am a faculty member in the [https://cs.xmu.edu.cn/ Department of Computer Science] at [https://informatics.xmu.edu.cn/ School of Informatics], [https://www.xmu.edu.cn/ Xiamen University], where I lead the [https://sngroup.org.cn/ System and Networking Group (SNGroup)]. Before joining XMU, I was a faculty in the [https://cpsc.yale.edu/ Department of Computer Science] at [https://www.yale.edu/ Yale University] and the [https://cpsc.yale.edu/ School of Computer Science] at [https://www.mcgill.ca/ McGill University], respectively. I received my Master and PhD Degrees from the [https://engineering.wayne.edu/computer-science Department of Computer Science] at [https://wayne.edu/ Wayne State University] in 2012 and 2014, respectively, under the supervision of [https://www.ece.iastate.edu/~hongwei/ Dr. Hongwei Zhang]. I received my Bachelor Degree in Information Security and Bachelor Degree in Economics from [https://www.nankai.edu.cn/ Nankai University] in 2007.
+
+== Research Interests
+My research focuses on building reliable, high-performance and secure large-scale networks and systems, including but not limited to data center networks, wide-area networks, cyber-physical systems and machine learning systems. I publish in top-tier system conferences (e.g., SIGCOMM, OSDI, FAST, SC, and INFOCOM) and journals (e.g., ToN, JSAC, and TMC). My work has been deployed or adopted by multiple academic organizations and industry partners.
+
+== Prospective Students
+I am looking for self-motivated graduate students on both Master and Ph.D. levels. If you are interested in working on exciting projects on computer networks and systems, please drop me an email.
+== News 
+- 06\/2023 *\[Award]*: The paper "Toward a Unified Framework for Verifying and Interpreting Learning-Based Networking Systems" is nominated as a Best Paper Candidate of IEEE/ACM IWQoS 2023 (CCF B, top 7 out of 264 submissions).\n
+- 05\/2023 *\[Paper]*: The paper "Beyond a Centralized Verifier: Scaling Data Plane Checking via Distributed, On-Device Verification" is accepted by ACM SIGCOMM 2023 (the flagship conference in computer networks, CCF A). The acceptance ratio is 22% (71/323).\n
+- 05\/2023 *\[Paper]*: The paper "Flor: An Open High Performance RDMA Framework Over Heterogeneous RNICs" is accepted by USENIX OSDI 2023 (one of the flagship conferences in computer systems, CCF A). The acceptance ratio is 20% (50/255).\n
+- 05\/2023 *\[Service]*: I serve as the TPC member of IEEE INFOCOM 2023 (CCF A). Please consider submitting your work.\n
+- 04\/2023 *\[Paper]*: Two papers "Diagnosing Distributed Routing Configurations Using Sequential Program Analysis" and "Toward Privacy-Preserving Interdomain Configuration Verification via Multi-Party Computation" are accepted by ACM APNet 2023 (one of the flagship workshops in computer networks, CCF C). The acceptance ratio is 27% (24/90).\n
+- 04\/2023 *\[Paper]*: The paper "Toward a Unified Framework for Verifying and Interpreting Learning-Based Networking Systems" is accepted by IEEE/ACM IWQoS 2023 (part of FCRC 2023, CCF B). The acceptance ratio is 23% (62/264).\n
+- 04\/2023 *\[Service]*: I serve as the TPC member of ACM IMC 2023 (CCF B). Please consider submitting your work.\n
+- 03\/2023 *\[Service]*: I serve as the publicity co-chair of ACM APNet 2023 (CCF C), a top-tier workshop on computer networks. Please consider submitting your work.\n
+- 03\/2023 *\[Service]*: I serve as the TPC member of IEEE/ACM IWQoS 2023 (CCF B). Please consider submitting your work.\n
+- 12\/2022 *\[Paper]*: Two papers "More Than Capacity: Performance-oriented Evolution of Pangu in Alibaba" and "Fisc: A Large-scale Cloud-native-oriented File System" are accepted by USENIX FAST 2023 (the flagship conference in storage systems, CCF A). The acceptance ratio is 23% (28/123).\n
+- 11\/2022 *\[Service]*: I serve as the TPC member of ACM DAC 2023 (CCF A). Please consider submitting your work.\n
+- 09\/2022 *\[Paper]*: The paper "Network Can Check Itself: Scaling Data Plane Checking via Distributed, On-Device Verification" is accepted by ACM HotNets 2022 (one of the flagship workshops in computer networks, CCF C). The acceptance ratio is XX%.

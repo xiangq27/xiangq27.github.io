@@ -1,0 +1,165 @@
+# jemdoc: menu{MENU}{Publications.html}, nofooter 
+== Publications
+
+== Book Chapters
+*Qiao Xiang* and Hongwei Zhang, "In-Network Processing in Wireless Sensor Networks", in Chapter 4 of [https://www.routledge.com/Handbook-of-Sensor-Networking-Advanced-Technologies-and-Applications/Vacca/p/book/9781466569713 Handbook of Sensor Networking: Advanced Technologies and Applications], CRC Press, 2015. Please send me an email if you are interested in reading the chapter.
+== Conferences,Journals and Workshops
+. *Qiao Xiang*, Chenyang Huang, Ridi Wen, Yuxin Wang, Xiwen Fan, Zaoxing Alan Liu, Linghe Kong, Dennis Duan, Franck Le, and Wei Sun, "Beyond a Centralized Verifier: Scaling Data Plane Checking via Distributed, On-Device Verification", in ACM SIGCOMM'23 (CCF A), 2023, (acceptance rate: 22%).\n
+[files/tulkun-sigcomm23.pdf \[paper\]][files/ \[slides\]]
+. Huisan Xu, Qiuyue Qin, Xing Fang, *Qiao Xiang*, and Jiwu Shu, "Toward Privacy-Preserving Interdomain Configuration Verification via Multi-Party Computation", in ACM APNET'23 (CCF C), 2023, (acceptance rate: 27%).\n
+[files/incv-apnet23.pdf \[paper\]][slides/incv-apnet23.pptx \[slides\]]
+. Rulan Yang, Xing Fang, Lizhao You, *Qiao Xiang*, Hanyang Shao, Gao Han, Ziyi Wang, Zhihao Zhang, and Jiwu Shu, "Diagnosing Distributed Routing Configurations Using Sequential Program Analysis", in ACM APNET'23 (CCF C), 2023, (acceptance rate: 27%).\n
+[files/scalpel-apnet23.pdf \[paper\]][slides/scalpel-apnet23.pptx \[slides\]]
+. Qiang Li, Yixiao Gao, Xiaoliang Wang, Haonan Qiu, Yanfang Le, Derui Liu, *Qiao Xiang*, and et al., "Flor: An Open High Performance RDMA Framework Over Heterogeneous RNICs", in USENIX OSDI'23 (CCF A), 2023, (acceptance rate: 20%).\n
+[files/flor-osdi23.pdf \[paper\]][files/ \[slides\]]
+. Yangfan Huang, Yuling Lin, Haizhou Du, Yijian Chen, Haohao Song, Linghe Kong, *Qiao Xiang*, Qiang Li, Franck Le, and Jiwu Shu, "Toward a Unified Framework for Verifying and Interpreting Learning-Based Networking Systems", in IEEE/ACM IWQoS'23 (CCF B), pp. xx-xx, 2023, (acceptance rate: 24%).\n
+[files/uint-iwqos23.pdf \[paper\]][slides/uint-iwqos23.pptx \[slides\]]
+. Adrian German, Marcelo Pias and *Qiao Xiang*, "On the Design and Implementation of a Quantum Architectures Knowledge Unit for a CS Curriculum", in ACM SIGCSE'23, vol. 1, pp. 1150-1156, 2023.\n
+[files/quantum-sigcse23.pdf \[paper\]][files/ \[slides\]]
+. Haoqiang Huang, Yuchao Zhang, Ran Wang, *Qiao Xiang*, Wendong Wang, Xirong Que, Ke Xu, "FRAVaR: A Fast Failure Recovery Framework for Inter-DC Network", in IEEE WCNC'23 (CCF C), pp. 1-6, 2023.\n
+[files/fravar-wcnc23.pdf \[paper\]][files/ \[slides\]]
+. Qiang Li, *Qiao Xiang*, Yuxin Wang, Haohao Song, Ridi Wen, and et al., "More Than Capacity: Performance-oriented Evolution of Pangu in Alibaba", in USENIX FAST'23 (CCF A), pp. 331-346, 2023, (acceptance rate: 23%).\n
+[files/pangu-fast23.pdf \[paper\]][files/ \[slides\]]
+. Qiang Li, Lulu Chen, Xiaoliang Wang, Shuo Huang, *Qiao Xiang*, and et al., "Fisc: A Large-scale Cloud-native-oriented File System", in USENIX FAST'23 (CCF A), pp. 231-246, 2023, (acceptance rate: 23%).\n
+[files/fisc-fast23.pdf \[paper\]][files/ \[slides\]]
+. Haoyu Liu, Feiyan Ding, Yao Wang, *Qiao Xiang*, et al. "What Appears Suboptimal May Surprise You: A Fixed-Rate Scheduling Policy for Geo-Distributed CoFlows." 2023 IEEE 29th International Conference on Parallel and Distributed Systems (ICPADS). IEEE, 2023.\n
+[files/numcoflow-icpads23.pdf \[paper\]][files/ \[slides\]]
+. Dan-Adrian German,Marcelo Pias,*Qiao Xiang*, et al. "A Quantum Abacus for Teaching Quantum Algorithms." 2023 IEEE Frontiers in Education Conference (FIE). IEEE, 2023.\n
+[files/quantum-fie23.pdf \[paper\]][files/ \[slides\]]
+. Xi Chen, *Qiao Xiang* (co-primary authors), Linghe Kong, Linghe Kong, and Huisan Xu, "Learning from FM Communications: Toward Accurate, Efficient, All-Terrain Vehicle Localization", in ACM/IEEE Transactions on Networking (CCF A), vol. 31, no. 1, pp. 42-47, 2023. A short version was published at IEEE MASS'19 and received the Best Paper Award.\n
+[files/radioloc-ton23.pdf \[paper\]]
+. Haizhou Du, Yijian Chen, Xiaojie Feng,*Qiao Xiang* ,Haoyu Liu. "An efficient federated learning framework for multi-channeled mobile edge network with layered gradient compression." Computer Networks 221 (2023): 109517.\n
+[https://arxiv.org/abs/2109.08819 \[arxiv\]]
+. Rulan Yang, Xing Fang, Lizhao You, *Qiao Xiang*, Hanyang Shao, Gao Han, Ziyi Wang, Zhihao Zhang, Jiwu Shu, and Linghe Kong, Diagnosing Distributed Routing Configurations Using Sequential Program Analysis, in ACM APNet'23 (CCF C), pp. xx-xx, 2023, (acceptance rate: 27%).\n
+[files/scalpel-apnet23.pdf \[paper\]]
+. Huisan Xu, Qiuyue Qin, Xing Fang, *Qiao Xiang*, and Jiwu Shu, Toward Privacy-Preserving Interdomain Configuration Verification via Multi-Party Computation, in ACM APNet'23 (CCF C), pp. xx-xx, 2023, (acceptance rate: 27%).\n
+[files/3600061.3600064.pdf \[paper\]]
+. *Qiao Xiang*,Yuling Lin, Mingjun Fang, et al. "Toward Reproducing Network Research Results Using Large Language Models." Proceedings of the 22nd ACM Workshop on Hot Topics in Networks. 2023.\n
+[https://arxiv.org/abs/2309.04716 \[arxiv\]]
+. Dong Guo, Shenshen Chen, Kai Gao, *Qiao Xiang*, Ying Zhang, and Yang Richard Yang, "Flash: Fast, Consistent Data Plane Verification for Large-Scale Network Settings", in ACM SIGCOMM'22 (CCF A), pp. 314-335, 2022, (acceptance rate: 20%).\n
+[files/flash-sigcomm22.pdf \[paper\]][slides/flash-sigcomm22.pptx \[slides\]]
+. Haizhou Du, Sheng Huang, and *Qiao Xiang*, Orchestra: Adaptively Accelerating Distributed Deep Learning in Heterogeneous Environments, in ACM CF'22 (CCF C), pp. 181-184, 2022.\n
+[files/orchestra-cf22.pdf \[paper\]][files/ \[slides\]]
+. Junqin Huang, Linghe Kong,Guihai Chen, *Qiao Xiang*, Xi Chen, Xue Liu, et al. "Blockchain-based federated learning: A systematic survey." IEEE Network (2022).\n
+[files/blockchain-fl-network22.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Ridi Wen, Chenyang Huang, Yuxin Wang, and Franck Le, Network Can Check Itself: Scaling Data Plane Checking via Distributed, On-Device Verification, in ACM HotNets'22 (CCF C), pp. 85-92, 2022, (acceptance rate: 31%).\n
+[files/ddpv-hotnets22.pdf \[paper\]]
+. Jinghui Jiang, Zhenpei Huang, *Qiao Xiang*, Lu Tang, and Jiwu Shu, P4-DPLL: Accelerating SAT Solving Using Switching ASICs, in ACM SIGCOMM-FFSPIN'22, pp. 24-30, 2022.\n
+[files/p4dpll-ffspin22.pdf \[paper\]]
+. Yuxin Wang, *Qiao Xiang*, Jiwu Shu, Geng Li, and Linghe Kong, Toward Low-Latency End-to-End Communication in 5G Using Interdomain Edge Peering, in ACM SIGCOMM-NAI'22, pp. 26-33, 2022.\n
+[files/edgepeering-nai22.pdf \[paper\]]
+. Yutong Liu, Landu Jiang, Linghe Kong, *Qiao Xiang*, Xue Liu, and Guihai Chen, Wi-Fruit: See Through Fruits with Smart Devices, in ACM Ubicomp'22 (CCF A), vol. 5, no. 4, pp. 169:1-169:29, 2021.\n
+[files/wifruit-ubicomp22.pdf \[paper\]][files/ \[slides\]]
+. Yichao Cheng, Ning Luo, Jingxuan Zhang, Timos Antonopoulos, Ruzica Piskac, and *Qiao Xiang*, Looking for the Maximum Independent Set: A New Perspective on the Stable Path Problem, in IEEE INFOCOM'21 (CCF A), pp. 1-10, 2021.\n
+[files/agspp-infocom21.pdf \[paper\]][files/ \[slides\]]
+. Shuyu Wu, Linghe Kong, *Qiao Xiang*, Zhenzhe Zheng, Luoyi Fu, and Guihai Chen, A Lightweight, Privacy-Preserving Tensor Completion Framework for Internet of Things, in IEEE IPSA'21 (CCF C), pp. 644-651, 2021.\n
+[files/pptensor-ipsa21.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Haitao Yu, James Aspnes, Franck Le, Linghe Kong, and Yang Richard Yang, "Optimizing in the Dark: Learning Optimal Network Resource Reservation Through a Simple Request Interface", in ACM/IEEE Transactions on Networking (CCF A), vol. 29, no. 2, pp. 571-584, 2021. A short version was published at AAAI'19 as an oral paper.\n
+[files/boxopt-ton21.pdf \[paper\]]
+. Haizhou Du, Keke Zhang, and *Qiao Xiang*, "Stargazer: Toward Efficient Data Analytics Scheduling via Task Completion Time Inference", in Elsevier Computers and Electrical Engineering, vol. 92, pp. 107092, 2021.\n
+[files/stargazer-cee.pdf \[paper\]]
+. *Qiao Xiang*, Franck Le, Jingxuan Zhang, and Yang Richard Yang, Toward Stable Interdomain Network-Application Integration, in ACM SIGCOMM-NAI'21, pp. 40-46, 2021.\n
+[files/sfp-nai21.pdf \[paper\]]
+. *Qiao Xiang*, Jensen Zhang, Franck Le, Y. Richard Yang. "Toward programmable interdomain routing." Proceedings of the Applied Networking Research Workshop. 2020.\n
+[files/sdi-anrw20.pdf \[paper\]]
+. Lachos, Danny,*Qiao Xiang*,Christian Rothenberg, et al. "Towards deep network & application integration: Possibilities, challenges, and research directions." Proceedings of the Workshop on Network Application Integration/CoDesign. 2020.\n
+[files/alto-nai20.pdf \[paper\]]
+. Lachos Danny,Christian Rothenberg,*Qiao Xiang*, et al. "Multi-domain information exposure using alto: The good, the bad and the solution." Proceedings of the Applied Networking Research Workshop. 2020.\n
+[files/alto-anrw20.pdf \[paper\]]
+. Yuwei Xu, Shuai Tong, Tiantian Zhang, Wen Sun, Xiaoyan Hu, and *Qiao Xiang*, "COMPASS: Directing Named Data Transmission in VANETs by Dynamic Directional Interfaces", in IEEE Access, vol. 8, pp. 8418-8435, 2020.\n
+[files/compass-access20.pdf \[paper\]]
+. Xingjian Lu, Fanxin Kong, Xue Liu, Jianwei Yin, *Qiao Xiang*, and Huiqun Yu, "Bulk Savings for Bulk Transfers: Minimizing Energy Cost on Inter-Data-Center Traffic", in IEEE Transactions on Cloud Computing, vol. 9, no. 1, pp. 73-85, 2020.\n
+[files/bulkidc-tcc20.pdf \[paper\]]
+. Haizhou Du, Ping Han, *Qiao Xiang*, Sheng Huang. "Monkeyking: Adaptive parameter tuning on big data platforms with deep reinforcement learning." Big Data 8.4 (2020): 270-290.\n
+[files/monkeyking-bigdata20.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*,Jingxuan Zhang, Kai Gao, et al. "Toward optimal software-defined interdomain routing." IEEE INFOCOM 2020-IEEE Conference on Computer Communications. IEEE, 2020.\n
+[files/sdi-infocom20.pdf \[paper\]][files/ \[slides\]]
+. *Xiang Qiao*, Linghe Kong, Xi Chen, et al. "GreenBroker: Optimal Electric Vehicle Park-and-Charge Control via Vehicle-to-Infrastructure Communication." 2019 IEEE International Black Sea Conference on Communications and Networking (BlackSeaCom). IEEE, 2019.\n
+[files/greenbroker-blackseacom19.pdf \[paper\]][files/ \[slides\]]
+. Xin Wang, *Qiao Xiang*, Jeremy Tucker, Vinod Mishra, Y. Richard Yang, et al. "Dandelion: A Novel, High-Level Programming System for Software Defined Coalitions with Local State Sharing." MILCOM 2019-2019 IEEE Military Communications Conference (MILCOM). IEEE, 2019.\n
+[files/dandelion-milcom19.pdf \[paper\]][files/ \[slides\]]
+. Xi Chen, *Qiao Xiang*, Linghe Kong, Xue Liu. RadioLoc: Learning vehicle locations with FM signal in all-terrain environments. In 2019 IEEE 16th International Conference on Mobile Ad Hoc and Sensor Systems (MASS) (pp. 438-446). IEEE.2019\n
+[files/radioloc-mass19.pdf \[paper\]]
+. *Qiao Xiang*, Jingxuan Zhang, Xin Wang, Yang Liu, Chin Guok, Franck Le, John MacAuley, Harvey Newman, and Yang Richard Yang, "Toward Fine-Grained, Privacy-Preserving, Efficient Multi-Domain Network Resource Discovery", in IEEE Journal on Selected Areas in Communications (CCF A), vol. 37, no. 8, pp. 1924-1940, 2019. A short version was published at IEEE/ACM SC'18.\n
+[files/mercator-jsac19.pdf \[paper\]]
+. Kai Gao, *Qiao Xiang*, Xin Wang, Yang Richard Yang, and Jun Bi, "An Objective-Driven On-Demand Network Abstraction for Adaptive Applications", in ACM/IEEE Transactions on Networking (CCF A), vol. 27, no. 2, pp. 805-818, 2019. A short version was published at IEEE/ACM IWQoS'17.\n
+[files/rsa-ton19.pdf \[paper\]]
+. *Qiao Xiang*, Shenshen Chen, Kai Gao,et al. Unicorn: Unified resource orchestration for multi-domain, geo-distributed data analytics. Future Generation Computer Systems, 93, 188-197 ,2019.\n
+[files/unicorn-dais17.pdf \[paper\]]
+. *Qiao Xiang*, Xin Wang, Jingxuan Zhang, Harvey Newman, Yang Liu, and Yang Richard Yang, "Unicorn: Unified Resource Orchestration for Multi-Domain, Geo-Distributed Data Analytics", in Elsevier Future Generation Computer Systems (CCF C), vol 93, pp. 188-197, 2019.\n
+[files/unicorn-indis17.pdf \[paper\]]
+. Lachos Danny,Christian Rothenberg,*Qiao Xiang*, et al. "Supporting multi-domain Use cases with ALTO." Proceedings of the Applied Networking Research Workshop. 2019.\n
+[files/alto-anrw19.pdf \[paper\]]
+. *Qiao Xiang*, Franck Le, Yeon-sup Lim, et al. "Opensdc: A novel, generic datapath for software defined coalitions." MILCOM 2018-2018 IEEE Military Communications Conference (MILCOM). IEEE, 2018.\n
+[files/opensdc-milcom18.pdf \[paper\]][files/ \[slides\]]
+. Kai Gao, *Qiao Xiang*, Xin Wang, Yang Richard Yang, Jun Bi. "NOVA: Towards on-demand equivalent network view abstraction for network optimization." 2017 IEEE/ACM 25th International Symposium on Quality of Service (IWQoS). IEEE, 2017.\n
+[files/rsa-iwqos17.pdf \[paper\]][files/ \[slides\]]
+. Linghe Kong, Xi Chen, Xue Liu, *Qiao Xiang*, Yi Gao, Noam Ben Baruch, and Guihai Chen, "AdaSharing: Adaptive Data Sharing in Collaborative Robots", in IEEE Transactions on Industrial Electronics, vol. 64, no. 12, pp. 9569-9579, 2017.\n
+[files/Adasharing-tie17.pdf \[paper\]]
+. Linghe Kong, Daqiang Zhang, Zongjian He, *Qiao Xiang*, Jiafu Wan, and Meixia Tao, "Embracing Big Data with Compressive Sensing: A Green Approach in Industrial Wireless Networks", in IEEE Communications Magazine, Oct., pp. 54-59, 2016.\n
+[files/csbigdata-commag16.pdf \[paper\]]
+. Wei Wang, Jingxuan Zhang, Dong Guo, *Qiao Xiang*, Chenxi Huang, Jinda Chang, Liqing Zhang. Towards an emerging cloudware paradigm for transparent computing. In Proceedings of the 9th International Conference on Utility and Cloud Computing pp. 43-48, 2016\n
+[files/cloudware-ucc16.pdf \[paper\]]
+. Dong Guo, Wei Wang, Jingxuan Zhang, *Qiao Xiang*, Chenxi Huang, Jinda Chang, Liqing Zhang. Cloudware: an emerging software paradigm for cloud computing. In Proceedings of the 8th Asia-Pacific Symposium on Internetware(CCF c) pp. 1-10, 2016 \n
+[files/cloudware-internetware16.pdf \[paper\]]
+. Dong Guo, Wei Wang, Jingxuan Zhang , Guosun Zeng, *Qiao Xiang*, Zerong Wei. Towards cloudware paradigm for cloud computing. In 2016 IEEE 9th International Conference on Cloud Computing (CLOUD) pp. 164-171. IEEE, 2016 \n
+[files/cloudware-cloud16.pdf \[paper\]]
+. Linghe Kong, *Qiao Xiang*, Xue Liu, Xiao-Yang Liu, Xiaofeng Gao, Guihai Chen, and Min-You Wu, "ICP: Instantaneous Clustering Protocol for Wireless Sensor Networks", Elsevier Computer Networks (CCF B), vol. 101, pp. 144-157, 2016.\n
+[files/icp-cn16.pdf \[paper\]]
+. Fanxin Kong, *Qiao Xiang*, Linghe Kong, Jing Chen and Xue Liu, On-Line Scheduling for Electric Vehicle Charging in Park and Charge Systems, to appear in the 37th IEEE Real-Time Systems Symposium (RTSS), 2016. (Acceptance rate: ~23%)\n
+[files/ev-rtss16.pdf \[paper\]][files/ \[slides\]]
+. Xi Chen, Lei Rao, *Qiao Xiang*, Xue Liu and Fan Bai, DRIVING: Distributed Scheduling for Video Streaming in Vehicular Wi-Fi Systems, to appear in ACM Multimedia, 2016. (Acceptance rate: 20% = 52/260)\n
+[files/driving-mm16.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Linghe Kong, Xue Liu, Jingdong Xu and Wei Wang, Auc2Reserve: A Differentially Private Auction for Electric Vehicle Fast Charging Reservation, Invited Paper, to appear in the 22nd IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (IEEE RTCSA), 2016.\n
+[files/Auc2Reserve-rtcsa16-invited.pdf \[paper\]][files/ \[slides\]]
+. Xi Chen, Linghe Kong, Xue Liu, Lei Rao, Fan Bai and *Qiao Xiang*, How Cars Talk Louder, Clearer and Fairer: Optimizing the Communication Performance of Connected Vehicles via Online Synchronous Control, the 35th Annual IEEE International Conference on Computer Communications (IEEE INFOCOM), 2016. (Acceptance rate: 18.25% = 300/1644)\n
+[files/OnCar-infocom16.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Fanxin Kong, Xi Chen, Linghe Kong, Xue Liu and Lei Rao, Auc2Charge: An Online Auction Framework for Electric Vehicle Park-and-Charge, the sixth International Conference on Future Energy Systems (ACM e-Energy), 2015. (Acceptance rate: 22.8% = 16/70)\n
+[files/Auc2Charge-eenergy15.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Xi Chen, Linghe Kong, Lei Rao and Xue Liu, Data Preference Matters: A New Perspective of Safety Data Dissemination in Vehicular Ad Hoc Networks, the 34th Annual IEEE International Conference on Computer Communications (INFOCOM), 2015. (Acceptance rate: 19% = 316/1640) \n
+[files/PVCast-infocom15.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang*, Hongwei Zhang, Jianping Wang, Guoliang Xing, Shan Lin and Xue Liu, On Optimal Diversity in Network-Coding-Based Routing in Wireless Networks, the 34th Annual IEEE International Conference on Computer Communications (INFOCOM), 2015. (Acceptance rate: 19% = 316/1640)\n
+[files/ONCR-infocom15.pdf \[paper\]][files/ \[slides\]]
+. Xiaohui Liu, Hongwei Zhang, *Qiao Xiang*, Xin Che, and Xi Ju, "Taming Uncertainties in Real-Time Routing for Wireless Networked Sensing and Control", in IEEE Transactions on Smart Grid, vol. 4, no. 1, pp. 288-301, 2013.\n
+[files/mta-tsg13.pdf \[paper\]]
+. Xiaohui Liu, Hongwei Zhang, *Qiao Xiang*, Xin Che and Xi Ju, Taming Uncertainties in Real-Time Routing for Wireless Networked Sensing and Control, the 13th ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc), 2012. (Acceptance rate: 20% = 24/120)\n
+[files/mta-mobihoc.pdf \[paper\]][files/ \[slides\]]
+. *Qiao Xiang* and Hongwei Zhang, QoS-Aware In-Network Processing for Mission-Critical Wireless Cyber-Physical Systems, in ACM SenSys'12 Doctoral Colloquium, 2012.\n
+[files/ncor-dcsensys12.pdf \[paper\]]
+. Xiaohui Liu, Hongwei Zhang, and *Qiao Xiang*, Towards Predictable Real-Time Routing for Wireless Networked Sensing and Control, in CPSWeek RealWin'11, 2011.\n
+[files/mta-realwin11.pdf \[paper\]]
+. *Qiao Xiang*, Hongwei Zhang, Jinhong Xu, Xiaohui Liu, and Loren J. Rittle, "When In-Network Processing Meets Time: Complexity and Effects of Joint Optimization in Wireless Sensor Networks", in IEEE Transaction of Mobile Computing (CCF A), vol. 10, no. 10, pp. 1488-1502, 2011.\n
+[files/tr-tPack.pdf \[paper\]]
+. *Qiao Xiang*, Jinhong Xu, Xiaohui Liu, Hongwei Zhang and Loren J. Rittle, When In-Network Processing Meets Time: Complexity and Effects of Joint Optimization in Wireless Sensor Networks, the 30th IEEE Real-Time Systems Symposium (RTSS), 2009. (Acceptance rate: <20%)\n
+[files/tPack-rtss.pdf \[paper\]][files/ \[slides\]]
+. Yang Wang, Bo Meng, and *Qiao Xiang*, "Comparison on Survival Analysis of Traumatic Brain Injury Patients Treated at Normal Temperature and Mild Hypothermia", in China General Practice, vol. 23, pp. 11, 2006.\n
+[files/ \[paper\]]
+== Posters
+. *Qiao Xiang*, Chin Guok, Franck Le et al. "SFP: Toward interdomain routing for SDN networks." Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos. 2018.\n
+[files/sfp-sigcomm18.pdf \[paper\]]
+. *Xiang Qiao*, J. Jensen Zhang, X. Tony Wang, et al. "Fine-grained, multi-domain network resource abstraction as a fundamental primitive to enable high-performance, collaborative data sciences." Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos. 2018.\n
+[files/mercator-sigcomm18.pdf \[paper\]]
+. Kai Gao, Chen Gu, *Qiao Xiang*, Xin Wang, Y. Richard Yang, Jun Bi. "ORSAP: Abstracting routing state on demand." 2016 IEEE 24th International Conference on Network Protocols (ICNP). IEEE, 2016.\n
+[files/RSA-icnp16-poster.pdf \[paper\]]
+. Kai Gao, Chen Gu, *Qiao Xiang*, Yang Richard Yang, Jun Bi, FAST: Enabling Simplified Programming Abstraction for Complex State-Dependent SDN Programming, to appear in ACM SIGCOMM, 2016.\n
+[files/FAST-sigcomm16-poster.pdf \[paper\]]
+== Technical Reports
+Ning Luo, *Qiao Xiang*, Timos Antonopoulos, Ruzica Piskac, Y. Richard Yang and Franck Le, IVeri: Privacy-Preserving Interdomain Verification, Yale University, 2020.\n
+[https://arxiv.org/abs/2202.02729 \[arxiv\]]\n
+*Qiao Xiang*, Hongwei Zhang, Jianping Wang and Guoliang Xing, ProNCP: A Proactive Network Coding based Protection Protocol, Technical Report, Dependable Networking and Computing Group, Wayne State University, 2014. \n
+[files/tr-proncp.pdf \[Bib Tex\]]\n
+*Qiao Xiang*, Hongwei Zhang, Jianping Wang and Guoliang Xing, EENCR: An Energy-efficient Network Coding based Routing Protocol, Technical Report, Dependable Networking and Computing Group, Wayne State University, 2014.\n
+[files/tr-eencr.pdf \[Bib Tex\]]\n
+*Qiao Xiang*, QoS-Assured In-Network Processing in Wireless Cyber-Physical Systems: A Survey, Technical Report, Dependable Networking and Computing Group, Wayne State University, 2009.\n
+[files/tr-inp-survey.pdf \[Bib Tex\]]\n
+*Qiao Xiang*, Hongwei Zhang, Jinhong Xu, Xiaohui Liu and Loren J. Rittle, When In-Network Processing Meets Time: Complexity and Effects of Joint Optimization in Wireless Sensor Networks, Technical Report, Dependable Networking and Computing Group, Wayne State University, 2009.\n
+[files/tPack-tmc11.pdf \[Bib Tex\]]
+== Dissertation and Thesis
+*Qiao Xiang*, In-Network Processing for Mission-Critical Wireless Networked Sensing and Control: A Real-Time, Efficiency, and Resiliency Perspective, PhD Dissertation, Wayne State University, 2014.\n
+[files/dissertation14-Qiao-Xiang.pdf \[Bib Tex\]]\n
+*Qiao Xiang*, When In-Network Processing Meets Time: Complexity and Effects of Joint Optimization in Wireless Sensor Networks, Master Thesis, Wayne State University, 2012.\n
+[files/thesis-master12-Qiao-Xiang.pdf \[Bib Tex\]]\n
+*Qiao Xiang*, Dynamic Node Labeling Schemes in Native XML Database, Bachelor Thesis, Nankai University, 2007.\n
+[files/ \[Bib Tex\]]\n
+*Qiao Xiang*, The Development and Role of Institutional Economics in Modern China Economy, Bachelor Thesis, Nankai University, 2007.\n
+[files/ \[Bib Tex\]]
